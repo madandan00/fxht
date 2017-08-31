@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>消息推送</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/ctr.css" />
+		<link rel="stylesheet" href="../../css/m-WeChart.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_vh5c45oti6v18aor.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>店铺管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>微信设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>首次关注</span></a>
+			</div>
+			<div class="key">
+				<p class="nn"><i>*</i><span>关键词&nbsp;：&nbsp;</span></p>
+				<p><input type="text" /></p>
+				<p class="nn"><i>*</i><span>匹配类型&nbsp;：&nbsp;</span></p>
+				<p class="clearfix"><input type="radio" /><b style="margin-right: 75px;">精确匹配</b><input type="radio" /><b>模糊匹配</b></p>
+				<p class="tt">全匹配是对话完全一致才能触发，模糊匹配是是要包含就触发，两种匹配均区分大小写。</p>
+			</div>
+			<div class="ctr">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">选择类型</span>
+				</div>
+				<ul class="Ctr">
+					<li class="active">
+						<p><i class="iconfont icon-wenben-copy"></i></p>
+						<p><span>文本</span></p>
+					</li>
+					<li>
+						<p><i class="iconfont icon-tuwen1"></i></p>
+						<p><span>单条图文</span></p>
+					</li>
+					<li>
+						<p><i class="iconfont icon-tuwen"></i></p>
+						<p><span>多条图文</span></p>
+					</li>
+					<li>
+						<p><i class="iconfont icon-tupian1"></i></p>
+						<p><span>图片</span></p>
+					</li>
+				</ul>
+			</div>
+			<div class="tab">
+				<div class="box txt">
+					<div class="result">
+						<p>添加文字</p>
+						<textarea name="" rows="" cols=""></textarea>
+						<p style="text-align: right;background: #fff;"><b style="font-weight: normal;color: #a1a1a1;font-size: 14px;">最多可输入<strong style="color: #2b81f0;">200</strong>字</b></p>
+					</div>
+					<div class="insert">
+						<span style="margin-right: 50px;">插入ID号</span>
+						<span style="margin-right: 50px;">插入昵称</span>
+						<span style="margin-right: 50px;">插入店铺</span>
+						<span style="margin-right: 50px;">插入会员个数</span>
+						<span>插入时间</span>
+					</div>
+					<div class="time">
+						<p><span>更新时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i></p>
+					</div>
+					<div class="op" style="margin-top: 25px;padding-bottom: 70px;">
+						<span class="qd" style="margin-left: 235px;">添加推送</span>
+						<span class="qx">取消</span>
+					</div>
+				</div>
+				<div class="box pic-txt" style="display: none;">
+					<div class="headline">
+						<p><span>标题：</span></p>
+						<p>
+							<input type="text" />
+						</p>
+						<p><i>建议不多于30个字</i></p>
+					</div>
+					<div class="headline">
+						<p><span>描述：</span></p>
+						<p>
+							<input type="text" />
+						</p>
+						<p><i>最多50字</i></p>
+					</div>
+					<div class="add-pic clearfix  add1">
+						<p><span>添加图片：</span></p>
+						<p class="clearfix">
+							<a href="javascript:;" class="mddpic iconfont icon-jiahao"><input type="file" class="picture" name="name[]" /><img /></a>
+						</p>
+						<p><i>建议尺寸：500像素*500像素</i></p>
+					</div>
+					<div class="headline clearfix">
+						<p><span>跳转链接：</span></p>
+						<p>
+							<input type="text" />
+						</p>
+					</div>
+					<div class="time">
+						<p><span>更新时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i></p>
+					</div>
+					<div class="op" style="margin-top: 25px;padding-bottom: 70px;">
+						<span class="qd" id="dd" style="margin-left: 80px;">添加推送</span>
+						<span class="qx">取消</span>
+					</div>
+				</div>
+				<div class="box mpic-box" style="display: none;">
+					<div class="mpic-one">
+
+					</div>
+
+					<div class="fixed">
+						<div class="m-add clearfix">
+							<div style="float: left;">
+								<i class="add-mul">增加多条图文</i>
+							</div>
+							<!--<i style="float: left;margin-left: 10px;">增加多条图文</i>-->
+						</div>
+						<div class="time" style="margin-top: 30px;">
+							<p><span>更新时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i></p>
+						</div>
+						<div class="op" style="margin-top: 25px;padding-bottom: 70px;">
+							<span class="qd" style="margin-left: 80px;">添加推送</span>
+							<span class="qx">取消</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="box mpic" style="display: none;">
+					<div class="add-pic">
+						<p><span>添加图片：</span></p>
+						<div class="Preview clearfix">
+
+						</div>
+						<p class="clearfix">
+							<a href="javascript:;" class="mddpic iconfont icon-jiahao"><input type="file" class="picture2" name="name[]" /><img /></a>
+						</p>
+						<p class="clearfix"><i>建议尺寸：500像素*500像素</i></p>
+					</div>
+					<div class="time clearfix" style="margin-top: 20px;">
+						<p><span>更新时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i></p>
+					</div>
+					<div class="op" style="margin-top: 25px;padding-bottom: 70px;">
+						<span class="qd" style="margin-left: 80px;">添加推送</span>
+						<span class="qx">取消</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+		$(".tab").delegate(".picture", "change", function() {
+			var path = $(this).val();
+			var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+			if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+				$(this).parents('a').removeClass("icon-jiahao");
+				$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+				$(this).removeClass("picture").addClass("picture1");
+				$(".picNum").html($(".show .picture1").length);
+			} else {
+				alert("请上传正确的图片格式");
+				return false;
+			}
+
+		})
+		$(".tab").delegate(".picture1", "change", function() {
+			var path = $(this).val();
+			//alert(path)
+			var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+			if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+				$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+			} else {
+				alert("请上传正确的图片格式");
+				return false;
+			}
+		})
+		$(".tab").delegate(".picture2", "change", function() {
+			var path = $(this).val();
+			var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+			if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+				$(this).parents('a').removeClass("icon-jiahao")
+				$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+
+				var pic = '<a href="javascript:;" class="mddpic iconfont icon-jiahao"><img /><input type="file" class="picture2" name="name[]"/></a>'
+				$(this).parents('a').removeClass("icon-jiaohao").after(pic);
+				$(this).removeClass("picture2").addClass("picture1");
+			} else {
+				alert("请上传正确的图片格式");
+				return false;
+			}
+		})
+		$(".Ctr li").on("click", function() {
+			var index = $(this).index();
+			$(".Ctr li").removeClass("active")
+			$(".Ctr li").eq(index).addClass("active")
+			$(".tab .box").hide();
+			$(".tab .box").eq(index).show();
+
+		})
+		$(".add-mul").on("click", function() {
+			var html = '<div class="one clearfix">' +
+				'<div class="left">' +
+				'<div class="add-pic">' +
+				'<p><span>添加图片：</span></p>' +
+				'<div class="Preview clearfix">' +
+				'</div>' +
+				'<p class="clearfix">' +
+				'<a href="javascript:;" class="mddpic iconfont icon-jiahao"><img/><input type="file" class="picture" name="name[]" /></a></p>' +
+				'<p><i>建议尺寸：500像素*500像素</i><p>'+
+				'</div>' +
+				'</div>' +
+				'<div class="right">' +
+				'<div class="headline">' +
+				'<p><span>标题：</span></p>' +
+				'<p>' +
+				'<input type="text" />' +
+				'</p>' +
+				'<p><i>建议不多于30个字</i></p>' +
+				'</div>' +
+				'<div class="headline">' +
+				'<p><span>描述：</span></p>' +
+				'<p>' +
+				'<input type="text" />' +
+				'</p>' +
+				'<p><i>最多50字</i></p>' +
+				'</div>' +
+				'<div class="headline">' +
+				'<p><span>跳转链接：</span></p>' +
+				'<p>' +
+				'<input type="text" />' +
+				'</p>' +
+				'</div>' +
+				'</div>' +
+				'</div>'
+			$(html).appendTo(".mpic-one")
+		})
+		$("#dd").on("click", function() {
+			console.log($("#mm").attr("path"))
+		})
+	</script>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>店铺管理</title>
+		<link rel="stylesheet" type="text/css" href="public.css">
+		<link rel="stylesheet" type="text/css" href="easyui.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_hicdkkoos4r96bt9.css">
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+		<script src="slide.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.panel-tool {
+				top: 12px;
+			}
+		</style>
+	</head>
+
+	<body class="easyui-layout">
+		<!--顶部-->
+		<div region="north" border="true" class="cs-north">
+			<ul>
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="">店铺管理</a>
+				</li>
+				<li class="active">
+					<a href="">商品管理</a>
+				</li>
+				<li>
+					<a href="">订单管理</a>
+				</li>
+				<li>
+					<a href="">会员分销</a>
+				</li>
+				<li>
+					<a href="">财务中心</a>
+				</li>
+				<li>
+					<a href="">营销中心</a>
+				</li>
+				<li>
+					<a href="">设置</a>
+				</li>
+				<li><span><i class="iconfont icon-tuichu"></i><b>退出</b></span></li>
+			</ul>
+		</div>
+		<!--左边导航-->
+		<div region="west" border="false" split="false" title="&nbsp" class="cs-west">
+			<div class="info">
+				<div class="tou-img">
+					<img src="img/logo.png" />
+				</div>
+				<p class="name">小喵喵仙儿</p>
+				<p class="position">管理员</p>
+			</div>
+			<div id="aa" class="easyui-accordion" fit="false" border="false">
+				<div selected="false" title='<i class="iconfont icon-dianpu" style="margin-left:6px;font-size:23px"></i>店铺主页'>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-special-subject-list.html" class="cs-navi-tab active">当前主页模板</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/storeset.html" class="cs-navi-tab">店铺信息设置</a>
+					</p>
+
+				</div>
+
+				<div title='<i class="iconfont icon-huiyuan" style="margin-left:6px;font-size:23px"></i>会员主页'>
+					<p>
+						<a href="javascript:void(0);" src="dev/goods/goods-release-g.html" class="cs-navi-tab active">可选模板</a>
+					</p>
+				</div>
+
+				<div title='<i class="iconfont icon-tupian" style="margin-left:6px;font-size:23px"></i>图片管理'>
+					<p>
+						<a href="javascript:void(0);" src="dev/goods/goods-release-g.html" class="cs-navi-tab active">图片分类</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/goods/addgoods.html" class="cs-navi-tab">上传图片</a>
+					</p>
+				</div>
+
+				<div title='<i class="iconfont icon-shoujij34" style="margin-left:6px;font-size:23px"></i>专题管理'>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-special-subject-class.html" class="cs-navi-tab active">专题分类</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-special-subject-list.html" class="cs-navi-tab">专题列表</a>
+					</p>
+				</div>
+
+				<div title='<i class="iconfont icon-icon-weixinguanli" style="margin-left:6px;font-size:23px"></i>微信设置'>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-WeChart-F.html" class="cs-navi-tab active">首次关注</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-WeChart-F.html" class="cs-navi-tab">自动回复</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-WeChart-setting.html" class="cs-navi-tab">微信设置</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/store/m-information-setting.html" class="cs-navi-tab">消息设置</a>
+					</p>
+				</div>
+
+				<!--<div title='<a href="javascript:void(0);" src="dev/goods/goods-classily-list-g.html" class="cs-navi-tab" style="width:170px;height:38px;display:inline-block;line-height:30px" ><i class="iconfont icon-shangpinfenlei01"></i>商品分类</a>' >			
+					<p><a href="javascript:void(0);" src="dev/goods/goods-type-list-g.html" class="cs-navi-tab active">商品类型</a></p>
+				</div>-->
+
+			</div>
+
+		</div>
+		<!--右侧展示内容-->
+		<div id="mainPanle" region="center" border="true" border="false">
+			<div id="tabs" class="easyui-tabs" fit="true" border="false">
+				<div title="Home">
+					<div class="cs-home-remark">
+						<h1></h1> <br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--<div region="south" border="false" class="cs-south">11111111111</div>-->
+
+		<div id="mm" class="easyui-menu cs-tab-menu">
+			<div id="mm-tabupdate">刷新</div>
+			<div class="menu-sep"></div>
+			<div id="mm-tabclose">关闭</div>
+			<div id="mm-tabcloseother">关闭其他</div>
+			<div id="mm-tabcloseall">关闭全部</div>
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	//					setTimeout(function(){
+	//						//console.log($(".panel-tool").length) 
+	//						$(".panel-tool").eq(2).hide()
+	//						$(".panel-tool").eq(3).hide()
+	//						$(".panel-tool").eq(4).hide()
+	//						$(".panel-tool").eq(5).hide()
+	//					},10)					
+
+	//关闭折叠
+	//					 $(function(){
+	//					        $("#aa").accordion('getSelected').panel('collapse')
+	//					});
+	//.panel-body.accordion-body p a
+	//.panel-header.accordion-header  a
+	setTimeout(function() {
+		$(".panel-body.accordion-body p a").eq(0).click()
+	}, 10)
+</script>

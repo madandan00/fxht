@@ -1,0 +1,69 @@
+.in {
+  background: #fff;
+  margin-top: 10px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  height: 670px;
+}
+.in .down {
+  color: #666;
+  font-size: 12px;
+}
+.in .down span {
+  color: #2b82f0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.in .in-info {
+  width: 370px;
+  margin: 66px auto 0;
+}
+.in .in-info .in-tit {
+  font-size: 14px;
+  color: #333;
+  line-height: 40px;
+}
+.in .in-info .in-tip {
+  font-size: 14px;
+  color: #333;
+  line-height: 34px;
+}
+.in .in-info .dr {
+  background: #2b81f0;
+  color: #fff;
+  font-size: 16px;
+  margin: 80px auto 0;
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+.in .in-info .in-file .pics {
+  font-weight: normal;
+  height: 36px;
+  width: 310px;
+  position: relative;
+  border: 1px solid #b6b6b6;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.in .in-info .in-file .pics input {
+  margin-top: 0px;
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}

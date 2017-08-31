@@ -1,0 +1,77 @@
+#list {
+  overflow: hidden;
+  width: 100%;
+}
+#list caption {
+  text-align: left;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+}
+#list caption span {
+  margin-left: 15px;
+}
+#list caption strong {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  float: right;
+  margin-top: 12px;
+  background: #2b81f0;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#list caption i {
+  font-size: 12px;
+  color: #333;
+}
+#list caption #huifu {
+  width: 95px;
+  margin-right: 20px;
+}
+#list caption #delete {
+  width: 65px;
+  margin-right: 20px;
+}
+#list caption #print {
+  width: 120px;
+  margin-right: 10px;
+}
+#list caption #pass {
+  width: 95px;
+  margin-right: 10px;
+}
+#list caption #Fgoods {
+  width: 65px;
+  margin-right: 10px;
+}
+#list thead th {
+  height: 54px;
+  border: none;
+  font-size: 14px;
+  background: #fff;
+}
+#list tbody td {
+  text-align: center;
+  color: #333;
+}
+
+.ctltable {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.box {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}

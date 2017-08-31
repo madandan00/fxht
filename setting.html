@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+		<link rel="stylesheet" type="text/css" href="public.css">
+		<link rel="stylesheet" type="text/css" href="easyui.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_xxw1cqtcnvr6bt9.css">
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+
+	</head>
+
+	<body class="easyui-layout">
+		<!--顶部-->
+		<div region="north" border="true" class="cs-north">
+
+			<ul>
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="store.html">店铺管理</a>
+				</li>
+				<li>
+					<a href="">商品管理</a>
+				</li>
+				<li class="active">
+					<a href="order.html">订单管理</a>
+				</li>
+				<li>
+					<a href="">会员分销</a>
+				</li>
+				<li>
+					<a href="">财务中心</a>
+				</li>
+				<li>
+					<a href="">营销中心</a>
+				</li>
+				<li>
+					<a href="">设置</a>
+				</li>
+				<li><span><i class="iconfont icon-tuichu" ></i><b>退出</b></span></li>
+			</ul>
+		</div>
+		<!--左边导航-->
+		<div region="west" border="false" split="false" title="&nbsp;" class="cs-west">
+			<div class="info">
+				<div class="tou-img">
+					<img src="img/logo.png" />
+				</div>
+				<p class="name">小喵喵仙儿</p>
+				<p class="position">管理员</p>
+			</div>
+			<div class="easyui-accordion" fit="false" border="false">
+				<div title='<i class="iconfont icon-shezhi2"></i>系统设置' selected="true">
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-all-order.html" class="cs-navi-tab">店铺设置</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/setting/withdraw-deposit.html" class="cs-navi-tab">提现设置</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/setting/pay-setting-w.html" class="cs-navi-tab">支付收款设置</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-order-in.html" class="cs-navi-tab">自动确认收货设置</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-order-out.html" class="cs-navi-tab">自动取消订单设置</a>
+					</p>
+				</div>
+
+				<div title='<i class="iconfont icon-shezhi1"></i>基本设置'>
+					<p>
+						<a href="javascript:void(0);" src="dev/setting/m-admin-list.html" class="cs-navi-tab">管理员列表</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-change-refunding.html" class="cs-navi-tab">组设置</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-CR-reason.html" class="cs-navi-tab">绑定域名</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-deliver-2.html" class="cs-navi-tab">操作日志</a>
+					</p>
+					
+				</div>
+				
+
+			</div>
+
+		</div>
+		<!--右侧展示内容-->
+		<div id="mainPanle" region="center" border="true" border="false">
+			<div id="tabs" class="easyui-tabs" fit="true" border="false">
+				<!--<div title="Home">
+					<div class="cs-home-remark">
+						
+
+					</div>
+				</div>-->
+			</div>
+		</div>
+
+		<!--<div region="south" border="false" class="cs-south">11111111111</div>-->
+
+		<div id="mm" class="easyui-menu cs-tab-menu">
+			<div id="mm-tabupdate">刷新</div>
+			<div class="menu-sep"></div>
+			<div id="mm-tabclose">关闭</div>
+			<div id="mm-tabcloseother">关闭其他</div>
+			<div id="mm-tabcloseall">关闭全部</div>
+		</div>
+	</body>
+	<script src="slide.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		setTimeout(function() {
+			$(".cs-navi-tab").eq(0).click()
+		}, 10)
+	</script>
+
+</html>

@@ -1,0 +1,32 @@
+.tit {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  line-height: 60px;
+  font-size: 16px;
+  color: #333;
+}
+.tit span {
+  margin-left: 20px;
+}
+.tit i {
+  margin-left: 16px;
+}
+.tit b {
+  float: left;
+  width: 8px;
+  height: 40px;
+  margin-top: 10px;
+  background: #2b81f0;
+}
+.tit strong {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 130px;
+  height: 40px;
+  background: #2b81f0;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}

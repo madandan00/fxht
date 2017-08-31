@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/m-admin-list.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_r6ve06itqg9icnmi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>基本设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>管理员列表</span></a>
+			</div>
+			<div style="min-height:440px;height:auto !important;height:440px;background: #fff;margin-top: 10px;">
+				<div style="padding: 30px 20px;border-bottom: 1px solid #e9e8e8;" class="box">
+					<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;position: relative;">
+						<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+						<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">管理员列表</span>
+						<a href="m-add-admin.html"><strong style="margin-left: 50px;">添加管理员</strong></a>
+					</div>
+				</div>
+				<table border="0" cellspacing="" cellpadding="" id="list">
+					<!--	<caption style="background: #eeeeee;"><span>模板列表</span></caption>-->
+					<thead>
+						<tr>
+							<th class="li1"><span>序号</span></th>
+							<th class="li2"><span>用户名</span></th>
+							<th class="li3"><span>权限</span></th>
+							<th class="li4"><span>创建时间</span></th>
+							<th class="li5"><span>最后登录时间</span></th>
+							<th class="li6"><span>最后登录IP</span></th>
+							<th class="li7"><span>登录次数</span></th>
+							<th class="li8"><span>登录状态</span></th>
+							<th class="li9"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<tr class="order">
+							<td class="li1">
+								<span>1</span>
+							</td>
+							<td class="li2">
+								<span>哇哈哈哈</span>
+							</td>
+							<td class="li3"><span>超级管理员</span></td>
+							<td class="li4"><span>2017.04.04</span></td>
+							<td class="li5" style="text-align: left;"><span>2017.08.04  13：14：56</span></td>
+							<td class="li6" style="text-align: left;"><span>192.10.123.01</span></td>
+							<td class="li7"><span>20</span></td>
+							<td class="li8"><span>启用</span></td>
+							<td class="li9" style="text-align: left;">
+								<a href="m-freight-xiugai.html"><i class="iconfont icon-xiugai"></i></a>
+							
+							</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+
+		<div id="add-logistics" class="tip">
+			<i class="iconfont icon-X close"></i>
+			<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+				<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+				<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">添加物流公司</span>
+			</div>
+			<div class="express">
+				<p>
+					<span>物流公司&nbsp;:&nbsp;</span><input type="text" style="width: 240px;" class="gs">
+				</p>
+				<p>
+					<span>物流code&nbsp;:&nbsp;</span><input type="text" style="width: 160px;" class="code">
+				</p>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script type="text/javascript">
+		page(8)
+	</script>
+
+</html>

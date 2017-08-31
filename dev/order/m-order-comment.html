@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/m-order-comment.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_8vabw759cudz33di.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>售后服务</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>商品评论</span></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active">全部</li>
+					<li>好评</li>
+					<li>中评</li>
+					<li>差评</li>
+				</ul>
+			</div>
+			<div class="search">
+				<p>
+					<span>商品名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+					<span>商品货号&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;">
+					<span>会员名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;">
+				</p>
+				<p>
+					<span>评论时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i>
+					<button style="margin-left: 30px;"><i class="iconfont icon-shousuo"></i>搜索</button>
+				</p>
+			</div>
+			<div style="min-height:380px;height:auto !important;height:380px;background: #fff;">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px;" class="ctltable">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;"><span>订单列表</span><strong id="huifu">一键回复</strong></caption>
+					<thead>
+						<tr>
+							<th class="li8"><input type="checkbox" name="" id="all" value="" /></th>
+							<th class="li1"><span>商品信息</span></th>
+							<th class="li2"><span>会员名称</span></th>
+							<th class="li3"><span>好评</span></th>
+							<th class="li4"><span>评论内容</span></th>
+							<th class="li5"><span>晒图</span></th>
+							<th class="li6"><span>评论时间</span></th>
+							<th class="li7"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<tr class="order">
+							<td class="li8"><input type="checkbox" name="" class="arr" value="" show_id="" /></td>
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<p>力士(LUX)娇肤香皂三块装 恒久嫩肤115gx3</p>
+							</td>
+							<td class="li2"><span>吃吃的爱</span></td>
+							<td class="li3"><span>好评</span></td>
+							<td class="li4">
+								<p>好香好香，很好用很好用很好用好香好香，很好用很好用很好用</p>
+							</td>
+							<td class="li5"><img src="../../img/order/good_03.jpg" alt="" /></td>
+							<td class="li6"><span>2017.07.31</span></td>
+							<td class="li7">
+								<i class="iconfont icon-pinglun pinglun" style="color: #1f8e53;"></i>
+								<a href="m-order-after-sale.html"><i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i></a>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li8"><input type="checkbox" name="" class="arr" value="" show_id="" /></td>
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<p>力士(LUX)娇肤香皂三块装 恒久嫩肤115gx3</p>
+							</td>
+							<td class="li2"><span>吃吃的爱</span></td>
+							<td class="li3"><span>好评</span></td>
+							<td class="li4">
+								<p>好香好香，很好用很好用很好用好香好香，很好用很好用很好用好香好香，很好用很好用很好用好香好香，很好用很好用很好用</p>
+							</td>
+							<td class="li5">
+								<div>
+									<img src="../../img/order/good_03.jpg" alt="" />
+									<img src="../../img/order/good_03.jpg" alt="" />
+									<img src="../../img/order/good_03.jpg" alt="" />
+								</div>
+							</td>
+							<td class="li6"><span>2017.07.31</span></td>
+							<td class="li7">
+								<i class="iconfont icon-pinglun pinglun" style="color: #1f8e53;"></i>
+								<i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li8"><input type="checkbox" name="" class="arr" value="" show_id="" /></td>
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<p>力士(LUX)娇肤香皂三块装 恒久嫩肤115gx3</p>
+							</td>
+							<td class="li2"><span>吃吃的爱</span></td>
+							<td class="li3"><span>好评</span></td>
+							<td class="li4">
+								<p>好香好香，很好用很好用很好用好香好香，很好用很好用很好用</p>
+							</td>
+							<td class="li5"><img src="../../img/order/good_03.jpg" alt="" /></td>
+							<td class="li6"><span>2017.07.31</span></td>
+							<td class="li7">
+								<i class="iconfont icon-pinglun pinglun" style="color: #1f8e53;"></i>
+								<i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li8"><input type="checkbox" name="" class="arr" value="" show_id="" /></td>
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<p>力士(LUX)娇肤香皂三块装 恒久嫩肤115gx3</p>
+							</td>
+							<td class="li2"><span>吃吃的爱</span></td>
+							<td class="li3"><span>好评</span></td>
+							<td class="li4">
+								<p>好香好香，很好用很好用很好用好香好香，很好用很好用很好用好香好香，很好用很好用很好用好香好香，很好用很好用很好用</p>
+							</td>
+							<td class="li5">
+								<div>
+									<img src="../../img/order/good_03.jpg" alt="" />
+									<img src="../../img/order/good_03.jpg" alt="" />
+									<img src="../../img/order/good_03.jpg" alt="" />
+								</div>
+							</td>
+							<td class="li6"><span>2017.07.31</span></td>
+							<td class="li7">
+								<i class="iconfont icon-pinglun pinglun" style="color: #1f8e53;"></i>
+								<i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		<div id="reply">
+			<i class="iconfont icon-X close"></i>
+			<p class="titl"><span></span><i>回复评论</i></p>
+			<div class="info">
+				<img src="../../img/order/good_03.jpg" alt="" />
+				<p class="customer-name">会飞的云</p>
+				<p class="good-name">力士(LUX)娇肤香皂三块装 恒久嫩肤115gx3</p>
+			</div>
+			<select></select>
+			<div class="inputTxt">
+				<textarea name="" rows="" cols="" placeholder="请输入回复内容…………" id="hf"></textarea>
+			</div>
+			<div class="opration">
+				<button class="qd">确定</button>
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script type="text/javascript" src="../../js/fenye.js"></script>
+	<script type="text/javascript" src="../../js/m-order-comment.js"></script>
+
+</html>

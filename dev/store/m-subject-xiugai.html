@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" href="../../css/m-add.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_xlnjqwri9pwlv7vi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>店铺管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>专题管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>专题列表</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>修改专题</span></a>
+			</div>
+			<div class="order-info">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">修改专题</span>
+				</div>
+				<div class="add">
+					<div class="left">
+						<span>专题名称&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<span>水晶水果</span>
+						<i class="iconfont icon-xiugai change"></i>
+					</div>
+				</div>
+				<div class="add">
+					<div class="left">
+						<span>专题标题&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<span>水晶水果</span>
+						<i class="iconfont icon-xiugai change"></i>
+					</div>
+				</div>
+				<div class="add">
+					<div class="left">
+						<span>专题分类&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<span>水晶水果</span>
+						<i class="iconfont icon-xiugai change"></i>
+					</div>
+				</div>
+
+				<div class="add">
+					<div class="left">
+						<span>专题图片&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right clearfix">
+						<div class="box">
+							<div class="display-pic">
+								<img src="../../img/order/good_03.jpg" alt="" />
+							</div>
+							<div class="link ">
+								<p class="one clearfix">模板一</p>
+								<p class="two clearfix"><span>模板背景链接地址&nbsp;：&nbsp;</span><input /><i class="iconfont icon-p-delet"></i></p>
+							</div>
+						</div>
+						<div class="box">
+							<a href="m-subject-model.html" class="pic iconfont icon-jiahao"></a>
+							
+						</div>
+					</div>
+					<!--<div class="right clearfix">
+						<div class="box">
+							<a href="javascript:;" class="pic iconfont "><input type="file" class="picture1" name="name[]" /><img src="../../img/order/good_03.jpg" /></a>
+							<div class="link"><span>专题链接地址&nbsp;：&nbsp;</span><input /><i class="iconfont icon-p-delet"></i></div>
+						</div>
+						<div class="box">
+							<a href="javascript:;" class="pic iconfont icon-jiahao"><input type="file" class="picture" name="name[]" /><img /></a>
+							<div class="link" style="display: none;"><span>专题链接地址&nbsp;：&nbsp;</span><input /><i class="iconfont icon-p-delet"></i></div>
+						</div>
+					</div>-->
+				</div>
+
+				<div class="opration" style="margin-top: 80px;padding-bottom: 50px;">
+					<button class="qd" data-id="">保存</button>
+					<span class="cancel">取消</span>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+		$(".right").delegate(".picture", "change", function() {
+			if($(".right .picture1").length < 5) {
+				var path = $(this).val();
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+
+					var pic = '<div class="box"><a href="javascript:;" class="pic iconfont icon-jiahao"><img /><input type="file" class="picture" name="name[]"/></a><div class="link" style="display: none;"><span>专题链接地址&nbsp;：&nbsp;</span><input /></div></div>'
+					$(this).parents('a').removeClass("icon-jiahao").parents(".box").after(pic);
+					$(this).parents(".box").find(".link").show()
+
+					$(this).removeClass("picture").addClass("picture1");
+					//$(this).append(lin)
+
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				}
+			} else {
+				var path = $(this).val();
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+					$(this).parents('a').removeClass("icon-jiahao");
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+					$(this).removeClass("picture").addClass("picture1");
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				}
+
+			}
+
+		})
+		$(".right").delegate(".picture1", "change", function() {
+				var path = $(this).val();
+				//alert(path)
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				}
+			})
+			//	修改
+		$(".change").on("click", function() {
+			if($(this).hasClass("icon-xiugai")) {
+				var val = $(this).parents(".right").find("span").html();
+				$(this).parents(".right").find("span").html('<input type="text" class="kk" value=' + val + '>');
+				$(this).removeClass("icon-xiugai").addClass("icon-duihaocheckmark17")
+			} else if($(this).hasClass("icon-duihaocheckmark17")) {
+				var val = $(this).parents(".right").find(".kk").val();
+				$(this).parents(".right").find("span").html(val);
+				$(this).removeClass("icon-duihaocheckmark17").addClass("icon-xiugai")
+					//alert(val)
+				//$(this).parents("p").find(".tj").val(val);
+			}
+
+		})
+	</script>
+
+</html>

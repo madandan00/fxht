@@ -1,0 +1,205 @@
+.info-setting {
+    padding: 20px 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    background: #fff;
+    margin-top: 10px;
+}
+.nav {
+    margin-top: 20px;
+    height: 40px;
+    li {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 140px;
+        float: left;
+        background: #fff;
+        cursor: pointer;
+        border: 1px solid #b6b6b6;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        font-size: 16px;
+    }
+    li+li {
+        border-left: none;
+    }
+    .active {
+        background: #2b81f0;
+        color: #fff;
+    }
+}
+.nav2 {
+    height: 40px;
+    margin-top: 30px;
+    ul{
+        li{
+            float: left;
+            height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 140px;
+        background: #ededed;
+        margin-right: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+    }
+//  span {
+//      float: left;
+//      height: 40px;
+//      line-height: 40px;
+//      text-align: center;
+//      width: 140px;
+//      background: #ededed;
+//      margin-right: 50px;
+//      font-size: 16px;
+//      cursor: pointer;
+//  }
+    .active {
+        background: #2b81f0;
+        color: #fff;
+    }
+}
+.info {
+    padding: 20px 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    background: #fff;
+    margin-top: 10px;
+    .left {
+        width: 110px;
+        height: 40px;
+        margin-left: 180px;
+        float: left;
+        text-align: right;
+        span,
+        i {
+            font-size: 14px;
+            color: #333;
+            line-height: 40px;
+        }
+    }
+    .right {
+        float: left;
+        margin-left: 18px;
+        .result {
+            width: 430px;
+            height: 190px;
+            border: 1px solid #b6b6b6;
+            position: relative;
+            float: left;
+            margin-bottom: 20px;
+            p {
+                height: 40px;
+                //background: #f5f5f9;    
+                font-size: 14px;
+                color: #d2d2d2;
+                line-height: 40px;
+                padding: 0 10px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+            }
+            .mdd {
+                position: absolute;
+            }
+            textarea {
+                font-size: 12px;
+                padding: 10px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                width: 100%;
+                border: none;
+                height: 150px;
+                
+            }
+        }
+        .insert {
+            float: left;
+            margin-left: 30px;
+            p {
+                height: 30px;
+                line-height: 30px;
+                span {
+                    margin-left: 5px;
+                    color: #666;
+                    cursor: pointer;
+                }
+            }
+        }
+        .sel {
+           
+             height: 40px;
+            span {
+                float: left;
+                line-height: 40px;
+                color: #666;
+                margin: 0 5px;
+            }
+            input{
+                float: left;
+                margin-top: 13px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+.opration {
+        //width: 100%;
+        //text-align: center;
+        box-sizing: border-box;
+        margin-left: 400px;
+        overflow: hidden;
+        span {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 20px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+        .qd {
+            background: #2b81f0;
+            color: #fff;
+            margin-right: 90px;
+        }
+        .cancel {
+            border: 1px solid #2b81f0;
+            background: #fff;
+            color: #2b81f0;
+        }
+    }

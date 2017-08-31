@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>组设置</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/setting.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_r6ve06itqg9icnmi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>基本设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>组设置</span></a>
+			</div>
+			<div class="order-info">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;position: relative;">
+
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">组设置</span>
+
+				</div>
+
+				<div class="add" style="margin-top: 40px;">
+					<div class="left" style="width: 490px;">
+						<span><b>*&nbsp;</b>组名称&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><input type="text" /></p>
+						<p class="tt"></p>
+					</div>
+				</div>
+
+				<div class="add">
+					<div class="left" style="width: 490px;">
+						<span><b>*&nbsp;</b>所属情况&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p class="clearfix"><input type="radio" /><strong>财务管理</strong><input type="radio" /><strong>售后管理</strong></p>
+						<p class="clearfix"><input type="radio" /><strong>商品管理</strong><input type="radio" /><strong>市场管理</strong></p>
+						<p class="clearfix"><input type="radio" /><strong>财务管理</strong><input type="radio" /><strong>售后管理</strong></p>
+						<p class="tt"></p>
+						<div class="big-box">
+							<div class="small-box">
+								<p class="clearfix"><input type="checkbox" /><strong>财务管理</strong><input type="checkbox" /><strong>售后管理</strong></p>
+								<p class="clearfix"><input type="checkbox" /><strong>商品管理</strong><input type="checkbox" /><strong>市场管理</strong></p>
+								<p class="clearfix"><input type="checkbox" /><strong>财务管理</strong><input type="checkbox" /><strong>售后管理</strong></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="opration" style="margin-top: 30px;padding-bottom: 50px;margin-left: 500px;">
+					<button class="qd" data-id="">保存</button>
+					<span class="cancel">取消</span>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+		$(".on-off").on("click", function() {
+			if($(this).hasClass("icon-kaiguanguan")) {
+				$(this).removeClass("icon-kaiguanguan").addClass("icon-kaiguan")
+			} else if($(this).hasClass("icon-kaiguan")) {
+				$(this).removeClass("icon-kaiguan").addClass("icon-kaiguanguan")
+			}
+		})
+	</script>
+
+</html>

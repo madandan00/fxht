@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/m-freight-model.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o8c00yeddrh08uxr.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>物流管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>运费模板</span></a>
+			</div>
+
+			<div class="search">
+				<p><a href="m-add-freight.html" class="add">添加运费模板</a></p>
+				<p>
+					<span>模板名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+					<span>快递公司&nbsp;:&nbsp;</span><input type="text" style="margin-right: 50px;">
+					<b ><i class="iconfont icon-shousuo"></i>搜索</b>
+				</p>
+			</div>
+			<div style="min-height:440px;height:auto !important;height:440px;background: #fff;">
+				
+			
+			<table border="0" cellspacing="" cellpadding="" id="list" >
+				<caption style="background: #eeeeee;"><span>模板列表</span></caption>
+				<thead>
+					<tr>
+						<th class="li1"><span>模板名称</span></th>
+						<th class="li2"><span>快递公司</span></th>
+						<th class="li3"><span>配送件数</span></th>
+						<th class="li4"><span>配送费用</span></th>
+						<th class="li5"><span>操作</span></th>
+					</tr>
+				</thead>
+				<tbody id="itemContainer">
+					<tr class="order">
+						<td class="li1" >
+							<span>模板名称1</span>
+						</td>
+						<td class="li2">
+							<span>顺丰快递</span>
+						</td>
+						<td class="li3"><span>10件</span></td>
+						<td class="li4">10元</td>
+						<td class="li5" style="text-align: center;">
+							<a href="m-freight-xiugai.html"><i class="iconfont icon-xiugai"></i></a>
+							<i class="iconfont icon-p-delet"></i>
+						</td>
+					</tr>
+					
+				</tbody>
+
+			</table>
+			</div>
+			<div id="tap" >
+				<div class="zs" >
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		
+		<div id="add-logistics" class="tip">
+			<i class="iconfont icon-X close"></i>
+			<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+				<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+				<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">添加物流公司</span>
+			</div>
+			<div class="express">
+				<p>
+					<span>物流公司&nbsp;:&nbsp;</span><input type="text" style="width: 240px;" class="gs">
+				</p>
+				<p>
+					<span>物流code&nbsp;:&nbsp;</span><input type="text" style="width: 160px;" class="code">
+				</p>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script type="text/javascript">
+		page(8)
+	</script>
+
+</html>

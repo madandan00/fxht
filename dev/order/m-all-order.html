@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/m-all-order.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_alldy0di3qjv2t9.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>订单主页</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>所有订单</span></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active">所有订单</li>
+					<li>待付款订单</li>
+					<li>待发货订单</li>
+					<li>已发货订单</li>
+					<li>已完成订单</li>
+					<li>未审核取消订单</li>
+					<li>已审核取消订单</li>
+				</ul>
+			</div>
+			<div class="search">
+				<p>
+					<span>订单编号&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+					<span>收货人&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;">
+					<span>快递单号&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;">
+				</p>
+				<p>
+					<span>下单时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i>
+					<b style="margin-left: 30px;"><i class="iconfont icon-shousuo"></i>搜索</b>
+					<b style="margin-left: 10px;"><i class="iconfont icon-daochu"></i>导出</b>
+				</p>
+			</div>
+			<div style="min-height:440px;height:auto !important;height:100px;background: #fff;">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px;">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;"><span>订单列表</span><strong id="delete">删除</strong><strong id="print">打印发货清单</strong></caption>
+					<thead>
+						<tr>
+							<th class="li1"><input type="checkbox" name="" id="all" value="" /><span>商品信息</span></th>
+							<th class="li2"><span>数量</span></th>
+							<th class="li3"><span>会员名</span></th>
+							<th class="li4"><span>优惠券</span></th>
+							<th class="li5"><span>快递费</span></th>
+							<th class="li6"><span>实付金额</span></th>
+							<th class="li7"><span>订单状态</span></th>
+							<th class="li8"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+
+						<tr class="order-info">
+							<td colspan="8" style="padding-top: 10px;">
+								<input type="checkbox" name="" class="arr" value="" /><span style="margin-left: 10px;">订单编号&nbsp;:&nbsp;</span><i>112233556688</i>
+								<i style="margin-left: 30px;">2017.07.30  15：20：36</i>
+								<strong>待付款</strong>
+								<b><i class="iconfont icon-dianhua"></i><span>18800001234</span></b>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<img src="../../img/order/good_03.jpg" alt="" />
+							</td>
+							<td class="li2"><span>共10件</span></td>
+							<td class="li3"><span>吃吃的爱</span></td>
+							<td class="li4"><span>-￥10</span></td>
+							<td class="li5"><span>￥10</span></td>
+							<td class="li6"><span>￥300.00</span></td>
+							<td class="li7"><span class="fh">发货</span></td>
+							<td class="li8">
+								<a href="m-order-detail.html"><i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i></a>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+						<tr class="order-info">
+							<td colspan="8" style="padding-top: 10px;">
+								<input type="checkbox" name="" class="arr" value="" /><span style="margin-left: 10px;">订单编号&nbsp;:&nbsp;</span><i>112233556688</i>
+								<i style="margin-left: 30px;">2017.07.30  15：20：36</i>
+								<strong>待付款</strong>
+								<b><i class="iconfont icon-dianhua"></i><span>18800001234</span></b>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<img src="../../img/order/good_03.jpg" alt="" />
+							</td>
+							<td class="li2"><span>共10件</span></td>
+							<td class="li3"><span>吃吃的爱</span></td>
+							<td class="li4"><span>-￥10</span></td>
+							<td class="li5"><span>￥10</span></td>
+							<td class="li6"><span>￥300.00</span></td>
+							<td class="li7"><span class="fh">发货</span></td>
+							<td class="li8">
+								<a href="#"><i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i></a>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		<div id="cancel" class="tip">
+			<div class="cancel-tip clearfix">
+				<i class="iconfont icon-icon102"></i>
+				<div>
+					<span>确定要删除订单信息吗？</span><br />
+					<span>删除后信息不可恢复！</span>
+				</div>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+		<div id="deliver" class="tip">
+			<i class="iconfont icon-X close"></i>
+			<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+				<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+				<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">订单发货</span>
+			</div>
+			<div class="express">
+				<p>
+					<span>快递公司&nbsp;:&nbsp;</span>
+					<select></select>
+				</p>
+				<p>
+					<span>快递公司&nbsp;:&nbsp;</span><input type="text">
+				</p>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script type="text/javascript" src="../../js/fenye.js"></script>
+	<script type="text/javascript" src="../../js/m-all-order.js"></script>
+
+</html>

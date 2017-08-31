@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">	
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/m-order-in.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_hymirvd2cdwy7gb9.css">		
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>订单主页</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>外部订单导入</span></a>
+			</div>
+			<div class="in">
+				<p class="down">导入文件需先从商城下载相应的文档模板&nbsp;下载<span>Excel</span>模板</p>
+				<div class="in-info">
+					<p class="in-tit">导入文件:</p>
+					<p class="in-file"><a href="javascript:;" class="pics" id="in"><input type="file" id="file1" onchange="checkPic('file1')" value="" /></a></p>
+					<p class="in-tip">请上传*.exl格式的文件</p>
+					<p><button class="dr">导入</button></p>
+				</div>
+			</div>
+			
+		</div>
+		<div id="daoru" class="tip">
+			<i class="iconfont icon-X close"></i>
+			<div class="daoru-tip clearfix">
+				<i class="iconfont icon-duihao"></i>
+				<div>
+					<span >恭喜！您的文件已成功导入</span><br />
+				</div>			
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+				
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/in-file.js" ></script>
+</html>

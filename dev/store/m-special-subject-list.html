@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<!--<link rel="stylesheet" href="../../css/m-freight-model.css" />-->
+		<link rel="stylesheet" href="../../css/m-special-subject-list.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o8c00yeddrh08uxr.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>店铺管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>专题管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>专题列表</span></a>
+			</div>
+			<div class="search">
+				<p>
+					<span>分类名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 40px;">
+					<span>图片分类&nbsp;:&nbsp;</span><input type="text" style="margin-right: 40px;">
+					<span>更新时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i>
+					<b style="float: right;"><i class="iconfont icon-shousuo"></i>搜索</b>
+				</p>
+				<p>
+					<a href="m-add-subject.html" class="add" style="width: 100px;">添加专题</a>
+				</p>
+			</div>
+			<div style="min-height:450px;height:auto !important;height:450px;background: #fff;margin-top: 10px;">
+
+				<table border="0" cellspacing="" cellpadding="" id="list">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;"><span>专题列表</span><strong id="delete">删除</strong></caption>
+					<thead>
+						<tr>
+							<th class="li1"><input type="checkbox" name="" id="all" value="" /></th>
+							<th class="li2"><span>图片</span></th>
+							<th class="li3"><span>专题名称</span></th>
+							<th class="li4"><span>专题标题</span></th>
+							<th class="li5"><span>专题分类</span></th>
+							<th class="li6"><span>上传时间</span></th>
+							<th class="li7"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<tr class="order">
+							<td class="li1">
+								<input type="checkbox" name="" class="arr" value="" show_id="" />
+							</td>
+							<td class="li2">
+								<img src="../../img/order/good_03.jpg">
+							</td>
+							<td class="li3"><span>水晶水果</span></td>
+							<td class="li4">首页banner</td>
+							<td class="li5">轮播banner</td>
+							<td class="li6"><span>2017.07.15</span></td>
+							<td class="li7" style="text-align: center;">
+								<a href="m-subject-xiugai.html"><i class="iconfont icon-xiugai"></i></a>
+								<i class="iconfont icon-p-delet"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1">
+								<input type="checkbox" name="" class="arr" value="" show_id="" />
+							</td>
+							<td class="li2">
+								<img src="../../img/order/good_03.jpg">
+							</td>
+							<td class="li3"><span>水晶水果</span></td>
+							<td class="li4">首页banner</td>
+							<td class="li5">轮播banner</td>
+							<td class="li6"><span>2017.07.15</span></td>
+							<td class="li7" style="text-align: center;">
+								<i class="iconfont icon-xiugai"></i>
+								<i class="iconfont icon-p-delet"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1">
+								<input type="checkbox" name="" class="arr" value="" show_id="" />
+							</td>
+							<td class="li2">
+								<img src="../../img/order/good_03.jpg">
+							</td>
+							<td class="li3"><span>水晶水果</span></td>
+							<td class="li4">首页banner</td>
+							<td class="li5">轮播banner</td>
+							<td class="li6"><span>2017.07.15</span></td>
+							<td class="li7" style="text-align: center;">
+								<i class="iconfont icon-xiugai"></i>
+								<i class="iconfont icon-p-delet"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1">
+								<input type="checkbox" name="" class="arr" value="" show_id="" />
+							</td>
+							<td class="li2">
+								<img src="../../img/order/good_03.jpg">
+							</td>
+							<td class="li3"><span>水晶水果</span></td>
+							<td class="li4">首页banner</td>
+							<td class="li5">轮播banner</td>
+							<td class="li6"><span>2017.07.15</span></td>
+							<td class="li7" style="text-align: center;">
+								<i class="iconfont icon-xiugai"></i>
+								<i class="iconfont icon-p-delet"></i>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1">
+								<input type="checkbox" name="" class="arr" value="" show_id="" />
+							</td>
+							<td class="li2">
+								<img src="../../img/order/good_03.jpg">
+							</td>
+							<td class="li3"><span>水晶水果</span></td>
+							<td class="li4">首页banner</td>
+							<td class="li5">轮播banner</td>
+							<td class="li6"><span>2017.07.15</span></td>
+							<td class="li7" style="text-align: center;">
+								<i class="iconfont icon-xiugai"></i>
+								<i class="iconfont icon-p-delet"></i>
+							</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		<div id="cancel" class="tip">
+			<div class="cancel-tip clearfix">
+				<i class="iconfont icon-icon102"></i>
+				<div>
+					<span>确定要删除专题信息吗？</span><br />
+					<span>删除后信息不可恢复！</span>
+				</div>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script type="text/javascript">
+		page(4)
+	</script>
+	<script type="text/javascript" src="../../js/selectAll.js"></script>
+	<script type="text/javascript" src="../../js/m-special-subject-list.js"></script>
+
+</html>

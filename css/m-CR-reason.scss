@@ -1,0 +1,55 @@
+
+tr{
+     border-bottom: 1px solid #e9e8e8;
+}
+.li1 {
+    width: 300px;
+    background: #fff;
+    
+}
+.li2 {
+    background: #fff;
+    padding: 10px 10px 10px 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width:420px;
+    img {
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-right: 10px;
+    }
+    .good-name {
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+    }
+    .good-num {
+        font-size: 14px;
+        color: #333;
+        margin-top: 16px;
+        position: absolute;
+        bottom: 10px;
+         left:140px;
+    }
+    .good-price {
+        font-size: 18px;
+        color: #333;
+        position: absolute;
+        bottom: 10px;
+       
+    }
+    .good-guige {
+        font-size: 14px;
+        color: #333;
+        margin-top: 16px;
+    }
+}
+.li3{
+    width:460px;
+    background: #fff;
+   
+}

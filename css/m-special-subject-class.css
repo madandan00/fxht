@@ -1,0 +1,18 @@
+.li8 {
+  width: 54px;
+}
+
+thead tr {
+  line-height: 56px;
+}
+
+tbody .li4 i {
+  font-size: 20px;
+  color: #8a8a8a;
+  cursor: pointer;
+}
+
+tr {
+  border: 1px solid #e9e8e8;
+  line-height: 70px;
+}

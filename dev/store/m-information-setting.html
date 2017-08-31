@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>消息设置</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" href="../../css/m-info-setting.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_xlnjqwri9pwlv7vi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>店铺管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>微信设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>消息设置</span></a>
+			</div>
+			<div class="info-setting">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">选择类型</span>
+				</div>
+				<div class="nav">
+					<ul class="nav-box1">
+						<li class="active">会员</li>
+						<li>分销代理</li>
+						<li>订单</li>
+						<li>营销</li>
+						<li>佣金</li>
+					</ul>
+				</div>
+				<div class="nav2">
+					<ul class="mbox1 mbox">
+						<li class="active">会员1</li>
+						<li>分销代理</li>
+						<li>订单</li>
+						<li>营销</li>
+						<li>佣金</li>
+					</ul>
+					<ul class="mbox2 mbox" style="display: none;">
+						<li class="active">会员2</li>
+						<li>分销代理</li>
+						<li>订单</li>
+						<li>营销</li>
+						<li>佣金</li>
+					</ul>
+					<ul class="mbox3 mbox" style="display: none;">
+						<li class="active">会员3</li>
+						<li>分销代理</li>
+						<li>订单</li>
+						<li>营销</li>
+						<li>佣金</li>
+					</ul>
+					<ul class="mbox4 mbox" style="display: none;">
+						<li class="active">会员4</li>
+						<li>分销代理</li>
+						<li>订单</li>
+						<li>营销</li>
+						<li>佣金</li>
+					</ul>
+					<ul class="mbox5 mbox" style="display: none;">
+						<li class="active">会员5</li>
+						<li>分销代理</li>
+						<li>订单</li>
+						<li>营销</li>
+						<li>佣金</li>
+					</ul>
+					<!--<span class="active">注册成为会员</span>
+					<span>成功推荐会员</span>-->
+				</div>
+			</div>
+			<div class="info">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;margin-bottom: 25px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">消息内容</span>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<i style="color: red;">*</i><span>消息内容编辑&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<div class="result">
+							<!--<p class="mdd">编辑文本 </p>-->
+							<textarea name="" rows="" cols="" id="intruduce"></textarea>
+							<p style="text-align: right;background: #fff;position: absolute;bottom: 0;right: 0;"><b style="font-weight: normal;color: #a1a1a1;font-size: 14px;">最多可输入<strong style="color: #2b81f0;">300</strong>字</b></p>
+						</div>
+						<div class="insert">
+							<p><span style="margin-right: 50px;">插入昵称</span></p>
+							<p><span style="margin-right: 50px;">插入店铺</span></p>
+							<p><span style="margin-right: 50px;">插入会员个数</span></p>
+							<p><span style="margin-right: 50px;">插入链接</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<i style="color: red;">*</i><span>微信&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<div class="sel">
+							<input type="radio" id="" value="" name="wx" /><span>开启</span>
+							<input type="radio" id="" value="" name="wx" style="margin-left: 60px;" /><span>关闭</span>
+						</div>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<i style="color: red;">*</i><span>站内&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<div class="sel">
+							<input type="radio" id="" value="" name="zn" /><span>开启</span>
+							<input type="radio" id="" value="" name="zn" style="margin-left: 60px;" /><span>关闭</span>
+						</div>
+					</div>
+				</div>
+				<div class="opration" style="margin-top: 100px;padding-bottom: 50px;">
+					<button class="qd" data-id="">确定</button>
+					<!--<button></button>-->
+					<!--data-id商品评论id-->
+					<span class="cancel">取消</span>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+//		$("#intruduce").on("change keyup", function() {
+//			var val = $(this).val();
+//			if(val == "") {
+//				$(".mdd").show();
+//			} else {
+//				$(".mdd").hide();
+//				//console.log(val.length)
+//				if(val.length > 300) {
+//					$(this).val(val.slice(0, 300))
+//				}
+//			}
+//		})
+		$(".nav li").on("click", function() {
+			var index=$(this).index();
+			$(".nav li").removeClass("active");
+			$(this).addClass("active");
+			$(".nav2 .mbox").hide();
+			$(".nav2 .mbox").eq(index).show();
+		})
+		$(".nav2 li").on("click", function() {
+			$(this).parents(".mbox").find("li").removeClass("active")
+			$(this).addClass("active")
+		})
+		$(".insert span").on("click",function(){
+			var val=$("#intruduce").val()
+			var html="["+$(this).html()+"]";
+			$("#intruduce").val(val+html)
+		})
+	</script>
+
+</html>

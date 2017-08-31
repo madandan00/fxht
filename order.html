@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单管理</title>
+		<link rel="stylesheet" type="text/css" href="public.css">
+		<link rel="stylesheet" type="text/css" href="easyui.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_6256w9urbczt1emi.css">
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+
+	</head>
+
+	<body class="easyui-layout">
+		<!--顶部-->
+		<div region="north" border="true" class="cs-north">
+
+			<ul>
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="store.html">店铺管理</a>
+				</li>
+				<li>
+					<a href="">商品管理</a>
+				</li>
+				<li class="active">
+					<a href="order.html">订单管理</a>
+				</li>
+				<li>
+					<a href="">会员分销</a>
+				</li>
+				<li>
+					<a href="">财务中心</a>
+				</li>
+				<li>
+					<a href="">营销中心</a>
+				</li>
+				<li>
+					<a href="">设置</a>
+				</li>
+				<li><span><i class="iconfont icon-tuichu" ></i><b>退出</b></span></li>
+			</ul>
+		</div>
+		<!--左边导航-->
+		<div region="west" border="false" split="false" title="&nbsp;" class="cs-west">
+			<div class="info">
+				<div class="tou-img">
+					<img src="img/logo.png" />
+				</div>
+				<p class="name">小喵喵仙儿</p>
+				<p class="position">管理员</p>
+			</div>
+			<div class="easyui-accordion" fit="false" border="false">
+				<div title='<i class="iconfont icon-dingdan"></i>订单主页' selected="true">
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-all-order.html" class="cs-navi-tab">所有订单</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-all-order01.html" class="cs-navi-tab">待付款订单</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-all-order.html" class="cs-navi-tab">待发货订单</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-order-in.html" class="cs-navi-tab">外部订单导入</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-order-out.html" class="cs-navi-tab">订单导出</a>
+					</p>
+				</div>
+
+				<div title='<i class="iconfont icon-shouhou"></i>售后服务'>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-order-comment.html" class="cs-navi-tab">商品评论</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-change-refunding.html" class="cs-navi-tab">退换货审核</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-CR-reason.html" class="cs-navi-tab">退换货理由</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-deliver-2.html" class="cs-navi-tab">二次发货</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-CR-list.html" class="cs-navi-tab">退换货列表</a>
+					</p>
+				</div>
+				<div title='<i class="iconfont icon-wuliu"></i>物流管理'>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-order-logistics.html" class="cs-navi-tab">物流公司</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-freight-model.html" class="cs-navi-tab">运费模板</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="api/test.html" class="cs-navi-tab">快递单模板</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/order/m-change-address.html" class="cs-navi-tab">修改地址</a>
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+		<!--右侧展示内容-->
+		<div id="mainPanle" region="center" border="true" border="false">
+			<div id="tabs" class="easyui-tabs" fit="true" border="false">
+				<!--<div title="Home">
+					<div class="cs-home-remark">
+						
+
+					</div>
+				</div>-->
+			</div>
+		</div>
+
+		<!--<div region="south" border="false" class="cs-south">11111111111</div>-->
+
+		<div id="mm" class="easyui-menu cs-tab-menu">
+			<div id="mm-tabupdate">刷新</div>
+			<div class="menu-sep"></div>
+			<div id="mm-tabclose">关闭</div>
+			<div id="mm-tabcloseother">关闭其他</div>
+			<div id="mm-tabcloseall">关闭全部</div>
+		</div>
+	</body>
+	<script src="slide.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		setTimeout(function() {
+			$(".cs-navi-tab").eq(0).click()
+		}, 10)
+	</script>
+
+</html>

@@ -1,0 +1,43 @@
+tr {
+    border-bottom: 1px solid #e9e8e8;
+    line-height: 40px;
+    
+}
+.li1{
+    width: 230px;
+    text-align: left; 
+    padding-left: 120px;
+}
+.li2{
+    width:270px;
+    text-align: left;
+}
+.li3{
+    width: 210px;
+    text-align: left;
+}
+.li4{
+    width:100px;
+    text-align: left;
+}
+.li5{
+    width: 240px;
+}
+#list tbody td{
+   text-align: left; 
+}
+tbody {
+    .li4 {
+        span {
+            color: #2b81f0;
+            cursor: pointer;
+            text-align: left;
+        }
+    }
+    .li5{
+        i{
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

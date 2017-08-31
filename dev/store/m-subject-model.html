@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" href="../../css/m-add.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_r6ve06itqg9icnmi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>店铺管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>专题管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>专题列表</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>添加专题</span></a>
+			</div>
+			<div class="order-info">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">可选模板</span>
+				</div>
+				<div class="model-box clearfix" style="margin-top: 20px;">
+					<div class="model-m">
+						<div class="model">
+							<img src="../../img/order/good_03.jpg" alt="" />
+							<div class="smark">
+								<span class="start">启用</span>
+							</div>
+							<i class="iconfont icon-toprightcorner01"></i>
+						</div>
+						<p>模板一</p>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+		$(".model").on("mouseenter",function(){
+			$(this).find(".smark").show();
+		})
+		$(".model").on("mouseleave",function(){
+			$(this).find(".smark").hide();
+		})
+		$(".start").on("click",function(){
+			$(".smark").hide();
+			$(this).parents(".model").find("i").show();
+			//window.location.href="m-add-subject.html"
+			window.history.back();
+		})
+	</script>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" href="../../css/m-order-out.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_8apiaf0z6rfnu3di.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>物流管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>运费模板</span></a>
+			</div>
+			<div class="out">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">运费模板信息</span>
+				</div>
+				<div class="box clearfix" style="margin-top: 10px;">
+					<div class="left">
+						<span>模板名称&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><span style="width:100px">模板1</span><i class="iconfont icon-xiugai xiugai"></i></p>
+						<input type="hidden" name="mb" class="mm" value="" />
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>快递公司&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><span style="width:100px">顺丰快递</span><i class="iconfont icon-xiugai xiugai"></i></p>
+						<input type="hidden" name="mb" class="mm" value="" />
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>计价方式&nbsp;:&nbsp;</span>
+
+					</div>
+					<div class="right">
+						<p>
+							<input type="radio" name="way" /><span>件数</span>
+							<input type="radio" name="way" /><span>重量</span>
+
+						</p>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>配送方式&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p>
+							<input type="radio" name="qu" /><span>快递</span>
+							<input type="radio" name="qu" /><span>自提</span>
+
+						</p>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>是否包邮&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p class="tip clearfix"><span>除指定地区外，其余地区的运费采用“默认运费”</span></p>
+						<div class="clearfix other">
+							<p>
+								<span style="margin-left: 20px;">默认运费&nbsp;:&nbsp;</span><input type="text" name="yunfei" /><span>件内，</span>
+								<input type="text" name="yunfei" /><span>元；</span>
+								<span>每增加</span><input type="text" name="yunfei" /><span>件，</span>
+								<span>运费相应增加</span><input type="text" name="yunfei" /><span>元</span>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>是否包邮&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p>
+							<input type="radio" name="yunfei" /><span>自定义运费</span>
+							<input type="radio" name="yunfei" /><span>卖家承担运费</span>
+							<input type="radio" name="yunfei" /><span>满额保取</span>
+							<input type="radio" name="yunfei" /><span>起送金额</span>
+						</p>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>需满足包邮金额&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right money">
+						<p>
+							<input type="text" class="baoyou" /><span>元</span>
+						</p>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>起送金额&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right money">
+						<p>
+							<input type="text" class="start-Money" /><span>元</span>
+						</p>
+					</div>
+				</div>
+				<p style="text-align: center;width: 100%;margin-top: 40px;" class="clearfix"><button class="tj">确定</button></p>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+	//点击修改图标
+		$(".xiugai").on("click", function() {
+			if($(this).hasClass("icon-xiugai")) {
+				var val = $(this).parents(".right").find("span").html();
+				//console.log(val)
+				$(this).parents(".right").find("span").html('<input type="text" class="kk" value=' + val + '>');
+				$(this).removeClass("icon-xiugai").addClass("icon-duihaocheckmark17")
+			} else if($(this).hasClass("icon-duihaocheckmark17")) {
+				var val = $(this).parents(".right").find(".kk").val();
+				$(this).parents(".right").find("span").html(val);
+				$(this).removeClass("icon-duihaocheckmark17").addClass("icon-xiugai")
+				$(this).parents(".right").find(".mm").val(val);
+				//alert($(this).parents(".right").find(".mm").val())
+			}
+		})
+	</script>
+
+</html>

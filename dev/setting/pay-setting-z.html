@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>支付宝/支付收款设置</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/setting.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_r6ve06itqg9icnmi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>系统设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>支付收款设置</span></a>
+			</div>
+
+			<div class="nav">
+				<ul>
+					<a href="pay-setting-z.html">
+						<li class="active">支付宝</li>
+					</a>
+					<a href="pay-setting-w.html">
+						<li>微信</li>
+					</a>
+				</ul>
+			</div>
+			<div class="order-info">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;position: relative;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">支付宝收款设置</span>
+					<i class="iconfont icon-kaiguanguan on-off" style="position: absolute;right: 0;font-size: 50px;color: #2b81f0;cursor: pointer;"></i>
+				</div>
+				<p style="font-size: 14px;color: #999;margin-left: 10px;">提示：开启后，结算时可以使用支付宝支付。</p>
+				<div class="add" style="margin-top: 40px;">
+					<div class="left" style="width: 490px;">
+						<span><b>*&nbsp;</b>支付宝账号&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><input type="text" /></p>
+						<p class="tt"></p>
+					</div>
+				</div>
+				<div class="add">
+					<div class="left" style="width: 490px;">
+						<span><b>*&nbsp;</b>支付宝账号姓名&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><input type="text" /></p>
+						<p class="tt"></p>
+					</div>
+				</div>
+
+				<div class="add">
+					<div class="left" style="width: 490px;">
+						<span><b>*&nbsp;</b>合作者身份（PID）&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><input type="text" /></p>
+						<p class="tt">提示：成功申请支付宝接口后获取到的PID。</p>
+					</div>
+				</div>
+				<div class="add">
+					<div class="left" style="width: 490px;">
+						<span><b>*&nbsp;</b>安全校验码（Key）&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p><input type="text" /></p>
+						<p class="tt">提示：成功申请支付宝接口后获取到的KEY。</p>
+					</div>
+
+				</div>
+
+				<div class="opration" style="margin-top: 30px;padding-bottom: 50px;margin-left: 500px;">
+					<button class="qd" data-id="">保存</button>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+		$(".on-off").on("click", function() {
+			if($(this).hasClass("icon-kaiguanguan")) {
+				$(this).removeClass("icon-kaiguanguan").addClass("icon-kaiguan")
+			} else if($(this).hasClass("icon-kaiguan")) {
+				$(this).removeClass("icon-kaiguan").addClass("icon-kaiguanguan")
+			}
+		})
+	</script>
+
+</html>

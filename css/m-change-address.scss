@@ -1,0 +1,136 @@
+.out {
+    background: #fff;
+    margin-top: 10px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 670px;
+    .left {
+        width: 290px;
+        float: left;
+        margin-right: 20px;
+        span {
+            float: right;
+            width: 170px;
+            line-height: 60px;
+            text-align: right;
+            font-size: 14px;
+            color: #333;
+        }
+    }
+    .right {
+        p {
+            font-size: 14px;
+            color: #333;
+            line-height: 60px;
+            height: 60px;
+        }
+        input {
+            width: 120px;
+            float: left;
+            height: 36px;
+            margin-right: 10px;
+            margin-top: 13px;
+            padding: 0 5px;
+            border: 1px solid #b6b6b6;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+        }
+        select {
+            width: 120px;
+            height: 36px;
+            position: absolute;
+            top:0;
+            left: 0;
+            opacity: 0;
+            filter:alpha(opacity=0);
+            font: 14px/20px "Microsoft YaHei";
+            z-index: 1;
+            option {
+                //min-height: 36px;
+               // height: 36px;
+                line-height: 36px;
+                padding-top: 100px;
+            }
+        }
+        .area {
+            width: 120px;
+            float: left;
+            height: 60px;
+            margin-right: 10px;
+            margin-top: 7px;
+            //border: 1px solid #b6b6b6;
+            //margin-top: 13px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            input{
+                width: 120px;
+                margin: 0;
+                margin-top: 5px;
+            }
+            i{
+                position: absolute;
+                line-height: 36px;
+                right: 10px;
+                color: #5e5e5e;
+            }
+        }
+        span {
+            display: inline-block;
+            *display: line;
+            *zoom: 1;
+            width: 120px;
+            height: 36px;
+            padding: 0 10px;
+            line-height: 36px;
+            position: absolute;
+            color: #999;
+            font-size: 14px;
+        }
+    }
+    .tj {
+        border: none;
+        outline: none;
+        text-align: center;
+        float: left;
+        background: #2b81f0;
+        color: #fff;
+        font-size: 16px;
+        // margin: 80px auto 0;
+        margin-left: 310px;
+        margin-top: 50px;
+        width: 120px;
+        height: 45px;
+        line-height: 45px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        cursor: pointer;
+    }
+}
+.default-box{
+    position: relative;
+    p{
+        font-size: 14px;
+        height: 24px;
+        line-height: 24px;
+        color: #333;
+        margin-left: 200px;
+    }
+    i{
+        font-size: 20px;
+        color: #1371e9;
+        position: absolute;
+        top:0;
+        left:590px;
+        cursor: pointer;
+    }
+}

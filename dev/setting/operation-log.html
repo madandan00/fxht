@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>操作日志</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/m-operation-log.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_alldy0di3qjv2t9.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>基本设置</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>操作日志</span></a>
+			</div>
+			<div class="search">
+				<p>
+					<span>用户名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+					<span>账号&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;">
+				</p>
+				<p>
+					<span>时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i>
+					<b style="margin-left: 30px;"><i class="iconfont icon-shousuo"></i>收索</b>
+				</p>
+			</div>
+			<div style="min-height:440px;height:auto !important;height:100px;background: #fff;">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px;">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;"><span>操作日志</span><i>（共999条记录）</i><strong id="delete">删除</strong></caption>
+					<thead>
+						<tr>
+							<th class="li1"><input type="checkbox" name="" id="all" value="" /></th>
+							<th class="li2"><span>日期</span></th>
+							<th class="li3"><span>用户名称</span></th>
+							<th class="li4"><span>登录账号</span></th>
+							<th class="li5"><span>数据ID</span></th>
+							<th class="li6"><span>登录IP</span></th>
+							<th class="li7"><span>日志内容</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<tr class="order">
+							<td class="li1"><input type="checkbox" name="" class="arr" value="" /></td>
+							<td class="li2">
+								<span>2017.01.01 10:00:01</span>
+							</td>
+							<td class="li3"><span>XIAOXIAO</span></td>
+							<td class="li4"><span>12345678</span></td>
+							<td class="li5"><span>123.123.123.12</span></td>
+							<td class="li6"><span>123.123.123.12</span></td>
+							<td class="li7"><span>内容日志 不一样的日志</span></td>
+
+						</tr>
+
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script type="text/javascript" src="../../js/fenye.js"></script>
+	<script type="text/javascript">
+		//全选
+		$("#all").on("change", function() {
+			if($(this)[0].checked) {
+				$(".arr").attr("checked", "checked");
+			} else {
+				$(".arr").removeAttr("checked");
+			}
+		})
+		$(".arr").on("change", function() {
+			var flag = true;
+			var arr = $(".arr");
+			var l = arr.length;
+			//alert(l)
+			for(var i = 0; i < l; i++) {
+				if(!arr.eq(i)[0].checked) {
+					flag = false;
+				}
+			}
+			if(flag) {
+				$("#all").attr("checked", "checked");
+			} else {
+				$("#all").removeAttr("checked");
+			}
+		})
+	</script>
+
+</html>

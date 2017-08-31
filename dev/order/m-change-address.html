@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>修改地址</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/m-change-address.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_r6ve06itqg9icnmi.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>物流管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>地址设置</span></a>
+			</div>
+			<div class="out">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">地址信息</span>
+				</div>
+				<div class="default-box clearfix" style="margin-top: 75px;">
+					<p >
+						<span>姓名&nbsp;:&nbsp;</span><span>杜小月</span>
+					</p>
+					<p>
+						<span>手机号&nbsp;:&nbsp;</span><span>17698761234</span>
+					</p>
+					<p>
+						<span>默认发货地址&nbsp;:&nbsp;</span><span>北京市门头沟区阳坡园新村果园农场</span>
+					</p>
+					<i class="iconfont icon-xiugai change"></i>
+				</div>
+				<div class="big-box" style="display: none;">
+					
+				
+				<div class="box clearfix" style="margin-top: 30px;">
+					<div class="left">
+						<span>添加新地址&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<div class="clearfix">
+							<div class="area">
+								<input type="text" placeholder="省"/>
+								
+							</div>
+							<div class="area">
+								<input type="text" placeholder="市"/>
+								
+							</div>
+							<div class="area">
+								<input type="text" placeholder="区"/>
+							</div>
+
+						</div>
+						<div class="clearfix" style="margin-left: 310px;">
+							<input type="text" placeholder="详细地址" style="width: 240px;" />
+						</div>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>发货人&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p>
+							<input type="text" />
+						</p>
+					</div>
+				</div>
+				<div class="box clearfix">
+					<div class="left">
+						<span>联系电话&nbsp;:&nbsp;</span>
+					</div>
+					<div class="right">
+						<p>
+							<input type="text" />
+						</p>
+					</div>
+				</div>
+				
+				<p style="text-align: center;width: 100%;margin-top: 40px;" class="clearfix"><button class="tj">保存</button></p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script>
+		$(".change").on("click",function(){
+			$(".big-box").toggle();
+		})
+		
+	</script>
+
+</html>

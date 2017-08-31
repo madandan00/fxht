@@ -1,0 +1,246 @@
+.tip {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: -340px;
+    padding: 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 680px;
+    height: 430px;
+    z-index: 10001;
+    background: #fff;
+    overflow: hidden;
+    .cancel-tip {
+        margin-top: 90px;
+        i {
+            font-size: 66px;
+            width: 66px;
+            height: 66px;
+            color: red;
+            line-height: 66px;
+            float: left;
+            margin-left: 175px;
+        }
+        div {
+            height: 66px;
+            float: left;
+            margin-left: 20px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        span {
+            font-size: 16px;
+            color: #333;
+            line-height: 26px;
+        }
+    }
+    .pass-tip {
+        margin-top: 150px;
+        p {
+            font-size: 16px;
+            color: #2b81f0;
+            text-align: center;
+        }
+    }
+    .npass-tip {
+        margin-top: 80px;
+        p {
+            font-size: 16px;
+            color: #2b81f0;
+            text-align: left;
+            margin-left: 10px;
+        }
+        textarea {
+            width: 500px;
+            height: 48px;
+            padding: 0 5px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            margin-top: 60px;
+            margin-left: 30px;
+            line-height: 46px;
+            color: #333;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+    }
+    .daoru-tip {
+        margin-top: 90px;
+        i {
+            font-size: 66px;
+            width: 66px;
+            height: 66px;
+            color: #1063e4;
+            line-height: 66px;
+            float: left;
+            margin-left: 175px;
+        }
+        div {
+            height: 66px;
+            float: left;
+            margin-left: 20px;
+        }
+        span {
+            font-size: 16px;
+            color: #1063e4;
+            line-height: 66px;
+        }
+    }
+    .subject-class {
+        margin-top: 40px;
+        .box {
+            float: left;
+            overflow: hidden;
+            width: 360px;
+            height: 115px;
+            border: 1px solid #b6b6b6;
+        }
+        p {
+            //height: 60px;
+            // line-height: 60px;
+            margin-left: 70px;
+            overflow: hidden;
+        }
+        i {
+            font-size: 12px;
+            color: #ff0000;
+            margin-left: 90px;
+        }
+        input,
+        span {
+            float: left;
+        }
+        span {
+            font-size: 14px;
+            line-height: 60px;
+            width: 70px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        input {
+            width: 200px;
+            height: 36px;
+            margin-top: 10px;
+            padding: 0 5px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+        }
+        textarea {
+            width: 360px;
+            height: 80px;
+            padding: 8px 20px 34px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            font-size: 14px;
+            color: #363535;
+            border: none;
+        }
+    }
+    .express {
+        margin-top: 70px;
+        p {
+            height: 60px;
+            line-height: 60px;
+            margin-left: 156px;
+        }
+        span,
+        input,
+        select {
+            float: left;
+        }
+        span {
+            font-size: 14px;
+            line-height: 60px;
+            width: 70px;
+            text-align: right;
+        }
+        input,
+        select {
+            width: 200px;
+            height: 36px;
+            margin-top: 10px;
+            padding: 0 5px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #000;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .opration {
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        span {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 20px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+        .qd {
+            background: #2b81f0;
+            color: #fff;
+            margin-right: 90px;
+        }
+        .qx {
+            border: 1px solid #2b81f0;
+            background: #fff;
+            color: #2b81f0;
+        }
+    }
+}
+.mark {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 10000;
+    display: none;
+}
