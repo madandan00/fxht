@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我教你做</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/tip.css" />
+		<link rel="stylesheet" href="../../css/m-teach.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_sh1acaipqs13jtt9.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>青青阁楼</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>我教你做</span></a>
+			</div>
+			<div class="search">
+				<p>
+					<a href="m_issue_menu.html" class="add" style="width: 96px;">发布菜谱</a>
+				</p>
+				<p>
+					<span>菜谱名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+					<span>作者名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;">
+					<span>分类&nbsp;:&nbsp;</span><select name="">
+						<option value="">1</option>
+					</select>
+				</p>
+				<p>
+					<span>录入人&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;margin-left: 15px;">
+					<span>发布时间&nbsp;:&nbsp;</span><input type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i>
+					<b style="margin-left: 30px;"><i class="iconfont icon-shousuo"></i>搜索</b>
+				</p>
+			</div>
+			<div style="min-height:520px;height:auto !important;height:520px;background: #fff;">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px;">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;"><span>信息列表</span><strong id="delete">删除</strong></caption>
+					<thead>
+						<tr>
+							<th class="li1"><input type="checkbox" name="" id="all" value="" /><span>菜谱名称</span></th>
+							<th class="li2"><span>分类</span></th>
+							<th class="li3"><span>作者名称</span></th>
+							<th class="li4"><span>发布时间</span></th>
+							<th class="li5"><span>浏览量</span></th>
+							<th class="li6"><span>录入人</span></th>
+							<th class="li7"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<tr class="order">
+							<td class="li1" style="text-align: left;">
+								<input type="checkbox" name="" class="arr" value="" />
+								<span>红烧茄子</span>
+							</td>
+							<td class="li2"><span>人气菜谱</span></td>
+							<td class="li3"><span>王晓明</span></td>
+							<td class="li4">
+								<span>2017-09-18</span>
+							</td>
+							<td class="li5"><span>￥10</span></td>
+							<td class="li6"><span>￥300.00</span></td>
+
+							<td class="li7">
+								<a href="m_menu_detail.html"><i class="iconfont icon-dujiayuniconzhenggao- xiangqing"></i></a>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;" show_id=""></i>
+							</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		<div id="cancel" class="tip">
+			<div class="cancel-tip clearfix">
+				<i class="iconfont icon-icon102"></i>
+				<div>
+					<span>确定要删除此条信息吗？</span><br />
+					<span>删除后信息不可恢复！</span>
+				</div>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/m-teach.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js" ></script>
+	<script>
+		page(10)
+	</script>
+</html>

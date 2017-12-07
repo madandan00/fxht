@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>菜谱详情</title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/m_issue_menu.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_nc7ppwbhhwf561or.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>青青阁楼</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>我教你做</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>发布菜谱</span></a>
+			</div>
+			<div class="out">
+				<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+					<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+					<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">发布菜谱</span>
+				</div>
+				<div class="info">
+					<p>
+						<span>标题名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+						<span>作者名称&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;">
+						<span>分类&nbsp;:&nbsp;</span>
+						<select>
+							<option value="">1</option>
+						</select>
+					</p>
+					<p>
+						<span>发布时间&nbsp;:&nbsp;</span><input type="text" style="margin-right: 75px;" onclick="laydate()">
+						<span>是否置顶&nbsp;:&nbsp;</span><input type="radio" class="rad" name="sj"><span>是</span><input type="radio" class="rad" style="margin-left: 30px;" name="sj"><span>否</span>
+					</p>
+				</div>
+				<div class="first-pic">
+					<p class="m-menu-tit">上传主图&nbsp;:&nbsp;</p>
+					<div class="big-pic-box">
+						<i class="iconfont icon-guanbi cancel"></i>
+						<div class="pic">
+							<div class="pic-mark"></div>
+							<a class="pic-box iconfont icon-jiahao">
+							</a>
+							<input type="file" class="picture m_pic" />
+							<img src="" />
+							<p>(主图最佳尺寸750*750)</p>
+						</div>
+					</div>
+				</div>
+				<div class="menu-descript">
+					<p class="m-menu-tit">菜谱描述&nbsp;:&nbsp;</p>
+					<div>
+						<textarea name="" rows="" cols=""></textarea>
+						<p class="tishi">这道菜的叙述（不少于10字）</p>
+					</div>
+				</div>
+				<div class="main-ingredient ingredient-box">
+					<p class="m-menu-tit">主料&nbsp;:&nbsp;</p>
+					<table border="0" cellspacing="0" cellpadding="0" class="ingredient">
+						<thead>
+							<tr>
+								<th>食材：如鸡蛋</th>
+								<th>用量：如3个</th>
+								<th class="op"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" /></td>
+								<td><input type="text" /></td>
+								<td class="op"><i class="iconfont icon-guanbi"></i></td>
+							</tr>
+						</tbody>
+					</table>
+					<span class="add-in">添加主料</span>
+				</div>
+				<div class="main-ingredient ingredient-box">
+					<p class="m-menu-tit">辅料&nbsp;:&nbsp;</p>
+					<table border="0" cellspacing="0" cellpadding="0" class="ingredient">
+						<thead>
+							<tr>
+								<th>食材：如鸡蛋</th>
+								<th>用量：如3个</th>
+								<th class="op"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" /></td>
+								<td><input type="text" /></td>
+								<td class="op"><i class="iconfont icon-guanbi"></i></td>
+							</tr>
+						</tbody>
+					</table>
+					<span class="add-in">添加辅料</span>
+				</div>
+				<div class="m-menu-step">
+					<p class="m-menu-tit">菜谱步骤&nbsp;:&nbsp;</p>
+					<div class="m-step-box">
+						<div class="m-step">
+							<i class="iconfont icon-guanbi cancel"></i>
+							<p class="step-tit">第<span>1</span>步</p>
+							<div class="step-box clearfix">
+								<div class="step-left">
+									<div class="big-pic-box">
+										<div class="pic">
+										<div class="pic-mark"></div>
+										<input type="file" class="picture m_pic" />
+										<img src="" />
+										<p><i class="iconfont icon-jiahao"></i>上传步骤图</p>
+									</div>
+										
+									</div>
+									
+								</div>
+								<div class="step-right">
+
+									<textarea name="" rows="" cols=""></textarea>
+									<p class="tishi"><i class="iconfont icon-tianxie"></i>步骤描述：</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<span class="add-in">添加步骤</span>
+				</div>
+				<div class="last-pic">
+					<p class="m-menu-tit">成品图&nbsp;:&nbsp;</p>
+					<div class="big-pic-box">
+						<i class="iconfont icon-guanbi cancel"></i>
+						<div class="pic">
+							<div class="pic-mark"></div>
+							<input type="file" class="picture m_pic" />
+							<img src="" />
+							<p><i class="iconfont icon-jiahao"></i>上传成品图</p>
+						</div>
+					</div>
+				</div>
+				<p class="m-op">
+					<button>发布</button>
+					<span style="margin-left: 80px;">取消</span>
+				</p>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/m_issue.js" ></script>
+
+</html>

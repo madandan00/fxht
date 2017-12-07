@@ -1,39 +1,33 @@
 tr {
   border-bottom: 1px solid #e9e8e8;
-  line-height: 40px;
-}
+  line-height: 40px; }
 
 .li1 {
   width: 330px;
   text-align: left;
-  padding-left: 100px;
-}
+  padding-left: 100px; }
 
 .li2 {
   width: 330px;
-  text-align: left;
-}
+  text-align: left; }
 
 .li3 {
   width: 260px;
-  text-align: left;
-}
+  text-align: left; }
 
 .li4 {
   width: 200px;
-  text-align: left;
-}
+  text-align: left; }
 
 #list tbody td {
-  text-align: left;
-}
+  text-align: left; }
 
 tbody .li4 span {
   color: #2b81f0;
   cursor: pointer;
-  text-align: left;
-}
+  text-align: left; }
 tbody .li5 i {
   margin: 0 10px;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
+/*# sourceMappingURL=m-order-logistics.css.map */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>热门话题 文章详情</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_18fv1gldh7611yvi.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/hort_rel.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/storeset.css"/>
+	<script src="../../js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div class="hort_relse">
+			
+			<!--主体内容-->
+			<div class="hort_rel">
+			<!--导航-->
+			  <div class="h_r_nav">
+			  	<h3></h3>
+			  	<ul>
+			  		<li><a href="#">青青阁楼</a></li>
+			  		<li><img src="../../img/images/back_03.jpg"/></li>
+			  		<li><a href="#">你问我答</a></li>
+			  		<li><img src="../../img/images/back_03.jpg"/></li>
+			  		<li><a href="#">热门话题</a></li>
+			  	</ul>
+			  </div>
+			<!--内容-->
+			  <div class="hort_r_main">
+			  	<!--发布文章-->
+			  	<div class="rel_art">
+			  		<p><i></i><span>文章详情</span></p>
+			  	</div>
+			  	<!--标题-->
+			    <div class="h_r_tit">
+			    	<span>标题名称：<input type="text" /></span>
+			    	<span>来源：<input type="text" /></span>
+			    	<span>关键字：<input type="text" /></span>
+			    </div>
+			    <!--发布时间-->
+			     <div class="h_r_time">
+			    	<span>
+							发布时间：
+							<input type="text" name="add_start_time" id="" value="" onclick="laydate()" />
+						<!--<i class="iconfont icon-rili"></i>-->
+						</span>
+			    </div>
+			    <!--摘要内容-->
+			     <div class="h_r_art">
+			     	<span>摘要内容：<input type="text" /></span>
+			     	
+			     </div>
+			    <!--上传主图-->
+			     <div class="h_r_pic">
+			     	<span id="">
+			     		上传主图：
+			     	</span>
+			     	<div class="rel_pic">
+			     			<div id="cont">
+
+									<div class="set">
+										<div class="logo sets">
+											<h1 class="cancel iconfont"></h1>
+											<a href='javascript:;' class='pic'>
+												<p class=" ps" style="font-size: 30px;line-height: 67px;display: inline-block;text-align: center;margin-top: 55px;">
+													<i class=" jia iconfont icon-jiahao" style="width: 80px;height: 80px;display: inline-block;border: 1px dashed #d2d2d2;"></i>
+													<i style="display: block;font-size: 12px;color: #adadad;">（主图最佳尺寸750*750）</i>
+												</p>
+												<img /><input type='file' class='picture' name='name[]' /></a>
+										</div>
+									</div>
+							</div>
+			     		
+			     	</div>
+			     </div>
+			    <!--内容-->
+			    <div class="h_r_edit">
+			    	<span>
+			    		内容：
+			    	</span>
+			    	<div class="edit">
+			    		23456789
+			    	</div>
+			    </div>
+			    <!--按钮-->
+			    <div class="button">
+			      
+			    <button class="fabu"><a href="javascript:;">发布</a></button>
+			    <button class="quxiao"><a href="javascript:;">取消</a></button>
+			      
+			    </div>
+			  </div>
+		   
+			</div>
+			
+			
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		
+		$(".logo").delegate(".picture", "change", function() {
+			if($(".logo .picture1").length < 0) {
+				var path = $(this).val();
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+
+					var pic = '<a href="javascript:;" class="pic iconfont icon-jiahao"><img /><input type="file" class="picture" name="name[]"/></a>'
+					$(this).siblings("ps").remove();
+//					$(this).parent("a").siblings("h1").addClass(" icon-iconfontshequyijujue");
+					$(this).removeClass("picture").addClass("picture1");
+					//			$(".logo .picNum").html($(".logo .picture1").length);
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				}
+			} else {
+				var path = $(this).val();
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+					$(this).siblings(".ps").remove();
+					$(this).parent("a").siblings("h1").addClass(" icon-iconfontshequyijujue");
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+					$(this).removeClass("picture").addClass("picture1");
+					//			$(".logo .picNum").html($(".logo .picture1").length);
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				} 
+				
+
+			}
+			$(".cancel").hide();
+			$("#cont").on("mouseover",function(){
+				$(".cancel").show();
+			})
+			$("#cont").on("mouseleave",function(){
+				$(".cancel").hide();
+			})
+			
+			$(".icon-iconfontshequyijujue").on("click",function(){
+				$(".pic").empty();
+				$('.pic').prepend("<p class='ps' style='font-size: 30px;line-height: 67px;display: inline-block;text-align: center;margin-top: 55px;'><i class=' jia iconfont icon-jiahao' style='width: 80px;height: 80px;display: inline-block;border: 1px dashed #d2d2d2;'></i><i style='display: block;font-size: 12px;color: #adadad;'>（主图最佳尺寸750*750）</i></p><img /><input type='file' class='picture' name='name[]' />")	;
+				$(this).removeClass("icon-iconfontshequyijujue");
+			})
+
+		})
+		$(".logo").delegate(".picture1", "change", function() {
+			var path = $(this).val();
+			//alert(path)
+			var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+			if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+				$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+			} else {
+				alert("请上传正确的图片格式");
+				return false;
+			}
+		})
+		
+		
+
+       
+	</script>
+</html>

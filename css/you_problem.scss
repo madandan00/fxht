@@ -1,0 +1,196 @@
+@import url("public.css");
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+.you_problem{
+    @include full(100%,auto,#ededee);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.you_pro{
+    @include full(100%,auto,none);
+//  padding-bottom: 20px;
+//  box-sizing: border-box;
+}
+.h_r_nav{
+    margin-bottom: 10px;
+    @include full(100%,60px,#fff);
+    overflow:hidden ;
+    padding-top: 13px;
+    box-sizing: border-box;
+    h3{
+        display: inline-block;
+       @include full(7px,39px,#2b81f0); 
+       float: left;
+    }
+    ul{
+        margin-left: 24px;
+        float: left;
+        li{
+            float: left;
+            line-height:40px;
+            margin-right: 17px;
+           a{
+               font-size: 16px;
+               color: #333333;
+           }
+        }
+    }
+}
+.you_pro_main{
+    padding: 25px 28px;
+    box-sizing: border-box;
+    @include full(100%,auto,#fff);
+    
+}
+.rel_btn{
+    padding-left: 3px;
+    @include full(100%,auto,none);
+    .relbtns{
+        display: inline-block;
+        @include full(96px,36px,#2b81f0);
+        text-align: center;
+        line-height: 36px;
+        border-radius: 5px;
+        border: none;
+        a{
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+.you_pro_tit{
+    @include full(100%,auto,none);
+    margin-top: 24px;
+    span{
+        margin-right: 72px;
+        input{
+            display: inline-block;
+            @include full(200px,36px,none);
+            border: 1px solid #bdbdbd;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            color: #959595;
+        }
+    }
+}
+.you_pro_time{
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    @include full(100%,auto,none);
+    margin-top: 24px;
+    span{
+        margin-right: 57px;
+        position: relative;
+        input{
+            display: inline-block;
+            @include full(200px,36px,none);
+            border: 1px solid #bdbdbd;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+        i{
+            position: absolute;
+            right: 18px;
+            top:-9px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button{
+            margin-top: 6px;
+            padding-bottom: 3px;
+            display: inline-block;
+            border: none;
+            border-radius: 5px;
+            @include full(96px,36px,#2b81f0);
+            line-height: 36px;
+            a{
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.infor_list{
+    @include full(100%,auto,#fff);
+    margin-top: 10px;
+   
+.list{
+    @include full(100%,60px,none);
+    padding:0 130px 0 28px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e8e8;
+    p{
+        float: left;
+        font-size: 16px;
+        color: #333;
+        line-height: 60px;
+        i{
+            font-size: 12px;
+            color: #333;
+        }
+    }
+    .p1{
+        float: right;
+        @include full(66px,36px,#2b81f0);
+        border-radius: 5px;
+        margin-top: 13px;
+        text-align: center;
+        line-height: 36px;
+        a{
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+    table{
+       
+        @include full(100%,auto,none);
+        tr{
+            font-size: 14px;
+            height: 40px;
+            border-bottom: 1px solid #e9e8e8;
+        }
+        tr:nth-child(1){
+            height: 56px;
+        }
+        .cor{
+            td{
+                color: #303030;
+            }
+        }
+        td{
+            text-align: left;
+            font-size: 14px;
+            color: #666666;
+        }
+        td:nth-child(1){
+            width: 84px;
+            text-align: center;
+        }
+        td:nth-child(2){
+            width: 318px;
+        }
+        td:nth-child(3){
+            width: 187px;
+        }
+        td:nth-child(4){
+            width: 207px;
+        }
+        td:nth-child(5){
+            width: 193px;
+        }
+        
+        td:last-child{
+            text-align: left;
+            width: 188px;
+//          padding-right: 128px;
+            box-sizing: border-box;
+        }
+    }
+
+}

@@ -1,0 +1,250 @@
+@import url("public.css");
+@import url("index.css");
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+body{
+    background: #eeeeee;
+}
+//头部.
+.verdant_details{
+    @include full(100%,auto,#eeeeee);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.cru_nav_g{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    @include box(horizontal);
+    .tit_g{
+        width: 6px;
+        height: 35px;
+        background: #2b81f0;
+        display: inline-block;
+        margin-top: 13px;
+    }
+    ul{
+        overflow: hidden;
+        li{
+            height: 60px;
+            line-height: 60px;
+            float: left;
+            margin-left: 20px;
+            a{
+                font-size: 16px;
+                color: #333333;
+            }
+            i{
+                position: relative;
+                color: #333333;
+                font-size: 20px;
+                top: -2px;
+                text-align: center;
+            }
+        }
+    }
+}
+//main
+.verdant_details_main{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 10px;
+}
+.verdant_top{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding-left: 27px;
+    p{
+        line-height: 80px;
+        span{
+            border-left: 6px solid #2b81f0;
+            padding-left: 9px;
+            color: #2b81f0;
+            font-size: 14px;
+            font-weight:bolder;
+        }
+    }
+}
+.verdant_main{
+    width: 800px;
+    height: auto;
+    padding-bottom: 44px;
+//  background: pink;
+    margin-left: 90px;
+    .title{
+        font-size: 16px;
+        color: #333333;
+        text-align: center;
+    }
+    .second{
+        font-size: 14px;
+        color: #666666;
+        text-indent: 2em;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .one_fist{
+        font-size: 14px;
+        color: #666666;
+        text-indent: 2em;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .img_sc{
+        text-align: center;
+        margin: auto;
+        img{
+            width: 650px;
+            height: 442px;
+            padding-top: 30px;
+        }
+    }
+    dl{
+        width: 650px;
+        overflow: hidden;
+        margin: auto;
+        dt{
+            .zhu_liao{
+                padding-top: 37px;
+                font-size: 18px;
+                color: #333333;
+                font-weight: bold;
+            }
+            ul{
+                overflow: hidden;
+                margin-top: 20px;
+                li{
+                    width: 325px;
+                    height: 46px;
+                    border: 1px solid #f3f3f3;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    color: #333333;
+                    font-size: 14px;
+                    background: #fff;
+                    line-height: 46px;
+                    float: left;
+                    font-weight: bold;
+                }
+            }
+        }
+        dd{
+            .fu_liao{
+                margin-top: 37px;
+                font-size: 18px;
+                color: #333333;
+                font-weight: bold;
+            }
+            ul{
+                overflow: hidden;
+                margin-top: 20px;
+                li{
+                    width: 325px;
+                    height: 46px;
+                    border: 1px solid #f3f3f3;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    color: #333333;
+                    font-size: 14px;
+                    background: #fff;
+                    line-height: 46px;
+                    float: left;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .box{
+        margin-top: 42px;
+        margin-left: 50px;
+        table{
+            tr{
+                td{
+                    span{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #363535;
+                    }
+                    select{
+                        width: 180px;
+                        height: 36px;
+                        border: 1px solid #b6b6b6;
+                        border-radius: 3px;
+                        box-sizing: border-box;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .step{
+        ul{
+            margin-left: 50px;
+            margin-top: 30px;
+            .step_title{
+                font-size: 18px;
+                color: #333333;
+                font-weight: bold;
+            }
+            .one_walk{
+                font-size: 16px;
+                color: #333333;
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
+            .step_main{
+                font-size: 14px;
+                color: #666666;
+                margin-top: 25px;
+            }
+        }
+        dl{
+            margin-top: 110px;
+            dt{
+                float: left;
+                p{
+                    width: 100px;
+                    line-height: 40px;
+                    border-radius: 5px;
+                    background: #2b81f0;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    margin-left: 140px;
+                    cursor: pointer;
+                }
+            }
+            dd{
+                float: left;
+                p{
+                    width: 100px;
+                    line-height: 40px;
+                    border-radius: 5px;
+//                  background: #2b81f0;
+                    color: #2b81f0;
+                    border: 1px solid #2b81f0;
+                    text-align: center;
+                    font-size: 16px;
+                    margin-left: 60px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.tianjia{
+    cursor: pointer;
+}

@@ -1,41 +1,33 @@
 .li7 {
-  width: 160px;
-}
-.li7 i {
-  margin: 0 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
+  width: 160px; }
+  .li7 i {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px; }
 
 .li6 {
-  width: 230px;
-}
+  width: 230px; }
 
 .li5 {
-  width: 160px;
-}
+  width: 160px; }
 
 .li4 {
-  width: 230px;
-}
+  width: 230px; }
 
 .li3 {
-  width: 160px;
-}
+  width: 160px; }
 
 .li2 {
-  width: 145px;
-}
-.li2 img {
-  width: 56px;
-  height: 56px;
-  margin: 10px;
-}
+  width: 145px; }
+  .li2 img {
+    width: 56px;
+    height: 56px;
+    margin: 10px; }
 
 .li1 {
-  width: 40px;
-}
+  width: 40px; }
 
 tr {
-  border-bottom: 1px solid #e9e8e8;
-}
+  border-bottom: 1px solid #e9e8e8; }
+
+/*# sourceMappingURL=m-special-subject-list.css.map */

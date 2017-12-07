@@ -31,28 +31,32 @@ $("#itemContainer").delegate(".cancel", "click", function() {
 })
 
 $("#delete").on("click", function() {
-		var arr = $(".arr");
-		var l = arr.length;
-		var list = [];
-		for(var i = 0; i < l; i++) {
-			if(arr.eq(i)[0].checked) {
-				list.push(arr.eq(i).attr("show_id"))
-			}
-		}
-		$.ajax({
-			type: "get",
-			url: "http://192.168.199.140/web/Admin/Order/DelOrder",
-			data: {
-				"show_id": list
-			},
-			success: function(data) {
-				if(data == 1) {
-					window.location.reload();
-				} else if(data == 0) {
-					alert("系统繁忙")
-				}
-			}
-		});
+	$(".mark").show();
+	$("#cancel").show();
+	
+//		var arr = $(".arr");
+//		var l = arr.length;
+//		var list = [];
+//		for(var i = 0; i < l; i++) {
+//			if(arr.eq(i)[0].checked) {
+//				list.push(arr.eq(i).attr("show_id"))
+//			}
+//		}
+//		
+//		$.ajax({
+//			type: "get",
+//			url: "http://192.168.199.140/web/Admin/Order/DelOrder",
+//			data: {
+//				"show_id": list
+//			},
+//			success: function(data) {
+//				if(data == 1) {
+//					window.location.reload();
+//				} else if(data == 0) {
+//					alert("系统繁忙")
+//				}
+//			}
+//		});
 
 	})
 	//全选

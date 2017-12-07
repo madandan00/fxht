@@ -32,12 +32,12 @@
 					</div>
 					<div class="right">
 						<p>
-							<input type="radio" name="state" /><span>全部订单</span>
-							<input type="radio" name="state" /><span>代发货订单</span>
-							<input type="radio" name="state" /><span>已发货订单</span>
-							<input type="radio" name="state" /><span>已完成订单</span>
-							<input type="radio" name="state" /><span>退货订单</span>
-							<input type="radio" name="state" /><span>换货订单</span>
+							<input type="radio" name="state" class="m-choice op1"><span>全部订单</span>
+							<input type="radio" name="state" class="m-choice op1"/><span>代发货订单</span>
+							<input type="radio" name="state" class="m-choice op1"/><span>已发货订单</span>
+							<input type="radio" name="state" class="m-choice op1"/><span>已完成订单</span>
+							<input type="radio" name="state" class="m-choice op2"/><span>退货订单</span>
+							<input type="radio" name="state" class="m-choice op2"/><span>换货订单</span>
 
 						</p>
 					</div>
@@ -69,29 +69,50 @@
 					<div class="left">
 						<span>导出信息内容&nbsp;:&nbsp;</span>
 					</div>
-					<div class="right">
+					<div class="right" id="mj">
 						<p><span class="choose">选择导出内容</span><i class="iconfont icon-arrow-right" ></i></p>
-						<div class="option clearfix">
-							<p class="clearfix"><input type="checkbox"  id="all"/><span >全选</span></p>
+						<div class="option clearfix Choice1" id="Choice1">
+							<p class="clearfix"><input type="checkbox"  class="all"/><span >全选</span></p>
 							<div class="clearfix">
 								<div class="item clearfix">
-									<input type="checkbox" name="tj" class="condition" /><span>订单号</span>
+									<input type="checkbox"  class="condition" /><span>订单状态:1.待发货 2.已发货 3.已完成</span>
 								</div>
 								<div class="item clearfix">
-									<input type="checkbox" name="tj" class="condition" /><span>订单号</span>
+									<input type="checkbox"  class="condition" /><span>订单号</span>
 								</div>
 								<div class="item clearfix">
-									<input type="checkbox" name="tj" class="condition" /><span>订单号</span>
+									<input type="checkbox"  class="condition" /><span>订单号</span>
 								</div>
 								<div class="item clearfix">
-									<input type="checkbox" name="tj" class="condition" /><span>订单号</span>
+									<input type="checkbox" class="condition" /><span>订单号</span>
 								</div>
 								<div class="item clearfix">
-									<input type="checkbox" name="tj" class="condition" /><span>订单号</span>
+									<input type="checkbox"  class="condition" /><span>订单号</span>
 								</div>
 								
 							</div>
-
+							
+						</div>
+						<div class="option clearfix Choice2" id="Choice2">
+							<p class="clearfix"><input type="checkbox"  class="all"/><span >全选</span></p>
+							<div class="clearfix">
+								<div class="item clearfix">
+									<input type="checkbox"  class="condition" /><span>订单号2</span>
+								</div>
+								<div class="item clearfix">
+									<input type="checkbox"  class="condition" /><span>订单号</span>
+								</div>
+								<div class="item clearfix">
+									<input type="checkbox"  class="condition" /><span>订单号</span>
+								</div>
+								<div class="item clearfix">
+									<input type="checkbox" class="condition" /><span>订单号</span>
+								</div>
+								<div class="item clearfix">
+									<input type="checkbox"  class="condition" /><span>订单号</span>
+								</div>
+								
+							</div>
 							
 						</div>
 

@@ -7,16 +7,6 @@
     -moz-box-sizing: border-box;
     .add {
         overflow: hidden;
-        span {
-            display: inline-block;
-            *display: inline;
-            *zoom: 1;
-            width: 120px;
-            font-size: 16px;
-            text-align: right;
-            margin-right: 20px;
-            line-height: 65px;
-        }
         input,
         select {
             width: 280px;
@@ -28,6 +18,7 @@
             -webkit-box-sizing: border-box;
             -o-box-sizing: border-box;
             margin-top: 16px;
+            //float: left;
         }
         .left {
             width: 290px;
@@ -36,16 +27,27 @@
             b {
                 color: red;
             }
+            span {
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                width: 120px;
+                font-size: 16px;
+                text-align: right;
+                margin-right: 20px;
+                line-height: 65px;
+            }
         }
         .right {
             overflow: hidden;
-            span {
+            .gdx{
                 float: left;
                 text-align: left;
                 display: inline;
                 font-size: 16px;
                 color: #666;
                 margin-left: 10px;
+                line-height: 65px;
             }
             i {
                 font-size: 18px;
@@ -134,7 +136,7 @@
         }
     }
     .opration {
-       // width: 100%;
+        // width: 100%;
         //text-align: center;
         box-sizing: border-box;
         overflow: hidden;
@@ -154,6 +156,16 @@
             cursor: pointer;
         }
         button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]{
             width: 100px;
             height: 40px;
             border: none;

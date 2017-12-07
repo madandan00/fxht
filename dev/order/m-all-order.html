@@ -29,7 +29,7 @@
 			</div>
 			<div class="nav">
 				<ul>
-					<li class="active">所有订单</li>
+					<li class="active"><a href="">所有订单</a></li>
 					<li>待付款订单</li>
 					<li>待发货订单</li>
 					<li>已发货订单</li>
@@ -117,6 +117,31 @@
 								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
 							</td>
 						</tr>
+						<tr class="order-info">
+							<td colspan="8" style="padding-top: 10px;">
+								<input type="checkbox" name="" class="arr" value="" /><span style="margin-left: 10px;">订单编号&nbsp;:&nbsp;</span><i>112233556688</i>
+								<i style="margin-left: 30px;">2017.07.30  15：20：36</i>
+								<strong>待付款</strong>
+								<b><i class="iconfont icon-dianhua"></i><span>18800001234</span></b>
+							</td>
+						</tr>
+						<tr class="order">
+							<td class="li1" style="text-align: left;">
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<img src="../../img/order/good_03.jpg" alt="" />
+								<img src="../../img/order/good_03.jpg" alt="" />
+							</td>
+							<td class="li2"><span>共10件</span></td>
+							<td class="li3"><span>吃吃的爱</span></td>
+							<td class="li4"><span>-￥10</span></td>
+							<td class="li5"><span>￥10</span></td>
+							<td class="li6"><span>￥300.00</span></td>
+							<td class="li7"><span class="fh">发货</span></td>
+							<td class="li8">
+								<a href="m-order-detail.html"><i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i></a>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
 					</tbody>
 
 				</table>
@@ -171,7 +196,9 @@
 	</body>
 	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="../../js/jPages.js"></script>
-	<script type="text/javascript" src="../../js/fenye.js"></script>
+	<script>
+		page(4)
+	</script>
 	<script type="text/javascript" src="../../js/m-all-order.js"></script>
 
 </html>

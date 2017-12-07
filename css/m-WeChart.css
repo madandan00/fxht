@@ -1,493 +1,417 @@
 @charset "UTF-8";
 .tab {
-  margin-top: 10px;
-}
-.tab .txt {
-  padding: 15px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background: #fff;
-  overflow: hidden;
-}
-.tab .txt .result {
-  width: 630px;
-  height: 195px;
-  border: 1px solid #dedede;
-  margin-left: 160px;
-}
-.tab .txt .result p {
-  height: 40px;
-  background: #f5f5f9;
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-.tab .txt .result textarea {
-  font-size: 12px;
-  padding: 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  width: 100%;
-  border: none;
-  height: 110px;
-}
-.tab .txt .insert {
-  margin-left: 160px;
-  font-size: 16px;
-  color: #2b81f0;
-}
-.tab .txt .insert span {
-  line-height: 46px;
-  cursor: pointer;
-}
-.tab .txt .time {
-  margin-left: 160px;
-  color: #333;
-}
-.tab .txt .time p {
-  height: 70px;
-  line-height: 70px;
-}
-.tab .txt .time span,
-.tab .txt .time input,
-.tab .txt .time strong,
-.tab .txt .time b,
-.tab .txt .time select {
-  float: left;
-}
-.tab .txt .time span {
-  font-size: 14px;
-  line-height: 70px;
-  width: 75px;
-  text-align: right;
-}
-.tab .txt .time input {
-  width: 200px;
-  height: 36px;
-  line-height: 36px;
-  margin-top: 15px;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.tab .txt .time strong {
-  margin: 0 10px;
-}
-.tab .txt .op {
-  overflow: hidden;
-}
-.tab .txt .op span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.tab .txt .op button {
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-}
-.tab .txt .op .qd {
-  background: #2b81f0;
-  color: #fff;
-  margin-right: 90px;
-}
-.tab .txt .op .qx {
-  border: 1px solid #2b81f0;
-  background: #fff;
-  color: #2b81f0;
-}
-.tab .pic-txt {
-  padding: 15px 15px 15px 170px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background: #fff;
-  overflow: hidden;
-}
-.tab .pic-txt .headline span {
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-}
-.tab .pic-txt .headline i {
-  font-size: 12px;
-  color: #808080;
-  line-height: 20px;
-}
-.tab .pic-txt .headline input {
-  height: 36px;
-  width: 550px;
-  padding: 0 5px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  border: 1px solid #dedede;
-}
-.tab .pic-txt .add-pic span {
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-}
-.tab .pic-txt .add-pic i {
-  font-size: 14px;
-  color: #666;
-  float: left;
-}
-.tab .pic-txt .time {
-  color: #333;
-}
-.tab .pic-txt .time p {
-  height: 70px;
-  line-height: 70px;
-}
-.tab .pic-txt .time span,
-.tab .pic-txt .time input,
-.tab .pic-txt .time strong,
-.tab .pic-txt .time b,
-.tab .pic-txt .time select {
-  float: left;
-}
-.tab .pic-txt .time span {
-  font-size: 14px;
-  line-height: 70px;
-  width: 75px;
-  text-align: right;
-}
-.tab .pic-txt .time input {
-  width: 200px;
-  height: 36px;
-  line-height: 36px;
-  margin-top: 15px;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.tab .pic-txt .time strong {
-  margin: 0 10px;
-}
-.tab .pic-txt .op {
-  overflow: hidden;
-}
-.tab .pic-txt .op span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.tab .pic-txt .op button {
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-}
-.tab .pic-txt .op .qd {
-  background: #2b81f0;
-  color: #fff;
-  margin-right: 90px;
-}
-.tab .pic-txt .op .qx {
-  border: 1px solid #2b81f0;
-  background: #fff;
-  color: #2b81f0;
-}
-.tab .mpic-box {
-  background: #eee;
-}
-.tab .mpic-box .one {
-  background: #fff;
-  padding: 30px 0;
-  margin-top: 10px;
-}
-.tab .mpic-box .one .left {
-  width: 430px;
-  float: left;
-}
-.tab .mpic-box .one .right {
-  width: 550px;
-  float: left;
-}
-.tab .mpic-box .fixed {
-  padding: 30px 0;
-  background: #fff;
-  margin-top: 10px;
-}
-.tab .mpic-box .m-add {
-  margin-left: 100px;
-}
-.tab .mpic-box .m-add .add-mul {
-  display: block;
-  *display: inline;
-  *zoom: 1;
-  height: 40px;
-  width: 120px;
-  background: #2b81f0;
-  color: #fff;
-  line-height: 40px;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.tab .mpic-box .headline {
-  margin-left: 80px;
-}
-.tab .mpic-box .headline span {
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-}
-.tab .mpic-box .headline i {
-  font-size: 12px;
-  color: #808080;
-  line-height: 20px;
-}
-.tab .mpic-box .headline input {
-  height: 36px;
-  width: 415px;
-  padding: 0 5px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  border: 1px solid #dedede;
-}
-.tab .mpic-box .add-pic {
-  margin-left: 100px;
-  width: 350px;
-}
-.tab .mpic-box .add-pic span {
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-}
-.tab .mpic-box .add-pic i {
-  font-size: 14px;
-  color: #666;
-  float: left;
-}
-.tab .mpic-box .time {
-  margin-left: 100px;
-  color: #333;
-}
-.tab .mpic-box .time p {
-  height: 70px;
-  line-height: 70px;
-}
-.tab .mpic-box .time span,
-.tab .mpic-box .time input,
-.tab .mpic-box .time strong,
-.tab .mpic-box .time b,
-.tab .mpic-box .time select {
-  float: left;
-}
-.tab .mpic-box .time span {
-  font-size: 14px;
-  line-height: 70px;
-  width: 75px;
-  text-align: right;
-}
-.tab .mpic-box .time input {
-  width: 200px;
-  height: 36px;
-  line-height: 36px;
-  margin-top: 15px;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.tab .mpic-box .time strong {
-  margin: 0 10px;
-}
-.tab .mpic-box .op {
-  margin-left: 100px;
-  overflow: hidden;
-}
-.tab .mpic-box .op span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.tab .mpic-box .op button {
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-}
-.tab .mpic-box .op .qd {
-  background: #2b81f0;
-  color: #fff;
-  margin-right: 90px;
-}
-.tab .mpic-box .op .qx {
-  border: 1px solid #2b81f0;
-  background: #fff;
-  color: #2b81f0;
-}
-.tab .mpic {
-  margin-top: 10px;
-  padding: 15px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background: #fff;
-  overflow: hidden;
-}
-.tab .mpic .mddpic {
-  margin: 0 10px 10px 0;
-}
-.tab .mpic .add-pic {
-  margin-left: 170px;
-}
-.tab .mpic .add-pic span {
-  font-size: 16px;
-  color: #333;
-  line-height: 40px;
-}
-.tab .mpic .add-pic i {
-  font-size: 14px;
-  color: #666;
-  float: left;
-}
-.tab .mpic .time {
-  margin-left: 170px;
-  color: #333;
-}
-.tab .mpic .time p {
-  height: 70px;
-  line-height: 70px;
-}
-.tab .mpic .time span,
-.tab .mpic .time input,
-.tab .mpic .time strong,
-.tab .mpic .time b,
-.tab .mpic .time select {
-  float: left;
-}
-.tab .mpic .time span {
-  font-size: 14px;
-  line-height: 70px;
-  width: 75px;
-  text-align: right;
-}
-.tab .mpic .time input {
-  width: 200px;
-  height: 36px;
-  line-height: 36px;
-  margin-top: 15px;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.tab .mpic .time strong {
-  margin: 0 10px;
-}
-.tab .mpic .op {
-  overflow: hidden;
-  margin-left: 170px;
-}
-.tab .mpic .op span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.tab .mpic .op button {
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-}
-.tab .mpic .op .qd {
-  background: #2b81f0;
-  color: #fff;
-  margin-right: 90px;
-}
-.tab .mpic .op .qx {
-  border: 1px solid #2b81f0;
-  background: #fff;
-  color: #2b81f0;
-}
+  margin-top: 10px; }
+  .tab .txt {
+    padding: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    overflow: hidden; }
+    .tab .txt .result {
+      width: 630px;
+      height: 195px;
+      border: 1px solid #dedede;
+      margin-left: 160px; }
+      .tab .txt .result p {
+        height: 40px;
+        background: #f5f5f9;
+        font-size: 16px;
+        color: #333;
+        line-height: 40px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box; }
+      .tab .txt .result textarea {
+        font-size: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        width: 100%;
+        border: none;
+        height: 110px; }
+    .tab .txt .insert {
+      margin-left: 160px;
+      font-size: 16px;
+      color: #2b81f0; }
+      .tab .txt .insert span {
+        line-height: 46px;
+        cursor: pointer; }
+    .tab .txt .time {
+      margin-left: 160px;
+      color: #333; }
+      .tab .txt .time p {
+        height: 70px;
+        line-height: 70px; }
+      .tab .txt .time span,
+      .tab .txt .time input,
+      .tab .txt .time strong,
+      .tab .txt .time b,
+      .tab .txt .time select {
+        float: left; }
+      .tab .txt .time span {
+        font-size: 14px;
+        line-height: 70px;
+        width: 75px;
+        text-align: right; }
+      .tab .txt .time input {
+        width: 200px;
+        height: 36px;
+        line-height: 36px;
+        margin-top: 15px;
+        padding: 0 5px;
+        border: 1px solid #b6b6b6;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; }
+      .tab .txt .time strong {
+        margin: 0 10px; }
+    .tab .txt .op {
+      overflow: hidden; }
+      .tab .txt .op span {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer; }
+      .tab .txt .op button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none; }
+      .tab .txt .op .qd {
+        background: #2b81f0;
+        color: #fff;
+        margin-right: 90px; }
+      .tab .txt .op .qx {
+        border: 1px solid #2b81f0;
+        background: #fff;
+        color: #2b81f0; }
+  .tab .pic-txt {
+    padding: 15px 15px 15px 170px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    overflow: hidden; }
+    .tab .pic-txt .headline span {
+      font-size: 16px;
+      color: #333;
+      line-height: 40px; }
+    .tab .pic-txt .headline i {
+      font-size: 12px;
+      color: #808080;
+      line-height: 20px; }
+    .tab .pic-txt .headline input {
+      height: 36px;
+      width: 550px;
+      padding: 0 5px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      border: 1px solid #dedede; }
+    .tab .pic-txt .add-pic span {
+      font-size: 16px;
+      color: #333;
+      line-height: 40px; }
+    .tab .pic-txt .add-pic i {
+      font-size: 14px;
+      color: #666;
+      float: left; }
+    .tab .pic-txt .time {
+      color: #333; }
+      .tab .pic-txt .time p {
+        height: 70px;
+        line-height: 70px; }
+      .tab .pic-txt .time span,
+      .tab .pic-txt .time input,
+      .tab .pic-txt .time strong,
+      .tab .pic-txt .time b,
+      .tab .pic-txt .time select {
+        float: left; }
+      .tab .pic-txt .time span {
+        font-size: 14px;
+        line-height: 70px;
+        width: 75px;
+        text-align: right; }
+      .tab .pic-txt .time input {
+        width: 200px;
+        height: 36px;
+        line-height: 36px;
+        margin-top: 15px;
+        padding: 0 5px;
+        border: 1px solid #b6b6b6;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; }
+      .tab .pic-txt .time strong {
+        margin: 0 10px; }
+    .tab .pic-txt .op {
+      overflow: hidden; }
+      .tab .pic-txt .op span {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer; }
+      .tab .pic-txt .op button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none; }
+      .tab .pic-txt .op .qd {
+        background: #2b81f0;
+        color: #fff;
+        margin-right: 90px; }
+      .tab .pic-txt .op .qx {
+        border: 1px solid #2b81f0;
+        background: #fff;
+        color: #2b81f0; }
+  .tab .mpic-box {
+    background: #eee; }
+    .tab .mpic-box .one {
+      background: #fff;
+      padding: 30px 0;
+      margin-top: 10px; }
+      .tab .mpic-box .one .left {
+        width: 430px;
+        float: left; }
+      .tab .mpic-box .one .right {
+        width: 550px;
+        float: left; }
+    .tab .mpic-box .fixed {
+      padding: 30px 0;
+      background: #fff;
+      margin-top: 10px; }
+    .tab .mpic-box .m-add {
+      margin-left: 100px; }
+      .tab .mpic-box .m-add .add-mul {
+        display: block;
+        *display: inline;
+        *zoom: 1;
+        height: 40px;
+        width: 120px;
+        background: #2b81f0;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer; }
+    .tab .mpic-box .headline {
+      margin-left: 80px; }
+      .tab .mpic-box .headline span {
+        font-size: 16px;
+        color: #333;
+        line-height: 40px; }
+      .tab .mpic-box .headline i {
+        font-size: 12px;
+        color: #808080;
+        line-height: 20px; }
+      .tab .mpic-box .headline input {
+        height: 36px;
+        width: 415px;
+        padding: 0 5px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        border: 1px solid #dedede; }
+    .tab .mpic-box .add-pic {
+      margin-left: 100px;
+      width: 350px; }
+      .tab .mpic-box .add-pic span {
+        font-size: 16px;
+        color: #333;
+        line-height: 40px; }
+      .tab .mpic-box .add-pic i {
+        font-size: 14px;
+        color: #666;
+        float: left; }
+    .tab .mpic-box .time {
+      margin-left: 100px;
+      color: #333; }
+      .tab .mpic-box .time p {
+        height: 70px;
+        line-height: 70px; }
+      .tab .mpic-box .time span,
+      .tab .mpic-box .time input,
+      .tab .mpic-box .time strong,
+      .tab .mpic-box .time b,
+      .tab .mpic-box .time select {
+        float: left; }
+      .tab .mpic-box .time span {
+        font-size: 14px;
+        line-height: 70px;
+        width: 75px;
+        text-align: right; }
+      .tab .mpic-box .time input {
+        width: 200px;
+        height: 36px;
+        line-height: 36px;
+        margin-top: 15px;
+        padding: 0 5px;
+        border: 1px solid #b6b6b6;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; }
+      .tab .mpic-box .time strong {
+        margin: 0 10px; }
+    .tab .mpic-box .op {
+      margin-left: 100px;
+      overflow: hidden; }
+      .tab .mpic-box .op span {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer; }
+      .tab .mpic-box .op button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none; }
+      .tab .mpic-box .op .qd {
+        background: #2b81f0;
+        color: #fff;
+        margin-right: 90px; }
+      .tab .mpic-box .op .qx {
+        border: 1px solid #2b81f0;
+        background: #fff;
+        color: #2b81f0; }
+  .tab .mpic {
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    overflow: hidden; }
+    .tab .mpic .mddpic {
+      margin: 0 10px 10px 0; }
+    .tab .mpic .add-pic {
+      margin-left: 170px; }
+      .tab .mpic .add-pic span {
+        font-size: 16px;
+        color: #333;
+        line-height: 40px; }
+      .tab .mpic .add-pic i {
+        font-size: 14px;
+        color: #666;
+        float: left; }
+    .tab .mpic .time {
+      margin-left: 170px;
+      color: #333; }
+      .tab .mpic .time p {
+        height: 70px;
+        line-height: 70px; }
+      .tab .mpic .time span,
+      .tab .mpic .time input,
+      .tab .mpic .time strong,
+      .tab .mpic .time b,
+      .tab .mpic .time select {
+        float: left; }
+      .tab .mpic .time span {
+        font-size: 14px;
+        line-height: 70px;
+        width: 75px;
+        text-align: right; }
+      .tab .mpic .time input {
+        width: 200px;
+        height: 36px;
+        line-height: 36px;
+        margin-top: 15px;
+        padding: 0 5px;
+        border: 1px solid #b6b6b6;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; }
+      .tab .mpic .time strong {
+        margin: 0 10px; }
+    .tab .mpic .op {
+      overflow: hidden;
+      margin-left: 170px; }
+      .tab .mpic .op span {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer; }
+      .tab .mpic .op button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none; }
+      .tab .mpic .op .qd {
+        background: #2b81f0;
+        color: #fff;
+        margin-right: 90px; }
+      .tab .mpic .op .qx {
+        border: 1px solid #2b81f0;
+        background: #fff;
+        color: #2b81f0; }
 
 .mdd-pic {
   height: 40px;
@@ -509,76 +433,65 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-.mdd-pic input {
-  margin-top: 0;
-  position: absolute;
-  font-size: 100px;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  cursor: pointer;
-}
+  -ms-box-sizing: border-box; }
+  .mdd-pic input {
+    margin-top: 0;
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer; }
 
 .pic {
   margin-top: 20px;
-  overflow: hidden;
-}
-.pic span {
-  margin-left: 120px;
-  float: left;
-}
-.pic .pic-box {
-  float: left;
-  margin-left: 20px;
-}
-.pic .pic-box input {
-  margin-top: 20px;
-}
+  overflow: hidden; }
+  .pic span {
+    margin-left: 120px;
+    float: left; }
+  .pic .pic-box {
+    float: left;
+    margin-left: 20px; }
+    .pic .pic-box input {
+      margin-top: 20px; }
 
 .opration {
   box-sizing: border-box;
   margin-left: 400px;
-  overflow: hidden;
-}
-.opration span {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  margin-right: 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.opration button {
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-}
-.opration .qd {
-  background: #2b81f0;
-  color: #fff;
-  margin-right: 90px;
-}
-.opration .cancel {
-  border: 1px solid #2b81f0;
-  background: #fff;
-  color: #2b81f0;
-}
+  overflow: hidden; }
+  .opration span {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; }
+  .opration button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; }
+  .opration .qd {
+    background: #2b81f0;
+    color: #fff;
+    margin-right: 90px; }
+  .opration .cancel {
+    border: 1px solid #2b81f0;
+    background: #fff;
+    color: #2b81f0; }
 
 .key {
   background: #fff;
@@ -588,48 +501,40 @@
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  margin-top: 10px;
-}
-.key .nn {
-  font-size: 16px;
-  height: 45px;
-  line-height: 45px;
-}
-.key p i {
-  color: red;
-}
-.key p i锛宻pan {
-  height: 45px;
-  line-height: 45px;
-}
-.key p input[type="text"] {
-  height: 36px;
-  border: 1px solid #dedede;
-  width: 550px;
-  padding: 0 5px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-.key p input[type="radio"] {
-  width: 16px;
-  height: 16px;
-  float: left;
-  margin-top: 5px;
-}
-.key p b {
-  font-weight: normal;
-  font-size: 16px;
-  color: #666;
-  margin: 0 5px;
-  float: left;
-}
-.key .tt {
-  font-size: 14px;
-  color: #999;
-}
+  margin-top: 10px; }
+  .key .nn {
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px; }
+  .key p i {
+    color: red; }
+  .key p i锛宻pan {
+    height: 45px;
+    line-height: 45px; }
+  .key p input[type="text"] {
+    height: 36px;
+    border: 1px solid #dedede;
+    width: 550px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box; }
+  .key p input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 5px; }
+  .key p b {
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    margin: 0 5px;
+    float: left; }
+  .key .tt {
+    font-size: 14px;
+    color: #999; }
 
 .mddpic {
   width: 80px;
@@ -646,19 +551,88 @@
   overflow: hidden;
   display: inline-block;
   *display: inline;
-  *zoom: 1;
-}
-.mddpic img {
-  width: 100%;
-  height: 100%;
-}
-.mddpic input {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  cursor: pointer;
-}
+  *zoom: 1; }
+  .mddpic img {
+    width: 100%;
+    height: 100%; }
+  .mddpic input {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer; }
+
+.mbox {
+  margin-top: 20px; }
+  .mbox .left {
+    width: 60px;
+    height: 40px;
+    margin-left: 150px;
+    float: left;
+    text-align: right; }
+    .mbox .left span,
+    .mbox .left i {
+      font-size: 14px;
+      color: #333;
+      line-height: 40px; }
+  .mbox .right {
+    float: left;
+    margin-left: 18px; }
+    .mbox .right .result {
+      width: 430px;
+      height: 190px;
+      border: 1px solid #b6b6b6;
+      position: relative;
+      float: left;
+      margin-bottom: 20px; }
+      .mbox .right .result p {
+        height: 40px;
+        font-size: 14px;
+        color: #d2d2d2;
+        line-height: 40px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box; }
+      .mbox .right .result .mdd {
+        position: absolute; }
+      .mbox .right .result textarea {
+        font-size: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        width: 100%;
+        border: none;
+        height: 150px; }
+    .mbox .right .insert {
+      float: left;
+      margin-left: 30px; }
+      .mbox .right .insert p {
+        height: 30px;
+        line-height: 30px; }
+        .mbox .right .insert p span {
+          margin-left: 5px;
+          color: #666;
+          cursor: pointer; }
+    .mbox .right .sel {
+      height: 40px; }
+      .mbox .right .sel span {
+        float: left;
+        line-height: 40px;
+        color: #666;
+        margin: 0 5px; }
+      .mbox .right .sel input {
+        float: left;
+        margin-top: 13px;
+        width: 16px;
+        height: 16px; }
+
+/*# sourceMappingURL=m-WeChart.css.map */

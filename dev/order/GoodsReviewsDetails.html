@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" href="../../css/m-order-after-sale.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_0810ekmryxrvbo6r.css ">
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div id="big-pic" style="display: block;">
+			<i class="iconfont icon-X mclose"></i>
+			<div class="experts-answer">
+				<div class="alt-left alt-left1">
+					<img src="../../img/alt_left.png" />
+				</div>
+				<div class="alt-right alt-right1">
+					<img src="../../img/alt_right.png" />
+				</div>
+				<div class="bigbox">
+					<div class="experts-answer-box">
+						<!--<foreach name="select[1]" item="s">
+
+							<?php
+								if ($select[0][0]['review_type']==2) {
+										echo "<div class='m-swiper '>";
+										echo "<img src='__PUBLIC__/Uploads/$s' alt='' />";
+										echo "</div>";
+									}elseif ($select[0][0]['review_type']==1) {
+										echo "<div class='m-swiper '>";
+										echo "<img src='http://www.77farmers.com$s' alt='' />";
+										echo "</div>";
+									}
+									?>
+
+						</foreach>-->
+						<div class="m-swiper ">
+							111
+						</div>
+						<div class="m-swiper" style="background: red;">
+							2344
+						</div>
+						<div class="m-swiper" style="background: blue;">
+							2344
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="big-pic2">
+			<i class="iconfont icon-X mclose"></i>
+			<div class="experts-answer">
+				<div class="alt-left alt-left2">
+					<img src="__ADMIN__/img/alt_left.png" />
+				</div>
+				<div class="alt-right alt-right2">
+					<img src="__ADMIN__/img/alt_right.png" />
+				</div>
+				<div class="bigbox">
+					<div class="experts-answer-box">
+						<!--<foreach name="select[2]" item="ss">
+							<?php
+								if ($select[0][0]['review_type']==2) {
+										echo "<div class='m-swiper '>";
+										echo "<img src='__PUBLIC__/Uploads/$ss' alt='' />";
+										echo "</div>";
+									}elseif ($select[0][0]['review_type']==1) {
+										echo "<div class='m-swiper '>";
+										echo "<img src='http://www.77farmers.com$ss' alt='' />";
+										echo "</div>";
+									}
+									?>
+						</foreach>-->
+						<div class="m-swiper ">
+							111
+						</div>
+						<div class="m-swiper" style="background: red;">
+							2344
+						</div>
+						<div class="m-swiper" style="background: blue;">
+							2344
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href="{:U('Order/OrderShowLists')}"><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href="{:U('Order/GoodsRevertLists')}"><span>售后服务</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href="{:U('Order/GoodsRevertLists')}"><span>商品评论</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href="{:U('Order/GoodsReviewsDetails')}"><span>评论详情</span></a><i class="iconfont icon-arrow-right"></i>
+			</div>
+			<div class="good-info">
+				<img src="__PUBLIC__/Uploads/{$select[0][0]['goods_photo']}">
+				<p class="good-name">{$select[0][0]['goods_name']}*{$select[0][0]['quantity']}</p>
+				<p class="good-num">{$select[0][0]['goods_spec_key']}</p>
+				<p class="good-price">￥{$select[0][0]['goods_money']}</p>
+			</div>
+			<div class="order-info">
+
+				<p><span>会员名称&nbsp;:&nbsp;</span><i>{$select[0][0]['nickname']}</i></p>
+				<p><span>下单时间&nbsp;:&nbsp;</span><i><?php
+								echo date("Y-m-d H:i:s",$select[0][0]['order_time']);
+							?></i></p>
+				<p><span>订单编号&nbsp;:&nbsp;</span><i>{$select[0][0]['order_number']}</i></p>
+			</div>
+			<div class="reply">
+				<div>
+					<span>好评&nbsp;:&nbsp;</span>
+					<i><?php if($select[0][0]['satisfaction']==1){
+						echo "差评";
+					}elseif($select[0][0]['satisfaction']==2){
+						echo "中评";
+				}elseif($select[0][0]['satisfaction']==3){
+						echo "好评";
+				}?></i>
+				</div>
+				<?php
+					if ($select[1][0]) {
+				?>
+					<div>
+						<span>晒图&nbsp;:&nbsp;</span>
+						<p id="m-lunbo">
+							<foreach name="select[1]" item='photo'>
+								<?php
+									if ($select[0][0]['review_type']==2) {
+										echo "<img src='__PUBLIC__/Uploads/$photo' alt='' />";
+									}elseif ($select[0][0]['review_type']==1){
+										echo "<img src='http://www.77farmers.com$photo' alt='' />";
+									}
+								?>
+							</foreach>
+						</p>
+					</div>
+					<?php
+					}
+				?>
+						<div>
+							<span>评论内容&nbsp;:&nbsp;</span>
+							<p>{$select[0][0]['reviews_text']}</p>
+						</div>
+						<div>
+							<span>回复&nbsp;:&nbsp;</span>
+							<i>{$select[0][0]['call_id']}</i>
+						</div>
+						<?php
+					if ($select[2][0]) {
+				?>
+							<div>
+								<span>追加晒图&nbsp;:&nbsp;</span>
+								<p id="m-lunbo2">
+									<foreach name="select[2]" item='photos'>
+										<?php
+									if ($select[0][0]['review_type']==2) {
+										echo "<img src='__PUBLIC__/Uploads/$photos' alt='' />";
+									}elseif ($select[0][0]['review_type']==1){
+										echo "<img src='http://www.77farmers.com$photos' alt='' />";
+									}
+								?>
+
+									</foreach>
+								</p>
+							</div>
+							<?php
+					}
+				?>
+								<?php
+					if ($select[0][0]['additional']) {
+						echo "<div>
+						<span>追加评论&nbsp;:&nbsp;</span>
+						<p>".$select[0][0]['additional']."</p>
+						</div>";
+						echo "<div>
+						<span>追加回复&nbsp;:&nbsp;</span>
+						<i>".$select[0][0]['call_id']."</i>
+						</div>";
+					}
+				?>
+
+									<div class="return">
+										<?php
+						if ($select[0][0]['waitfor']==1) {
+							echo "<strong class='hf'>回复</strong>";
+						}else{
+							echo "<strong class='fh'>返回</strong>";
+						}
+					?>
+									</div>
+			</div>
+
+		</div>
+		<form method='post' action="{:U('Order/GoodsRevert')}">
+			<div id="reply">
+				<i class="iconfont icon-X close"></i>
+				<input type='hidden' name='reviews_id' value="{$select[0][0]['reviews_id']}" />
+				<p class="titl"><span></span><i>回复评论</i></p>
+				<div class="info">
+					<img src="__PUBLIC__/Uploads/{$select[0][0]['goods_photo']}" alt="" />
+					<p class="customer-name">{$select[0][0]['nickname']}</p>
+					<p class="good-name">{$select[0][0]['goods_name']}*{$select[0][0]['quantity']}</p>
+				</div>
+				<select name='huifu' class="call">
+					<option value=''>快捷回复选项</option>
+					<foreach name="call_back" item='call'>
+						<option value="{$call['call_content']}">{$call['call_type']}</option>
+					</foreach>
+				</select>
+				<div class="inputTxt">
+
+					<textarea name="call_id" rows="" cols="" placeholder="请输入回复内容…………" id="hf"></textarea>
+				</div>
+				<div class="opration">
+					<button class="qd" data-id="{$select[0]['reviews_id']}">确定</button>
+					<!--data-id商品评论id-->
+					<span class="cancel">取消</span>
+				</div>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript" src="__ADMIN__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__ADMIN__/js/m-order-after-sale.js"></script>
+	<script type="text/javascript">
+		//图片轮播
+		$("#m-lunbo img").each(function(index, val) {
+				$("#m-lunbo img").eq(index).on("click", function() {
+					$(".mark").show();
+					$("#big-pic").show();
+					var left = index * 445;
+					$("#big-pic .experts-answer-box").css("left", -left + "px");
+
+				})
+			})
+			// $("#m-lunbo2 img").each(function(index, val) {
+			// 		$("#m-lunbo2 img").eq(index).on("click", function() {
+			// 			$(".mark").show();
+			// 			$("#big-pic2").show();
+			// 			var left = index * 445;
+			// 			$("#big-pic2 .experts-answer-box").css("left", -left + "px");
+
+		// 		})
+		// 	})
+		轮播
+		var width1 = ($("#m-lunbo .experts-answer-box .m-swiper").length - 1) * 445;
+		$(".alt-right1 ").on("click", function() {
+			alert(1)
+			var l = parseInt($(this).parents(".experts-answer").find(".experts-answer-box").css("left"));
+			alert(l)
+			if(l <= -width1) {
+				var left = 0;
+			} else {
+				var left = parseInt(l) - 445;
+			}
+			$(".experts-answer-box").css("left", left + "px");
+		})
+		$(".alt-left1 ").on("click", function() {
+				var l = parseInt($(this).parents(".experts-answer").find(".experts-answer-box").css("left"));
+				//alert(l)
+				if(l >= 0) {
+					var left = -width1;
+				} else {
+					var left = parseInt(l) + 445;
+				}
+				$(".experts-answer-box").css("left", left + "px");
+			})
+			轮播
+			var width2 = ($("#m-lunbo2 .experts-answer-box .m-swiper").length - 1) * 445;
+			$(".alt-right2 ").on("click", function() {
+			var l = parseInt($(this).parents(".experts-answer").find(".experts-answer-box").css("left"));
+
+			if(l <= -width2) {
+			var left = 0;
+		} else {
+			var left = parseInt(l) - 445;
+		}
+		$(".experts-answer-box").css("left", left + "px");
+		 })
+
+		// $(".alt-left2 ").on("click", function() {
+		// 	var l = parseInt($(this).parents(".experts-answer").find(".experts-answer-box").css("left"));
+		// 	if(l >= 0) {
+		// 		var left = -width2;
+		// 	} else {
+		// 		var left = parseInt(l) + 445;
+		// 	}
+		// 	$(".experts-answer-box").css("left", left + "px");
+		// })
+	</script>
+
+</html>

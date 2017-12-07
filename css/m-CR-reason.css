@@ -1,11 +1,9 @@
 tr {
-  border-bottom: 1px solid #e9e8e8;
-}
+  border-bottom: 1px solid #e9e8e8; }
 
 .li1 {
   width: 300px;
-  background: #fff;
-}
+  background: #fff; }
 
 .li2 {
   background: #fff;
@@ -15,40 +13,35 @@ tr {
   -moz-box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  width: 420px;
-}
-.li2 img {
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin-right: 10px;
-}
-.li2 .good-name {
-  font-size: 14px;
-  color: #333;
-  text-align: left;
-}
-.li2 .good-num {
-  font-size: 14px;
-  color: #333;
-  margin-top: 16px;
-  position: absolute;
-  bottom: 10px;
-  left: 140px;
-}
-.li2 .good-price {
-  font-size: 18px;
-  color: #333;
-  position: absolute;
-  bottom: 10px;
-}
-.li2 .good-guige {
-  font-size: 14px;
-  color: #333;
-  margin-top: 16px;
-}
+  width: 420px; }
+  .li2 img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 10px; }
+  .li2 .good-name {
+    font-size: 14px;
+    color: #333;
+    text-align: left; }
+  .li2 .good-num {
+    font-size: 14px;
+    color: #333;
+    margin-top: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 140px; }
+  .li2 .good-price {
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    bottom: 10px; }
+  .li2 .good-guige {
+    font-size: 14px;
+    color: #333;
+    margin-top: 16px; }
 
 .li3 {
   width: 460px;
-  background: #fff;
-}
+  background: #fff; }
+
+/*# sourceMappingURL=m-CR-reason.css.map */

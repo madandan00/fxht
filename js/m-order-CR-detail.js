@@ -6,6 +6,7 @@ $(".tg").on("click",function(){
 //点击叉关闭弹窗
 $(".close").on("click",function(){
 	$(this).parents(".tip").hide();
+	$("#big-pic").hide();
 	$(".mark").hide();
 })
 //点击不通过
@@ -23,4 +24,14 @@ $("#n-pass .qx").on("click",function(){
 	$("#n-reason").val("");
 	$(this).parents(".tip").hide();
 	$(".mark").hide();
+})
+//图片轮播
+$("#m-lunbo img").each(function(index,val){
+	$("#m-lunbo img").eq(index).on("click",function(){
+		$(".mark").show();
+		$("#big-pic").show();
+		var left=index*445;
+		$(".experts-answer-box").css("left", -left + "px");
+		
+	})
 })

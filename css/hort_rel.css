@@ -1,0 +1,190 @@
+@import url("public.css");
+.hort_relse {
+  width: 100%;
+  height: auto;
+  background: #ededee;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.hort_rel {
+  width: 100%;
+  height: auto;
+  background: none; }
+
+.h_r_nav {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 13px;
+  box-sizing: border-box; }
+  .h_r_nav h3 {
+    display: inline-block;
+    width: 7px;
+    height: 39px;
+    background: #2b81f0;
+    float: left; }
+  .h_r_nav ul {
+    margin-left: 24px;
+    float: left; }
+    .h_r_nav ul li {
+      float: left;
+      line-height: 40px;
+      margin-right: 17px; }
+      .h_r_nav ul li a {
+        font-size: 16px;
+        color: #333333; }
+
+.hort_r_main {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box; }
+
+.rel_art {
+  width: 100%;
+  height: 20px;
+  background: none; }
+  .rel_art p {
+    position: relative; }
+    .rel_art p i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background: #2b81f0; }
+    .rel_art p span {
+      margin-left: 15px;
+      font-weight: bold;
+      color: #2B81F0;
+      font-size: 14px; }
+
+.h_r_tit {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 30px;
+  padding-left: 15px;
+  box-sizing: border-box; }
+  .h_r_tit span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 57px; }
+    .h_r_tit span input {
+      margin-left: 9px;
+      display: inline-block;
+      width: 200px;
+      height: 36px;
+      background: none;
+      border-radius: 3px;
+      border: 1px solid #b6b6b6;
+      outline: none;
+      padding-left: 20px; }
+
+.h_r_time {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 30px;
+  padding-left: 15px;
+  box-sizing: border-box; }
+  .h_r_time span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 57px; }
+    .h_r_time span input {
+      margin-left: 9px;
+      display: inline-block;
+      width: 200px;
+      height: 36px;
+      background: none;
+      border-radius: 3px;
+      border: 1px solid #b6b6b6;
+      outline: none;
+      padding-left: 20px;
+      color: #959595; }
+
+.h_r_art {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 30px;
+  padding-left: 15px;
+  box-sizing: border-box; }
+  .h_r_art span {
+    font-size: 14px;
+    color: #333;
+    margin-right: 57px; }
+    .h_r_art span input {
+      margin-left: 9px;
+      display: inline-block;
+      width: 780px;
+      height: 36px;
+      background: none;
+      border-radius: 3px;
+      border: 1px solid #b6b6b6;
+      outline: none;
+      padding-left: 20px; }
+
+.h_r_pic {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 40px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-bottom: 40px; }
+  .h_r_pic span {
+    font-size: 14px;
+    color: #5a5a5a; }
+  .h_r_pic .rel_pic {
+    margin-top: 20px;
+    width: 100%;
+    height: 235px;
+    background: none; }
+
+.h_r_edit {
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background: none; }
+  .h_r_edit span {
+    font-size: 14px;
+    color: #5a5a5a; }
+  .h_r_edit .edit {
+    margin-top: 20px;
+    width: 20px;
+    height: 413px;
+    background: none; }
+
+.button {
+  text-align: center;
+  margin-bottom: 10px; }
+  .button button {
+    width: 120px;
+    height: 46px;
+    background: none;
+    display: inline-block;
+    border-radius: 5px;
+    outline: none; }
+  .button .fabu {
+    background: #1063e4;
+    text-align: center;
+    border: none; }
+    .button .fabu a {
+      color: #FFFFFF;
+      line-height: 46px; }
+  .button .quxiao {
+    border: 1px solid #1063e4;
+    text-align: center;
+    margin-left: 80px; }
+    .button .quxiao a {
+      color: #1063e4;
+      line-height: 46px; }
+
+/*# sourceMappingURL=hort_rel.css.map */

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../public.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="../../css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="../../css/search.css">
+		<link rel="stylesheet" type="text/css" href="../../css/list.css">
+		<link rel="stylesheet" href="../../css/fenye.css" />
+		<link rel="stylesheet" href="../../css/m_quik_reply.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_xwoxpr0sr614te29.css">
+		<script type="text/javascript" src="../../js/laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>售后服务</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>快捷回复</span></a>
+			</div>
+
+			<div class="search">
+				<p>
+					<a href="javascript:;" class="add">添加回复</a>
+				</p>
+			</div>
+			<div style="min-height:450px;height:auto !important;height:450px;background: #fff;">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px;" class="ctltable">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;"><span>快捷回复列表</span></caption>
+					<thead>
+						<tr>
+							<th class="li1"><span>回复标题</span></th>
+							<th class="li2"><span>被容</span></th>
+							<th class="li3"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<tr class="order">
+							<td class="li1" style="text-align: left;">
+								<span>好评评论</span>
+							</td>
+							<td class="li2">
+								<p>非常感谢您！非常感谢您！非常感谢您！非常感谢您！非常感谢您</p>
+							</td>
+							<td class="li3">
+								<i class="iconfont icon-fabuicon change" style="color: #909090;"></i>
+								<i class="iconfont icon-p-delet cancel" style="color: #909090;"></i>
+							</td>
+						</tr>
+						
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		<div id="reply">
+			<i class="iconfont icon-X close"></i>
+			<p class="titl"><span></span><i>回复详情</i></p>
+			<p class="m-hui"><span>回复标题&nbsp;:&nbsp;</span><input type="text" /></p>
+			<div class="inputTxt2">
+				<textarea name="" rows="" cols="" placeholder="请输入回复内容…………" id="hf"></textarea>
+			</div>
+			<div class="opration">
+				<button class="qd">确定</button>
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jPages.js"></script>
+	<script>
+		$(".add").on("click", function() {
+			$(".mark").show();
+			$("#reply").show();
+		})
+		$(".change").on("click", function() {
+			var val_tit=$(this).parents("tr").find(".li1").find("span").html();
+			var val_con=$(this).parents("tr").find(".li2").find("p").html();
+			$(".mark").show();
+			$("#reply").show();
+			$("#reply .m-hui input").val(val_tit);
+			$("#reply .inputTxt2 textarea").val(val_con)
+		})
+		$("#reply .qx").on("click", function() {
+			$("#reply .qd").removeAttr("show_id");
+			$(".mark").hide();
+			$("#reply").hide();
+		})
+		$(".close").on("click", function() {
+			$(".mark").hide();
+			$(this).parents("#reply").hide();
+		})
+	</script>
+	<script>
+		page(10)
+	</script>
+
+</html>

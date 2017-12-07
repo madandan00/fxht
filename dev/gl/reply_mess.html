@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../css/reply_mess.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_nc7ppwbhhwf561or.css"/>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.flexText.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>消息回复</title>
+
+	</head>
+	<body>
+		<div class="reply_mess">
+			<!--头部-->
+			<div class="reply_mess_tou">
+				<span class="tit_g"></span>
+				<ul>
+					<li>
+						<a href="#">设置</a>
+					</li>
+					<li>
+						<i class="iconfont icon-iconfontyoujiantou"></i>
+					</li>
+					<li>
+						<a href="#">条件设置</a>
+					</li>
+				</ul>
+			</div>
+			<!--内容-->
+			<div class="reply_mess_content">
+				<div class="reply_mess_con">
+					<dl>
+						<dt>
+							<div class="tx">
+								<img src="../../img/content.png"/>
+							</div>
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<span>努力爱过</span><br />
+									<i>2017-10-16</i>
+								</li>
+								<li >
+									<p>真的好吃我试过了，很美味，不油不腻，非常棒！</p>
+									<div class="comment-show">
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<!--回复的内容-->
+				<div class="user-huifu-box">
+				</div>
+				<!--回复框-->
+				<div class="huifu-box">
+					<textarea name="" rows="" cols="" placeholder="回复："></textarea>
+					<span class="m-huifu"><p class="a_lef">回复</p></span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		//小回复
+		$(".m-huifu").on("click", function() {
+			var txt = $(this).parents(".huifu-box").find("textarea").val();
+			var block = 
+				'<img src="img/topics_03.jpg" alt="" />' +
+				'</div>' +
+				'<div class="response">' +
+				'<div>' +
+				'<p class="mm"><span class="user-name">浪花一朵朵</span><span>&nbsp;:&nbsp;</span>' + txt + '</p>' +
+				'</div>' +
+				'<div class="response-time">' +
+				'</div>' +
+				'</div>' +
+				'</div>'
+			$(block).appendTo(".user-huifu-box");
+			$(this).parents(".m-communicate-right-box").removeClass("active");
+			$(this).parents(".m-communicate-right-box").find(".m-communicate-bottom").find(".huifu").attr("data-state", 1).html("回复");
+			$(this).parents(".huifu-box").find("textarea").val("");
+			alert("回复成功");
+		})
+	</script>
+</html>

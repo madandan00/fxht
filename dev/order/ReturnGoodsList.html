@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__ADMIN__/public.css">
+		<link rel="stylesheet" type="text/css" href="__ADMIN__/css/main-content.css">
+		<link rel="stylesheet" type="text/css" href="__ADMIN__/css/head-tit.css">
+		<link rel="stylesheet" type="text/css" href="__ADMIN__/css/head-nav.css">
+		<link rel="stylesheet" type="text/css" href="__ADMIN__/css/search.css">
+		<link rel="stylesheet" type="text/css" href="__ADMIN__/css/list.css">
+		<link rel="stylesheet" href="__ADMIN__/css/fenye.css" />
+		<link rel="stylesheet" href="__ADMIN__/css/tip.css" />
+		<link rel="stylesheet" href="__ADMIN__/css/m-deliver-2.css" />
+		<link rel="stylesheet" href="__ADMIN__/css/mCustomScrollbar.min.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o8c00yeddrh08uxr.css">
+		<script type="text/javascript" src="__ADMIN__/js/laydate/laydate.js"></script>
+		<style>
+			.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+				background: #2b81f0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mark"></div>
+		<div class="content">
+			<div class="tit">
+				<b></b>
+				<a href=""><span>订单管理</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>售后服务</span></a><i class="iconfont icon-arrow-right"></i>
+				<a href=""><span>退换货列表</span></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active">
+						<a href="{:U('Order/ReturnGoodsList')}">待收货</a>
+					</li>
+					<li>
+						<a href="{:U('Order/ReturnGoodsList')}?return_logistics=1&send_status=0&order_type=2">未发货</a>
+					</li>
+					<li>
+						<a href="{:U('Order/ReturnGoodsList')}?return_logistics=1&send_status=0&order_type=1">未打款</a>
+					</li>
+					<li>
+						<a href="{:U('Order/ReturnGoodsList')}?return_logistics=1&send_status=1&order_type=2">已发货</a>
+					</li>
+					<li>
+						<a href="{:U('Order/ReturnGoodsList')}?return_logistics=1&send_status=2&order_type=2">已完成</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="search">
+				<p>
+					<span>订单编号&nbsp;:&nbsp;</span><input type="text" name='return_number' style="margin-right: 75px;">
+					<span>收货人&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;" name='consigneename'>
+					<span>快递单号&nbsp;:&nbsp;</span><input type="text" style="margin-right: 70px;" name='send_expressage'>
+				</p>
+				<p>
+					<span>订单类型&nbsp;:&nbsp;</span>
+					<select name='order_type'>
+						<option value='0'>请选择</option>
+						<option value='1'>退货</option>
+						<option value='2'>换货</option>
+					</select>
+				</p>
+				<p>
+					<span>下单时间&nbsp;:&nbsp;</span><input name='star_time' type="text" onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i><strong>至</strong><input type="text" name='end_time' onclick="laydate()"><i class="iconfont icon-rili" style="float: left;margin-left: -33px;font-size: 24px;"></i>
+					<button style="margin-left: 30px;"><i class="iconfont icon-shousuo"></i>收索</button>
+					<b style="margin-left: 10px;"><i class="iconfont icon-daochu"></i>导出</b>
+				</p>
+			</div>
+			<div style="min-height:450px;height:auto !important;height:100px;background: #fff;">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px; border-collapse: collapse;">
+					<caption style="background: #fff;border-bottom: 1px solid #e9e8e8;height: 60px;line-height: 60px;">
+						<span>发货列表</span>
+						<strong id="delete">删除</strong>
+						<!--<?php
+							if ($select[0][0]['return_logistics']==1) {
+								if ($select[0][0]['send_status']==0) {
+									echo "<strong id='Fgoods'>发货</strong>";
+								}
+							}
+						?>-->
+						<strong id="Fgoods">发货</strong>
+					</caption>
+					<thead>
+						<tr>
+							<th class="li1"><input type="checkbox" name="" id="all" value="" /><span>商品信息</span></th>
+							<th class="li2"><span>数量</span></th>
+							<th class="li3"><span>会员名</span></th>
+							<th class="li4"><span>收货人信息</span></th>
+							<th class="li5"><span>退款金额</span></th>
+							<th class="li7"><span>发货状态</span></th>
+							<th class="li8"><span>操作</span></th>
+						</tr>
+					</thead>
+					<tbody id="itemContainer">
+						<foreach name='select' item="s">
+							<tr class="order-info">
+								<td colspan="8" style="padding-top: 10px;">
+									<input type="checkbox" name="" class="Farr" value="" show_id="{$s[0]['return_id']}" /><span style="margin-left: 10px;">订单编号&nbsp;:&nbsp;</span><i>{$s[0]['return_number']}</i>
+									<i style="margin-left: 30px;">{$s[0]['audit_time']}</i>
+									<i style="margin-left: 25px;">{$s[0]['express_name']}</i>
+									<span style="margin-left: 40px;">快递单号&nbsp;:&nbsp;</span><i>{$s[0]['send_expressage']}</i>
+									<strong>
+									<!--<?php
+										if ($s[0]['order_type']==1) {
+											echo "退货退款";
+										}elseif ($s[0]['order_type']==2) {
+											echo "仅换货";
+										}
+									?>-->
+								</strong>
+								</td>
+							</tr>
+							<tr class="order">
+								<td class="li1" style="text-align: left;">
+									<foreach name='s[1]' item='ss'>
+										<img src="__ADMIN__/{$ss[0]['goods_photo']}" alt="" />
+									</foreach>
+								</td>
+								<td class="li2"><span>共{$s[2]}件</span></td>
+								<td class="li3"><span>{$s[0]['nickname']}</span></td>
+								<td class="li4">
+									<p><span>{$s[0]['consigneename']}</span><span style="float: right;margin-right: 40px;">{$s[0]['consigneephone']}</span></p>
+									<p>{$s[0]['consigneeaddress']}</p>
+								</td>
+								<td class="li5"><span>￥{$s[0]['return_money']}</span></td>
+
+								<td class="li7">
+									<!--<?php
+									if ($s[0]['return_logistics']==1) {
+										if ($s[0]['send_status']==0) {
+											if ($s[0]['order_type']==2) {
+												echo "<span class='fh' show_id=".$s[0]['return_id'].">发货</span>";
+											}elseif ($s[0]['order_type']==1) {
+												echo  "<span>待打款</span>";
+											}
+											
+										}elseif ($s[0]['send_status']==1) {
+											echo "<span class='wc' show_id=".$s[0]['return_id'].">完成</span>";
+										}elseif ($s[0]['send_status']==2) {
+											echo "<span>已完成</span>";
+										}
+									}elseif ($s[0]['return_logistics']==0) {
+										 echo "<span class='sh' show_id=".$s[0]['return_id'].">收货</span>";
+									}
+								?>	-->
+								</td>
+								<td class="li8">
+									<a href="{:U('Order/ReturnListDetails')}?return_id={$s[0]['return_id']}"><i class="iconfont icon-xiangqing xiangqing" style="color: #2681f7;"></i></a>
+									<i class="iconfont icon-p-delet cancel" style="color: #909090;" show_id="{$s[0]['return_id']}"></i>
+								</td>
+							</tr>
+						</foreach>
+					</tbody>
+
+				</table>
+			</div>
+			<div id="tap">
+				<div class="zs">
+					<span id="page-panel"></span>
+					<span id="page-pane2"></span>
+					<span id="page-pane3"></span>
+					<span id="page-pane4"></span>
+				</div>
+				<div class="holder"></div>
+			</div>
+		</div>
+		<div id="cancel" class="tip">
+			<div class="cancel-tip clearfix">
+				<i class="iconfont icon-icon102"></i>
+				<div>
+					<span>确定要删除订单信息吗？</span><br />
+					<span>删除后信息不可恢复！</span>
+				</div>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+		<div id="deliver" class="tip">
+			<i class="iconfont icon-X close"></i>
+			<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+				<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+				<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">二次发货</span>
+			</div>
+			<div class="express">
+				<p>
+					<span>快递公司&nbsp;:&nbsp;</span>
+					<select class="gs">
+						<foreach name='company' item='c'>
+							<option value="{$c['express_id']}">{$c['express_name']}</option>
+						</foreach>
+					</select>
+				</p>
+				<p>
+					<span>快递单号&nbsp;:&nbsp;</span><input type="text" class="dh">
+				</p>
+
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+		<div id="Adeliver" class="tip">
+			<i class="iconfont icon-X close"></i>
+			<div class="tit" style="font-size: 16px;line-height: 40px;height: 40px;">
+				<b style="width: 6px;height: 26px;margin-top: 8px;"></b>
+				<span style="font-size: 16px;line-height: 40px;margin-left: 10px;color:#2b81f0;">批量发货</span>
+			</div>
+			<p style="font-size: 12px;color: #999;">输入第一个快递单号，后面的快递单号会自动+1生成。部分快递公司快递单号随机生成，需要您手动修改。</p>
+			<div style="height:265px;background: #fff;overflow-y: auto;margin-top: 20px;" class="dd">
+				<table border="0" cellspacing="" cellpadding="" id="list" style="margin-top: 10px;">
+
+					<thead>
+						<tr>
+							<th class="li11"><input type="checkbox" name="" id="Twoall" value="" /></th>
+							<th class="li12"><span>订单编号</span></th>
+							<th class="li13"><span>收货人</span></th>
+							<th class="li14"><span>快递公司</span></th>
+							<th class="li15"><span>快递单号</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<foreach name='select' item='m'>
+							<tr class="order">
+								<td class="li11">
+									<input type="checkbox" name="" class="arr" value="" show_id="{$m[0]['return_id']}" />
+								</td>
+								<td class="li12"><span>{$m[0]['return_number']}</span></td>
+								<td class="li13"><span>{$m[0]['consigneename']}</span></td>
+								<td class="li14">
+									<select>
+										<foreach name='company' item='c'>
+											<option value="{$c['express_id']}">{$c['express_name']}</option>
+										</foreach>
+									</select>
+								</td>
+								<td class="li15">
+									<input />
+								</td>
+							</tr>
+						</foreach>
+					</tbody>
+
+				</table>
+			</div>
+			<div class="opration">
+				<button class="qd" data-id="">确定</button>
+
+				<span class="qx">取消</span>
+			</div>
+		</div>
+	</body>
+
+</html>
+
+<script type="text/javascript" src="__ADMIN__/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__ADMIN__/js/jquery.mCustomScrollbar.min.js"></script>
+<script>
+	(function($) {
+		$(window).load(function() {
+			$(".dd").mCustomScrollbar();
+		});
+	})(jQuery);
+</script>
+<script type="text/javascript" src="__ADMIN__/js/jPages.js"></script>
+<script type="text/javascript" src="__ADMIN__/js/fenye.js"></script>
+<script type="text/javascript" src="__ADMIN__/js/m-CR-list.js"></script>

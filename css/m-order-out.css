@@ -7,238 +7,200 @@
   -moz-box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  height: 670px;
-}
-.out .left {
-  width: 160px;
-  float: left;
-  margin-right: 20px;
-}
-.out .left span {
-  float: right;
-  width: 170px;
-  line-height: 50px;
-  text-align: right;
-  font-size: 14px;
-  color: #333;
-}
-.out .right .kk {
-  width: 100px;
-  font-size: 14px;
-  margin-top: 14px;
-}
-.out .right .xiugai {
-  font-size: 20px;
-  color: #2e81eb;
-  cursor: pointer;
-}
-.out .right .icon-duihaocheckmark17 {
-  color: green;
-}
-.out .right .other {
-  height: 66px;
-  border: 1px solid #cccccc;
-  margin-left: 180px;
-}
-.out .right .other p {
-  line-height: 66px;
-}
-.out .right .other span,
-.out .right .other input {
-  float: left;
-}
-.out .right .other input {
-  width: 80px;
-  height: 30px;
-  margin: 18px 5px 0;
-  padding: 0 5px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-.out .right .other span {
-  margin-right: 0;
-}
-.out .right .tip span {
-  font-size: 12px;
-  color: #afafaf;
-}
-.out .right p {
-  line-height: 50px;
-}
-.out .right p span {
-  font-size: 14px;
-  color: #333;
-  float: left;
-  margin-right: 50px;
-}
-.out .right p input {
-  float: left;
-  width: 18px;
-  height: 18px;
-  margin: 16px 5px 0;
-}
-.out .right p .choose {
-  width: 160px;
-  padding-left: 20px;
-  height: 36px;
-  border: 1px solid #b6b6b6;
-  line-height: 36px;
-  font-size: 14px;
-  margin-top: 6px;
-  margin-right: 0;
-  cursor: pointer;
-}
-.out .right p i {
-  font-size: 14px;
-  margin-left: -20px;
-  line-height: 50px;
-}
-.out .right .option {
-  padding: 20px 30px;
-  width: 850px;
-  margin-left: 180px;
-  border: 1px solid #b6b6b6;
-  display: none;
-  margin-top: 10px;
-}
-.out .right .option .item {
-  float: left;
-  height: 33px;
-  width: 170px;
-}
-.out .right .option p input,
-.out .right .option p span {
-  float: left;
-  font-size: 14px;
-}
-.out .right .option p input {
-  margin: 10px 10px 0 0;
-  width: 15px;
-  height: 15px;
-}
-.out .right .option p span {
-  line-height: 33px;
-}
-.out .right .option input,
-.out .right .option span {
-  float: left;
-  font-size: 14px;
-}
-.out .right .option input {
-  margin-top: 10px;
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-}
-.out .right .option span {
-  line-height: 33px;
-}
-.out .money p {
-  height: 60px;
-  line-height: 60px;
-}
-.out .money p span,
-.out .money p input,
-.out .money p strong,
-.out .money p b {
-  float: left;
-}
-.out .money p span {
-  font-size: 14px;
-  line-height: 60px;
-  margin-left: 10px;
-  text-align: right;
-}
-.out .money p input {
-  width: 180px;
-  height: 36px;
-  margin: 10px 0 0;
-  padding: 0 5px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.out .money p strong {
-  margin: 0 10px;
-}
-.out .M-name,
-.out .express {
-  width: 200px !important;
-  height: 36px !important;
-  margin: 10px 0 0 !important;
-  padding: 0 5px !important;
-  box-sizing: border-box !important;
-  -webkit-box-sizing: border-box !important;
-  -moz-box-sizing: border-box !important;
-  -o-box-sizing: border-box !important;
-  -ms-box-sizing: border-box !important;
-}
-.out .time p {
-  height: 60px;
-  line-height: 60px;
-}
-.out .time p span,
-.out .time p input,
-.out .time p strong,
-.out .time p b {
-  float: left;
-}
-.out .time p span {
-  font-size: 14px;
-  line-height: 60px;
-  width: 70px;
-  text-align: right;
-}
-.out .time p input {
-  width: 120px;
-  height: 36px;
-  margin: 10px 0 0;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.out .time p strong {
-  margin: 0 10px;
-}
-.out .dc {
-  border: none;
-  outline: none;
-  text-align: center;
-  float: left;
-  background: #2b81f0;
-  color: #fff;
-  font-size: 16px;
-  margin-left: 180px;
-  margin-top: 50px;
-  width: 120px;
-  height: 45px;
-  line-height: 45px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-}
-.out .tj {
-  border: none;
-  outline: none;
-  text-align: center;
-  background: #2b81f0;
-  color: #fff;
-  font-size: 16px;
-  width: 120px;
-  height: 45px;
-  line-height: 45px;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-}
+  height: 670px; }
+  .out .left {
+    width: 160px;
+    float: left;
+    margin-right: 20px; }
+    .out .left span {
+      float: right;
+      width: 170px;
+      line-height: 50px;
+      text-align: right;
+      font-size: 14px;
+      color: #333; }
+  .out .right .kk {
+    width: 100px;
+    font-size: 14px;
+    margin-top: 14px; }
+  .out .right .xiugai {
+    font-size: 20px;
+    color: #2e81eb;
+    cursor: pointer; }
+  .out .right .icon-duihaocheckmark17 {
+    color: green; }
+  .out .right .other {
+    height: 66px;
+    border: 1px solid #cccccc;
+    margin-left: 180px; }
+    .out .right .other p {
+      line-height: 66px; }
+    .out .right .other span,
+    .out .right .other input {
+      float: left; }
+    .out .right .other input {
+      width: 80px;
+      height: 30px;
+      margin: 18px 5px 0;
+      padding: 0 5px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box; }
+    .out .right .other span {
+      margin-right: 0; }
+  .out .right .tip span {
+    font-size: 12px;
+    color: #afafaf; }
+  .out .right p {
+    line-height: 50px; }
+    .out .right p span {
+      font-size: 14px;
+      color: #333;
+      float: left;
+      margin-right: 35px; }
+    .out .right p input {
+      float: left;
+      width: 18px;
+      height: 18px;
+      margin: 16px 5px 0; }
+    .out .right p .choose {
+      width: 160px;
+      padding-left: 20px;
+      height: 36px;
+      border: 1px solid #b6b6b6;
+      line-height: 36px;
+      font-size: 14px;
+      margin-top: 6px;
+      margin-right: 0;
+      cursor: pointer; }
+    .out .right p i {
+      font-size: 14px;
+      margin-left: -20px;
+      line-height: 50px; }
+  .out .right .option {
+    padding: 20px 30px;
+    width: 850px;
+    margin-left: 180px;
+    border: 1px solid #b6b6b6;
+    display: none;
+    margin-top: 10px; }
+    .out .right .option .item {
+      float: left;
+      height: 33px;
+      width: 280px; }
+    .out .right .option p input,
+    .out .right .option p span {
+      float: left;
+      font-size: 14px; }
+    .out .right .option p input {
+      margin: 10px 10px 0 0;
+      width: 15px;
+      height: 15px; }
+    .out .right .option p span {
+      line-height: 33px; }
+    .out .right .option input,
+    .out .right .option span {
+      float: left;
+      font-size: 14px; }
+    .out .right .option input {
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 15px;
+      height: 15px; }
+    .out .right .option span {
+      line-height: 33px; }
+  .out .money p {
+    height: 60px;
+    line-height: 60px; }
+    .out .money p span,
+    .out .money p input,
+    .out .money p strong,
+    .out .money p b {
+      float: left; }
+    .out .money p span {
+      font-size: 14px;
+      line-height: 60px;
+      margin-left: 10px;
+      text-align: right; }
+    .out .money p input {
+      width: 180px;
+      height: 36px;
+      margin: 10px 0 0;
+      padding: 0 5px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+    .out .money p strong {
+      margin: 0 10px; }
+  .out .M-name,
+  .out .express {
+    width: 200px !important;
+    height: 36px !important;
+    margin: 10px 0 0 !important;
+    padding: 0 5px !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -o-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important; }
+  .out .time p {
+    height: 60px;
+    line-height: 60px; }
+    .out .time p span,
+    .out .time p input,
+    .out .time p strong,
+    .out .time p b {
+      float: left; }
+    .out .time p span {
+      font-size: 14px;
+      line-height: 60px;
+      width: 70px;
+      text-align: right; }
+    .out .time p input {
+      width: 120px;
+      height: 36px;
+      margin: 10px 0 0;
+      padding: 0 5px;
+      border: 1px solid #b6b6b6;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+    .out .time p strong {
+      margin: 0 10px; }
+  .out .dc {
+    border: none;
+    outline: none;
+    text-align: center;
+    float: left;
+    background: #2b81f0;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 180px;
+    margin-top: 50px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    cursor: pointer; }
+  .out .tj {
+    border: none;
+    outline: none;
+    text-align: center;
+    background: #2b81f0;
+    color: #fff;
+    font-size: 16px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=m-order-out.css.map */

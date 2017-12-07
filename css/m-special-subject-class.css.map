@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACD,KAAK,EAAE,IAAI;;AAGX,QAAE;EACE,WAAW,EAAE,IAAI;;AAKjB,YAAC;EACG,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,OAAO;;AAI3B,EAAE;EACE,MAAM,EAAC,iBAAiB;EACxB,WAAW,EAAE,IAAI",
+"sources": ["m-special-subject-class.scss"],
+"names": [],
+"file": "m-special-subject-class.css"
+}

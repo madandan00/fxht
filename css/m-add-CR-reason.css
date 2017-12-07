@@ -1,40 +1,31 @@
 tr {
   background: #fff;
   border-bottom: 1px solid #e9e8e8;
-  line-height: 40px;
-}
+  line-height: 40px; }
 
 .li1 {
-  width: 50px;
-}
+  width: 50px; }
 
 .li2 {
-  width: 200px;
-}
+  width: 200px; }
 
 .li3 {
-  width: 710px;
-}
-.li3 .kk {
-  width: 250px;
-  background: #f7f7f7;
-  line-height: 40px;
-  border: 1px solid #9dc5f8;
-  padding: 0 5px;
-}
+  width: 710px; }
+  .li3 .kk {
+    width: 250px;
+    background: #f7f7f7;
+    line-height: 40px;
+    border: 1px solid #9dc5f8;
+    padding: 0 5px; }
 
 .li4 {
-  width: 220px;
-}
-.li4 span {
-  cursor: pointer;
-}
-.li4 .icon-xiugai {
-  color: #2b81f0;
-}
-.li4 .icon-duihaocheckmark17 {
-  color: green;
-}
+  width: 220px; }
+  .li4 span {
+    cursor: pointer; }
+  .li4 .icon-xiugai {
+    color: #2b81f0; }
+  .li4 .icon-duihaocheckmark17 {
+    color: green; }
 
 .condition {
   margin-top: 10px;
@@ -42,44 +33,41 @@ tr {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  background: #fff;
-}
-.condition div {
-  width: 640px;
-  height: 60px;
-  line-height: 60px;
-  margin: 0 auto;
-}
-.condition span {
-  font-size: 14px;
-  line-height: 60px;
-  width: 70px;
-  text-align: right;
-}
-.condition input {
-  width: 550px;
-  height: 36px;
-  margin-top: 10px;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.condition b {
-  float: right;
-  font-weight: normal;
-  width: 68px;
-  height: 36px;
-  background: #2b81f0;
-  line-height: 36px;
-  margin-top: 12px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 5px;
-}
+  background: #fff; }
+  .condition div {
+    width: 640px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto; }
+  .condition span {
+    font-size: 14px;
+    line-height: 60px;
+    width: 70px;
+    text-align: right; }
+  .condition input {
+    width: 550px;
+    height: 36px;
+    margin-top: 10px;
+    padding: 0 5px;
+    border: 1px solid #b6b6b6;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; }
+  .condition b {
+    float: right;
+    font-weight: normal;
+    width: 68px;
+    height: 36px;
+    background: #2b81f0;
+    line-height: 36px;
+    margin-top: 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px; }
+
+/*# sourceMappingURL=m-add-CR-reason.css.map */

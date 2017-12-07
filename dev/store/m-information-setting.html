@@ -29,16 +29,13 @@
 				<div class="nav">
 					<ul class="nav-box1">
 						<li class="active">会员</li>
-						<li>分销代理</li>
-						<li>订单</li>
-						<li>营销</li>
-						<li>佣金</li>
+						
 					</ul>
 				</div>
 				<div class="nav2">
 					<ul class="mbox1 mbox">
-						<li class="active">会员1</li>
-						<li>分销代理</li>
+						<li class="active" data-id="1">会员1</li>
+						<li data-id="2">分销代理</li>
 						<li>订单</li>
 						<li>营销</li>
 						<li>佣金</li>
@@ -154,7 +151,13 @@
 		})
 		$(".nav2 li").on("click", function() {
 			$(this).parents(".mbox").find("li").removeClass("active")
-			$(this).addClass("active")
+			$(this).addClass("active");
+			if($(this).attr("data-id")=="2"){
+				var html="<p class='jifen'><span style="+"margin-right: 50px;"+">插入积分</span></p>"
+				$(".insert").append(html);
+			}else{
+				$(".insert").find(".jifen").remove();
+			}
 		})
 		$(".insert span").on("click",function(){
 			var val=$("#intruduce").val()

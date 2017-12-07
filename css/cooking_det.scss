@@ -1,0 +1,149 @@
+@import url("public.css");
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+.cooking_det{
+    @include full(100%,auto,#ededee);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cooking{
+    @include full(100%,auto,none);
+}
+.h_r_nav{
+    margin-bottom: 10px;
+    @include full(100%,60px,#fff);
+    overflow:hidden ;
+    padding-top: 13px;
+    box-sizing: border-box;
+    h3{
+        display: inline-block;
+       @include full(7px,39px,#2b81f0); 
+       float: left;
+    }
+    ul{
+        margin-left: 24px;
+        float: left;
+        li{
+            float: left;
+            line-height:40px;
+            margin-right: 17px;
+           a{
+               font-size: 16px;
+               color: #333333;
+           }
+        }
+    }
+}
+.cooking_main{
+    @include full(100%,auto,#fff);
+     padding:30px;
+    box-sizing: border-box;
+}
+.rel_art{
+    @include full(100%,20px,none);
+    p{
+        position: relative;
+        i{
+            position:absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            @include full(6px,20px,#2b81f0);
+        }
+        span{
+            margin-left: 15px;
+            font-weight: bold;
+            color: #2B81F0;
+            font-size: 14px;
+        }
+    }
+}
+.cooking_art{
+    margin: 0 auto;
+    @include full(734px,auto,none);
+//  padding-left: 190px;
+//  text-align: center;
+    box-sizing: border-box;
+   .art{
+        @include full(734px,auto,none);
+        h3{
+        text-align: center;
+        line-height: 86px;
+        font-size: 24px;
+        color: #333333;
+    }
+    p{
+        font-size: 14px;
+        color: #bcbcbc;
+        text-indent: 2rem;
+        line-height: 26px;
+    }
+    span{
+        display: inline-block;
+        @include full(600px,400px,none);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        img{
+           display: inline-block;
+           @include full(100%,auto,none); 
+        }
+    }
+    #cailiao{
+        a{
+            display: block;
+            font-size: 14px;
+        color: #bcbcbc;
+        line-height: 26px;
+        }
+    }
+    .buzhou{
+        margin-top: 15px;
+        a{
+            font-size: 14px;
+            color: #bcbcbc;
+        }
+        ol{
+            li{
+                color: #bcbcbc;
+                padding-bottom: 10px;
+                font-size: 14px;
+            }
+            li:last-child{
+                padding-bottom: none;
+            }
+        }
+    }
+   }
+}
+.button{
+    margin-top: 48px;
+    text-align: center;
+    margin-bottom: 10px;
+    button{
+        @include full(120px,46px,none);
+        display: inline-block;
+        border-radius: 5px;
+        outline: none;
+    }
+    .fabu{
+        background: #1063e4;
+        text-align: center;
+        border: none;
+        a{
+            color: #FFFFFF;
+            line-height: 46px;
+        }
+    }
+    .quxiao{
+        border:1px solid #1063e4;
+        text-align: center;
+        margin-left: 80px;
+        a{
+            color: #1063e4;
+            line-height: 46px;
+        }
+    }
+}

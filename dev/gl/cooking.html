@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/cooking.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_18fv1gldh7611yvi.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/fenye1.css" />
+
+	</head>
+
+	<body>
+		<div class="cooking">
+			<div class="cook">
+				<!--导航-->
+				<div class="h_r_nav">
+					<h3></h3>
+					<ul>
+						<li>
+							<a href="#">青青阁楼</a>
+						</li>
+						<li><img src="../../img/images/back_03.jpg" /></li>
+						<li>
+							<a href="#">你问我答</a>
+						</li>
+						<li><img src="../../img/images/back_03.jpg" /></li>
+						<li>
+							<a href="#">厨艺交流</a>
+						</li>
+					</ul>
+				</div>
+				<!--主体-->
+				<div class="cook_main">
+					<!--标题名称-->
+					<div class="cook_tit">
+						<span>标题名称：<input type="text" /></span>
+						<span>作者名称：<input type="text" /></span>
+					</div>
+					<!--发布时间-->
+					<div class="cook_time">
+						<span>
+							发布时间：
+							<input type="text" name="add_start_time" id="" value="" onclick="laydate()" />
+						<i class="iconfont icon-rili"></i>
+						</span>
+						<span><button class="sear"><a href="javascript:;" class="iconfont icon-sousuo">搜索</a></button></span>
+					</div>
+				</div>
+				<!--信息列表-->
+				<div class="cook_infor_list">
+					<!--信息-->
+					<div class="list">
+						<p>信息列表<i>（共999条记录）</i></p>
+						<p class="p1">
+							<a href="javascript:;">删除</a>
+						</p>
+					</div>
+
+					<table border="0" cellspacing="1" cellpadding="1">
+						<tr class="cor">
+							<td class="t1">
+								<input type="checkbox" name="checks" id="checkAll" value=" " />
+							</td>
+							<td class="t2">
+								标题名称
+							</td>
+							<td class="t3">
+								作者名称
+							</td>
+							<td class="t4" style="padding-left: 8px;box-sizing: border-box;">
+								发布时间
+							</td>
+							<td class="t5" style="padding-left: 15px;box-sizing: border-box;">操作</td>
+						</tr>
+						<tbody id="itemContainer">
+							<tr>
+								<td class="t1">
+									<input type="checkbox" name="ck" />
+								</td>
+								<td class="t2">孩子最爱吃的鸡米花</td>
+								<td class="t3">美食达人</td>
+								<td class="t4"><span style="margin-right: 5px;">2017-10-13</span><span>14:56</span></td>
+								<td class="t5">
+									<a href="cooking_det.html"><i class="iconfont icon-dujiayuniconzhenggao-" style="margin-right: 15px;"></i></a>
+									<a href="javascript:;"><i class="iconfont icon-p-delet"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="t1">
+									<input type="checkbox" name="ck" />
+								</td>
+								<td class="t2">孩子最爱吃的鸡米花</td>
+								<td class="t3">美食达人</td>
+								<td class="t4"><span style="margin-right: 5px;">2017-10-13</span><span>14:56</span></td>
+								<td class="t5">
+									<a href="cooking_det.html"><i class="iconfont icon-dujiayuniconzhenggao-" style="margin-right: 15px;"></i></a>
+									<a href="javascript:;"><i class="iconfont icon-p-delet"></i></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!--分页-->
+					<div id="tap">
+						<div class="holder" style="display: inline-block;"></div>
+						<div class="zs" style="display: inline-block;">
+							<span id="page-panel"></span>
+							<span id="page-pane2"></span>
+							<span id="page-pane3"></span>
+							<span id="page-pane4"></span>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/jPages.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		page(10);
+
+		$("input[name='checks']").click(function() {
+			//判断当前点击的复选框处于什么状态$(this).is(":checked") 返回的是布尔类型
+			if($(this).is(":checked")) {
+				$("input[name='ck']").prop("checked", true);
+			} else {
+				$("input[name='ck']").prop("checked", false);
+			}
+		});
+	</script>
+
+</html>

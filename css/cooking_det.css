@@ -1,0 +1,141 @@
+@import url("public.css");
+.cooking_det {
+  width: 100%;
+  height: auto;
+  background: #ededee;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.cooking {
+  width: 100%;
+  height: auto;
+  background: none; }
+
+.h_r_nav {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 13px;
+  box-sizing: border-box; }
+  .h_r_nav h3 {
+    display: inline-block;
+    width: 7px;
+    height: 39px;
+    background: #2b81f0;
+    float: left; }
+  .h_r_nav ul {
+    margin-left: 24px;
+    float: left; }
+    .h_r_nav ul li {
+      float: left;
+      line-height: 40px;
+      margin-right: 17px; }
+      .h_r_nav ul li a {
+        font-size: 16px;
+        color: #333333; }
+
+.cooking_main {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box; }
+
+.rel_art {
+  width: 100%;
+  height: 20px;
+  background: none; }
+  .rel_art p {
+    position: relative; }
+    .rel_art p i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background: #2b81f0; }
+    .rel_art p span {
+      margin-left: 15px;
+      font-weight: bold;
+      color: #2B81F0;
+      font-size: 14px; }
+
+.cooking_art {
+  margin: 0 auto;
+  width: 734px;
+  height: auto;
+  background: none;
+  box-sizing: border-box; }
+  .cooking_art .art {
+    width: 734px;
+    height: auto;
+    background: none; }
+    .cooking_art .art h3 {
+      text-align: center;
+      line-height: 86px;
+      font-size: 24px;
+      color: #333333; }
+    .cooking_art .art p {
+      font-size: 14px;
+      color: #bcbcbc;
+      text-indent: 2rem;
+      line-height: 26px; }
+    .cooking_art .art span {
+      display: inline-block;
+      width: 600px;
+      height: 400px;
+      background: none;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .cooking_art .art span img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        background: none; }
+    .cooking_art .art #cailiao a {
+      display: block;
+      font-size: 14px;
+      color: #bcbcbc;
+      line-height: 26px; }
+    .cooking_art .art .buzhou {
+      margin-top: 15px; }
+      .cooking_art .art .buzhou a {
+        font-size: 14px;
+        color: #bcbcbc; }
+      .cooking_art .art .buzhou ol li {
+        color: #bcbcbc;
+        padding-bottom: 10px;
+        font-size: 14px; }
+      .cooking_art .art .buzhou ol li:last-child {
+        padding-bottom: none; }
+
+.button {
+  margin-top: 48px;
+  text-align: center;
+  margin-bottom: 10px; }
+  .button button {
+    width: 120px;
+    height: 46px;
+    background: none;
+    display: inline-block;
+    border-radius: 5px;
+    outline: none; }
+  .button .fabu {
+    background: #1063e4;
+    text-align: center;
+    border: none; }
+    .button .fabu a {
+      color: #FFFFFF;
+      line-height: 46px; }
+  .button .quxiao {
+    border: 1px solid #1063e4;
+    text-align: center;
+    margin-left: 80px; }
+    .button .quxiao a {
+      color: #1063e4;
+      line-height: 46px; }
+
+/*# sourceMappingURL=cooking_det.css.map */

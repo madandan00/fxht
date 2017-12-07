@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../css/no_specialist.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_bx7qvjxg7x1j1yvi.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/fenye.css"/>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jque.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jPages.js" type="text/javascript" charset="utf-8"></script>
+		<title>专家解答</title>
+	</head>
+	<body>
+		<div class="audit_cooking">
+			<!--头部-->
+			<div class="cru_nav_g">
+				<span class="tit_g"></span>
+				<ul>
+					<li>
+						<a href="#">青青阁楼</a>
+					</li>
+					<li>
+						<i class="iconfont icon-iconfontyoujiantou"></i>
+					</li>
+					<li>
+						<a href="#">未通过列表</a>
+					</li>
+				</ul>
+			</div>
+			<!--tab切换-->
+			<div class="tab_qie_fore">
+				<ul>
+					<li><a href="no_audit_cooking.html">厨艺交流</a></li>
+					<li><a href="no_time_cooking.html">青葱岁月</a></li>
+					<li class="tab_qie"><a href="no_specialist.html" style="color: #fff;">专家解答</a></li>
+					<li><a href="no_papi.html">网红专栏</a></li>
+				</ul>
+			</div>
+			<!--搜索-->
+			<div class="search">
+				<dl>
+					<dt>
+						<span>标题名称：</span>
+						<input />
+					</dt>
+					<dd>
+						<span>作者名称：</span>
+						<input />
+					</dd>
+					<p>
+						<span>关键词：</span>
+						<input />
+					</p>
+				</dl>
+				<dl>
+					<dt>
+						<span>录入人：</span>
+						<input />
+					</dt>
+					<dd style="margin-top: -5px;">
+						<label>
+						<span>发布时间：</span>
+						<input type="text" name="time" placeholder="请选择日期" id="startTime" value="" onClick="laydate({elem: '#startTime', istime: true, format: 'YYYY.MM.DD'})">
+						<i class="iconfont icon-rili" style="font-size: 23px"></i>
+						</label>
+					</dd>
+					<b>
+						<i class="iconfont icon-shousuo"></i>搜索
+					</b>
+				</dl>
+			</div>
+			<!--一键审核的内容-->
+			<div class="audit_content">
+				<table>
+					<caption>
+						<span>信息列表</span>
+						<span style="font-size: 12px;color: #5a5a5a;">（共999条记录）</span>
+						<strong class="pitch">一键审核</strong>
+					</caption>
+					<thead>
+						<tr class="tr_on">
+							<th class="li1">
+								<input type="checkbox" id="all" />
+								<span>标题名称</span>
+							</th>
+							<th class="li2">
+								<span>作者名称</span>
+							</th>
+							<th class="li3">
+								<span>发布时间</span>
+							</th>
+							<th class="li4">
+								<span>浏览量</span>
+							</th>
+							<th class="li5">
+								<span>关键词</span>
+							</th>
+							<th class="li6">
+								<span>录入人</span>
+							</th>
+							<th class="li7">
+								<span>操作</span>
+							</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody  id="itemContainer" class="list">
+						<tr>
+							<td class="li1">
+								<input type="checkbox" value="1" />
+								<span>232456</span>
+							</td>
+							<td class="li2">2afafa</td>
+							<td class="li3">sgdfsagfsefg</td>
+							<td class="li4">sgdfsagfsefg</td>
+							<td class="li5">sgdfsagfsefg</td>
+							<td class="li6">sgdfsagfsefg</td>
+							<td class="li7">
+								<a href="verdant_details.html">
+									<i class="iconfont icon-dujiayuniconzhenggao-"></i>
+								</a>
+								<a href="#">
+									<i class="iconfont icon-icon_delete" style="font-size: 18px;"></i>
+								</a>
+							</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="tap">
+					<div class="zs">
+						<span id="page-panel"></span>
+						<span id="page-pane2"></span>
+						<span id="page-pane3"></span>
+						<span id="page-pane4"></span>
+					</div>
+					<div class="holder"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//全选和反选
+		 $(function() {
+                //全选或全不选
+                $("#all").click(function() {
+                    if (this.checked) {
+                        $(".list :checkbox").attr("checked", true);
+                    } else {
+                        $(".list :checkbox").attr("checked", false);
+                    }
+                });
+                //全选  
+                $("#selectAll").click(function() {
+                    $(".list :checkbox,#all").attr("checked", true);
+                });
+                //全不选
+                $("#unSelect").click(function() {
+                    $(".list :checkbox,#all").attr("checked", false);
+                });
+                //反选 
+                $("#reverse").click(function() {
+                    $(".list :checkbox").each(function() {
+                        $(this).attr("checked", !$(this).attr("checked"));
+                    });
+                    allCheck();
+                });
+                //设置全选复选框
+                $(".list :checkbox").click(function() {
+                    allCheck();
+                });
+                //获取选中选项的值
+                $(".pitch").click(function() {
+                    var valArr = new Array;
+                    $(".list :checkbox[checked]").each(function(i) {
+                        valArr[i] = $(this).val();
+                    });
+                    var vals = valArr.join(',');
+                    alert(vals);
+                });
+            });
+            function allCheck() {
+                var num_all = $(".list :checkbox").size(); //选项总个数
+                var num_checked = $(".list :checkbox:checked").size(); //选中个数
+                if (num_all == num_checked) { //若选项总个数等于选中个数 
+                    $("#all").attr("checked", true); //全选选中
+                } else {
+                    $("#all").attr("checked", false);
+                }
+            }
+            page(10);
+	</script>
+</html>

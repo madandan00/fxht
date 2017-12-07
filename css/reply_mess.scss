@@ -1,0 +1,151 @@
+@import url("public.css");
+@import url("index.css");
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+body{
+    background: #eeeeee;
+}
+//头部
+.reply_mess{
+    @include full(100%,auto,#eeeeee);
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.reply_mess_tou{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    @include box(horizontal);
+    .tit_g{
+        width: 6px;
+        height: 35px;
+        background: #2b81f0;
+        display: inline-block;
+        margin-top: 13px;
+    }
+    ul{
+        overflow: hidden;
+        li{
+            height: 60px;
+            line-height: 60px;
+            float: left;
+            margin-left: 20px;
+            a{
+                font-size: 16px;
+                color: #333333;
+            }
+            i{
+                position: relative;
+                color: #333333;
+                font-size: 20px;
+                top: -2px;
+                text-align: center;
+            }
+        }
+    }
+}
+//
+.reply_mess_content{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 10px;
+    padding-bottom: 150px;
+}
+.reply_mess_con{
+    width: 100%;
+    height: 141px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 30px;
+    dl{
+        @include box(horizontal);
+        dt{
+            width: 84px;
+            height: auto;
+            .tx{
+                width: 57px;
+                height: 57px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        dd{
+            width: 100%;
+            ul{
+                span{
+                    font-size: 12px;
+                    color: #333333;
+                    font-weight: bold;
+                    display: inline-block;
+                    padding-top: 7px;
+                }
+                i{
+                    font-size: 12px;
+                    color: #999999;
+                    display: inline-block;
+                    padding-top: 7px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #666666;
+                    display: inline-block;
+                    padding-top: 16px;
+                }
+            }
+        }
+    }
+}
+.huifu-box{
+    width: 996px;
+    height: 214px;
+    background: #f4f4f4;
+    margin: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+    textarea{
+        width: 947px;
+        height: 100px;
+        display: inline-block;
+        margin-top: 30px;
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding-left: 13px;
+        padding-top: 11px;
+        color: #999999;
+    }
+    .a_lef{
+        width: 74px;
+        height: 36px;
+        background: #ff712b;
+        color: #fff;
+        line-height: 36px;
+        float: right;
+        border-radius: 5px;
+        margin-right: 25px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+}
+.user-huifu-box{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 130px;
+    margin-top: -10px;
+}

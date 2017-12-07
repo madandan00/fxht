@@ -1,0 +1,184 @@
+.li1 {
+  width: 300px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .li1 span {
+    margin-left: 40px; }
+
+.li2 {
+  width: 560px; }
+
+.li3 {
+  width: 150px;
+  text-align: left; }
+  .li3 i {
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 18px; }
+
+thead .li3 {
+  padding-left: 20px; }
+
+#list .order {
+  background: #fff;
+  height: 40px; }
+  #list .order td {
+    border-bottom: 1px solid #e9e8e8;
+    text-align: left; }
+
+thead tr {
+  border-bottom: 1px solid #e9e8e8; }
+
+thead th {
+  text-align: left; }
+
+.mark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  display: none; }
+
+#reply {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -210px;
+  margin-left: -340px;
+  padding: 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 680px;
+  height: 430px;
+  z-index: 10001;
+  background: #fff; }
+  #reply .close {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer; }
+  #reply .titl {
+    overflow: hidden; }
+    #reply .titl span {
+      float: left;
+      width: 5px;
+      height: 28px;
+      background: #2b81f0;
+      margin-right: 10px; }
+    #reply .titl i {
+      float: left;
+      color: #2b81f0;
+      font-size: 16px;
+      line-height: 28px; }
+  #reply .m-hui {
+    margin-top: 50px;
+    margin-left: 20px; }
+    #reply .m-hui span {
+      font-size: 14px;
+      color: #2b81f0; }
+    #reply .m-hui input {
+      width: 200px;
+      height: 36px;
+      border: 1px solid #b6b6b6;
+      padding-left: 10px; }
+  #reply .info {
+    margin-top: 50px;
+    height: 50px;
+    position: relative; }
+    #reply .info img {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: 10px; }
+    #reply .info .customer-name {
+      font-size: 14px; }
+    #reply .info .good-name {
+      position: absolute;
+      bottom: 0;
+      left: 60px; }
+  #reply .inputTxt2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden; }
+    #reply .inputTxt2 textarea {
+      padding: 5px;
+      float: left;
+      margin-left: 20px;
+      width: 560px;
+      height: 100px;
+      line-height: 20px;
+      color: #333;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border: 1px solid #e3e3e3; }
+  #reply .inputTxt {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    overflow: hidden; }
+    #reply .inputTxt textarea {
+      padding: 5px;
+      float: right;
+      width: 523px;
+      height: 48px;
+      line-height: 20px;
+      color: #333;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border: 1px solid #e3e3e3; }
+  #reply select {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 65px;
+    border: 1px solid #e3e3e3; }
+  #reply .opration {
+    width: 100%;
+    text-align: center;
+    overflow: hidden; }
+    #reply .opration span {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 20px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer; }
+    #reply .opration button {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer; }
+    #reply .opration .qd {
+      background: #2b81f0;
+      color: #fff;
+      margin-right: 90px; }
+    #reply .opration .qx {
+      border: 1px solid #2b81f0;
+      background: #fff;
+      color: #2b81f0; }

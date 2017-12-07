@@ -210,3 +210,14 @@ $(".Farr").on("change", function() {
 		$("#Fall").removeAttr("checked");
 	}
 })
+$(function(){
+	function GetQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r = window.location.search.substr(1).match(reg);
+			if(r != null) return unescape(r[2]);
+			return null;
+		}
+		var id = GetQueryString("id");
+		$(".nav li").removeClass("active");
+		$(".nav li").eq(id).addClass("active")
+})

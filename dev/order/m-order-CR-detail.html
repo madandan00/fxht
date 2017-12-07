@@ -10,10 +10,35 @@
 		<link rel="stylesheet" href="../../css/tip.css" />
 		<link rel="stylesheet" href="../../css/m-order-after-sale.css" />
 		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_xlnjqwri9pwlv7vi.css">
+
 	</head>
 
 	<body>
 		<div class="mark"></div>
+		<div id="big-pic">
+			<i class="iconfont icon-X close"></i>
+			<div class="experts-answer">
+				<div class="alt-left">
+					<img src="../../img/alt_left.png" />
+				</div>
+				<div class="alt-right">
+					<img src="../../img/alt_right.png" />
+				</div>
+				<div class="bigbox">
+					<div class="experts-answer-box">
+						<div class="m-swiper ">
+							111
+						</div>
+						<div class="m-swiper" style="background: red;">
+							2344
+						</div>
+						<div class="m-swiper" style="background: blue;">
+							2344
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="content">
 			<div class="tit">
 				<b></b>
@@ -90,7 +115,7 @@
 				<p class="good-guige">规格&nbsp;x<span>2</span></p>
 				<p class="good-price">￥50</p>
 				<div class="right">
-					<div class="pic">
+					<div id="m-lunbo" class="pic">
 						<img src="../../img/order/good_03.jpg" />
 					</div>
 					<p><span>退款原因&nbsp;:&nbsp;</span><i>2017.07.25  12：30：56</i></p>
@@ -128,6 +153,11 @@
 			<input type="hidden" val="" />
 			<div class="npass-tip">
 				<p>1米589小姐不同意太阳和风的退款申请 </p>
+				<p>
+					<select name="">
+						<option value="">1</option>
+					</select>
+				</p>
 				<textarea name="" rows="" cols="" placeholder="请输入拒绝理由......"></textarea>
 			</div>
 			<div class="opration">
@@ -140,5 +170,27 @@
 	</body>
 	<script type="text/javascript" src="../../js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="../../js/m-order-CR-detail.js"></script>
+	<script>
+		//轮播
+		var width = ($(".experts-answer-box .m-swiper").length - 1) * 445;
+		$(".alt-right").on("click", function() {
+			var l = parseInt($(".experts-answer-box").css("left"));
+			if(l <= -width) {
+				var left = 0;
+			} else {
+				var left = parseInt(l) - 445;
+			}
+			$(".experts-answer-box").css("left", left + "px");
+		})
+		$(".alt-left").on("click", function() {
+			var l = parseInt($(".experts-answer-box").css("left"));
+			if(l >= 0) {
+				var left = -width;
+			} else {
+				var left = parseInt(l) + 445;
+			}
+			$(".experts-answer-box").css("left", left + "px");
+		})
+	</script>
 
 </html>

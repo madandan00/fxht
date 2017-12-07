@@ -4,68 +4,65 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  background: #fff;
-}
-.search p {
-  height: 60px;
-  line-height: 60px;
-}
-.search a {
-  display: inline-block;
-  *display: line;
-  *zoom: 1;
-  background: #2b81f0;
-  color: #fff;
-  width: 130px;
-  height: 38px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
-.search span,
-.search input,
-.search strong,
-.search b,
-.search select {
-  float: left;
-}
-.search span {
-  font-size: 14px;
-  line-height: 60px;
-  width: 75px;
-  text-align: right;
-}
-.search input,
-.search select {
-  width: 200px;
-  height: 36px;
-  line-height: 36px;
-  margin-top: 10px;
-  padding: 0 5px;
-  border: 1px solid #b6b6b6;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.search strong {
-  margin: 0 10px;
-}
-.search b, .search button {
-  border: none;
-  outline: none;
-  font-weight: normal;
-  width: 95px;
-  height: 36px;
-  background: #2b81f0;
-  line-height: 36px;
-  margin-top: 12px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-}
+  background: #fff; }
+  .search p {
+    height: 60px;
+    line-height: 60px; }
+  .search a {
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    background: #2b81f0;
+    color: #fff;
+    width: 130px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
+  .search span,
+  .search input,
+  .search strong,
+  .search b,
+  .search select {
+    float: left; }
+  .search span {
+    font-size: 14px;
+    line-height: 60px;
+    text-align: right; }
+  .search input,
+  .search select {
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+    padding: 0 5px;
+    border: 1px solid #b6b6b6;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; }
+  .search strong {
+    margin: 0 10px; }
+  .search b, .search button {
+    border: none;
+    outline: none;
+    font-weight: normal;
+    width: 95px;
+    height: 36px;
+    background: #2b81f0;
+    line-height: 36px;
+    margin-top: 11px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; }
+    .search b i, .search button i {
+      line-height: 30px;
+      margin-right: 5px;
+      font-size: 16px; }
+
+/*# sourceMappingURL=search.css.map */

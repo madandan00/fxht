@@ -1,0 +1,179 @@
+@import url("public.css");
+@import url("index.css");
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+body{
+    background: #eeeeee;
+}
+//头部
+.message{
+    @include full(100%,auto,#eeeeee);
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cru_nav_g{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    @include box(horizontal);
+    .tit_g{
+        width: 6px;
+        height: 35px;
+        background: #2b81f0;
+        display: inline-block;
+        margin-top: 13px;
+    }
+    ul{
+        overflow: hidden;
+        li{
+            height: 60px;
+            line-height: 60px;
+            float: left;
+            margin-left: 20px;
+            a{
+                font-size: 16px;
+                color: #333333;
+            }
+            i{
+                position: relative;
+                color: #333333;
+                font-size: 20px;
+                top: -2px;
+                text-align: center;
+            }
+        }
+    }
+}
+//列表
+.audit_content{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    table{
+        width: 100%;
+        height: auto;
+        caption{
+            width:100%;
+            height: 60px;
+            text-align: left;
+            border-bottom: 1px solid #e9e8e8;
+            span{
+                padding-left: 30px;
+                line-height: 60px;
+                font-size: 16px;
+                color: #333333;
+            }
+            .pitch{
+                width: 66px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                background: #2b81f0;
+                display: inline-block;
+                float: right;
+                margin-right: 22px;
+                margin-top: 10px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .dele{
+                width: 66px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                background: #2b81f0;
+                display: inline-block;
+                float: right;
+                margin-right:100px;
+                margin-top: 10px;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+        tbody{
+            font-size: 14px;
+            color: #bcbcbc;
+            td{
+                height: 60px;
+                border-bottom: 1px solid #e9e8e8;
+            }
+            text-align: center;
+        }
+    }
+    dl{
+        overflow: hidden;
+        border-bottom: 1px solid #e9e8e8;
+        dt{
+            width: 820px;
+            float: left;
+        }
+        dd{
+            float: left;
+            ul{
+                float: left;
+                margin-top: 10px;
+                li{
+                    float: left;
+                    p{
+                        font-size: 14px;
+                        color: #484848;
+                    }
+                    i{
+                        font-size: 12px;
+                        color: #999999;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #999999;
+                    }
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .list{
+        width: 100%;
+        height: 60px;
+        li{
+            float: left;
+            line-height: 60PX;
+            input{
+                margin-left: 30px;
+            }
+            i{
+                font-size: 19px;
+                color: #2b81f0;
+                margin-top: -4px;
+                display: block;
+                padding-left: 28px;
+            }
+            span{
+                padding-left: 10px;
+            }
+            p{
+                padding-left: 5px;
+            }
+        }
+    }
+}
+.holder{
+    margin-top: 30px;
+}

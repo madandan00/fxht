@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_18fv1gldh7611yvi.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/you_zhuanjia.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/fenye1.css"/>
+		<script src="../../js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jPages.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="you_problem">
+			<div class="you_pro">
+				<!--导航-->
+				<div class="h_r_nav">
+					<h3></h3>
+					<ul>
+						<li>
+							<a href="#">青青阁楼</a>
+						</li>
+						<li><img src="../../img/images/back_03.jpg" /></li>
+						<li>
+							<a href="#">你问我答</a>
+						</li>
+						<li><img src="../../img/images/back_03.jpg" /></li>
+						<li>
+							<a href="#">专家解答</a>
+						</li>
+					</ul>
+				</div>
+				<!--主体-->
+				<div class="you_pro_main">
+					<!--发布问题-->
+					<div class="rel_btn">
+						<button class="relbtns"><a href="you_zhuanjia_det.html">发布问题</a></button>
+					</div>
+					<!--标题名称-->
+					<div class="you_pro_tit">
+						<span>标题名称：<input type="text"/></span>
+						<span>作者名称：<input type="text" /></span>
+                        <span>关键字：<input type="text" /></span>
+					</div>
+					<!--发布时间-->
+					<div class="you_pro_time">
+						<span style="margin-right: 67px;">录入人：<input type="text" style="margin-left: 15px;" /></span>
+						<span>
+							发布时间：
+							<input type="text" name="add_start_time" id="" value="" onclick="laydate()" />
+						<i class="iconfont icon-rili"></i>
+						</span>
+						<span><button class="sear"><a href="javascript:;" class="iconfont icon-sousuo">搜索</a></button></span>
+					</div>
+                    
+				</div>
+				
+				<!--信息列表-->
+                     <div class="infor_list">
+                     	<div class="list">
+                     		<p>信息列表<i>（共999条记录）</i></p>
+                     		<p class="p1"><a href="javascript:;">删除</a></p>
+                     	</div>
+                     	<table border="0" cellspacing="1" cellpadding="1" >
+                     		<tr class="cor">
+                     			
+                     			<td>
+                     					<input type="checkbox"  name="checks" value="" id="checkAll" />
+                     			</td>
+                     			<td>标题名称</td>
+                     			<td>作者名称</td>
+                     			<td>发布时间</td>
+                     			<td>浏览量</td>
+                     			<td>关键字</td>
+                     			<td>录入人</td>
+                     			<td style="padding-left: 15px;box-sizing: border-box;">操作</td>
+                     		</tr>
+                     		<tbody id="itemContainer">
+                     		<tr>
+                     			<td>
+                     				<input type="checkbox"  name="ck" id="" value="checked"/>
+                     			</td>
+                     			<td>
+                     				鸡蛋做不对营养都...
+                     			</td>
+                     			<td>张晓明</td>
+                     			<td>
+                     				2017-10-13
+                     			</td>
+                     			<td>
+                     				20356
+                     			</td>
+                     			<td>鸡蛋</td>
+                     			<td>
+                     				李晓明
+                     			</td>
+                     			<td>
+                     				<a href="you_zhuanjia_rel.html"><i class="iconfont icon-dujiayuniconzhenggao-" style="margin-right: 15px;"></i></a>
+                     				<a href="javascript:;"><i class="iconfont icon-p-delet"></i></a>
+                     			</td>
+                     		</tr>
+                     		<tr>
+                     			<td>
+                     				<input type="checkbox"  name="ck" id="" value="checked" class="ck"/>
+                     			</td>
+                     			<td>
+                     				超级无敌好吃的披萨
+                     			</td>
+                     			<td>柚子柠檬</td>
+                     			<td>
+                     				2017-10-13
+                     			</td>
+                     			<td>
+                     				20356
+                     			</td>
+                     			<td>鸡蛋</td>
+                     			<td>
+                     				李晓明
+                     			</td>
+                     			<td>
+                     				<i class="iconfont icon-dujiayuniconzhenggao-" style="margin-right: 15px;"></i>
+                     				<i class="iconfont icon-p-delet"></i>
+                     			</td>
+                     		</tr>
+                     		
+                     		</tbody>
+                     	
+                     	</table>
+                     	 <!--分页-->     
+	                     <div id="tap">
+	                     <div class="holder" style="display: inline-block;" ></div>	
+						 <div class="zs" style="display: inline-block;">
+							<span id="page-panel"></span>
+							<span id="page-pane2"></span>
+							<span id="page-pane3"></span>
+							<span id="page-pane4"></span>
+						</div>
+					
+				       </div>	
+                     </div>
+               
+
+                 
+			</div>
+		</div>
+	</body>
+   <script type="text/javascript">
+   	    page(10);
+   	 $("input[name='checks']").click(function(){
+		//判断当前点击的复选框处于什么状态$(this).is(":checked") 返回的是布尔类型
+		if($(this).is(":checked")){
+		$("input[name='ck']").prop("checked",true);
+		}else{
+		$("input[name='ck']").prop("checked",false);
+		}
+		});
+   	    
+   	    
+   	    
+   	 
+   </script>
+</html>

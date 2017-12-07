@@ -1,0 +1,192 @@
+@import url("public.css");
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+.hort_relse{
+    @include full(100%,auto,#ededee);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.hort_rel{
+    @include full(100%,auto,none);
+}
+.h_r_nav{
+    margin-bottom: 10px;
+    @include full(100%,60px,#fff);
+    overflow:hidden ;
+    padding-top: 13px;
+    box-sizing: border-box;
+    h3{
+        display: inline-block;
+       @include full(7px,39px,#2b81f0); 
+       float: left;
+    }
+    ul{
+        margin-left: 24px;
+        float: left;
+        li{
+            float: left;
+            line-height:40px;
+            margin-right: 17px;
+           a{
+               font-size: 16px;
+               color: #333333;
+           }
+        }
+    }
+}
+.hort_r_main{
+    @include full(100%,auto,#fff);
+    padding:30px;
+    box-sizing: border-box;
+}
+.rel_art{
+    @include full(100%,20px,none);
+    p{
+        position: relative;
+        i{
+            position:absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            @include full(6px,20px,#2b81f0);
+        }
+        span{
+            margin-left: 15px;
+            font-weight: bold;
+            color: #2B81F0;
+            font-size: 14px;
+        }
+    }
+}
+.h_r_tit{
+    
+    @include full(100%,auto,none);
+    margin-top: 30px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    span{
+        font-size: 14px;
+        color: #333;
+        margin-right: 57px;
+        input{
+            margin-left: 9px;
+            display: inline-block;
+            @include full(200px,36px,none);
+            border-radius: 3px;
+            border: 1px solid #b6b6b6;
+            outline: none;
+            padding-left: 20px;
+//          color: #959595;
+        }
+
+    }
+    
+}
+
+.h_r_time{
+    @include full(100%,auto,none);
+    margin-top: 30px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    span{
+        font-size: 14px;
+        color: #333;
+        margin-right: 57px;
+        input{
+            margin-left: 9px;
+            display: inline-block;
+            @include full(200px,36px,none);
+            border-radius: 3px;
+            border: 1px solid #b6b6b6;
+            outline: none;
+            padding-left: 20px;
+            color: #959595;
+        }
+
+    }
+    
+}
+.h_r_art{
+    @include full(100%,auto,none);
+    margin-top: 30px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    span{
+        font-size: 14px;
+        color: #333;
+        margin-right: 57px;
+        input{
+            margin-left: 9px;
+            display: inline-block;
+            @include full(780px,36px,none);
+            border-radius: 3px;
+            border: 1px solid #b6b6b6;
+            outline: none;
+            padding-left: 20px;
+        }
+
+    }
+    
+}
+.h_r_pic{
+    @include full(100%,auto,none);
+    margin-top:40px ;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    span{
+        font-size: 14px;
+        color: #5a5a5a;
+    }
+    .rel_pic{
+        margin-top: 20px;
+        @include full(100%,235px,none);
+//      .set{
+//          @include full(235px,235px,#f5f5f5);
+//      }
+    }
+}
+.h_r_edit{
+    padding-left: 15px;
+    box-sizing: border-box;
+    @include full(100%,auto,none);
+    span{
+        font-size: 14px;
+        color: #5a5a5a;
+    }
+    .edit{
+        margin-top: 20px;
+        @include full(20px,413px,none);
+    }
+}
+.button{
+    text-align: center;
+    margin-bottom: 10px;
+    button{
+        @include full(120px,46px,none);
+        display: inline-block;
+        border-radius: 5px;
+        outline: none;
+    }
+    .fabu{
+        background: #1063e4;
+        text-align: center;
+        border: none;
+        a{
+            color: #FFFFFF;
+            line-height: 46px;
+        }
+    }
+    .quxiao{
+        border:1px solid #1063e4;
+        text-align: center;
+        margin-left: 80px;
+        a{
+            color: #1063e4;
+            line-height: 46px;
+        }
+    }
+}

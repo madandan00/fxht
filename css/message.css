@@ -1,0 +1,149 @@
+@import url("public.css");
+@import url("index.css");
+body {
+  background: #eeeeee; }
+
+.message {
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.cru_nav_g {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .cru_nav_g .tit_g {
+    width: 6px;
+    height: 35px;
+    background: #2b81f0;
+    display: inline-block;
+    margin-top: 13px; }
+  .cru_nav_g ul {
+    overflow: hidden; }
+    .cru_nav_g ul li {
+      height: 60px;
+      line-height: 60px;
+      float: left;
+      margin-left: 20px; }
+      .cru_nav_g ul li a {
+        font-size: 16px;
+        color: #333333; }
+      .cru_nav_g ul li i {
+        position: relative;
+        color: #333333;
+        font-size: 20px;
+        top: -2px;
+        text-align: center; }
+
+.audit_content {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-sizing: border-box;
+  margin-top: 10px; }
+  .audit_content table {
+    width: 100%;
+    height: auto; }
+    .audit_content table caption {
+      width: 100%;
+      height: 60px;
+      text-align: left;
+      border-bottom: 1px solid #e9e8e8; }
+      .audit_content table caption span {
+        padding-left: 30px;
+        line-height: 60px;
+        font-size: 16px;
+        color: #333333; }
+      .audit_content table caption .pitch {
+        width: 66px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background: #2b81f0;
+        display: inline-block;
+        float: right;
+        margin-right: 22px;
+        margin-top: 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer; }
+      .audit_content table caption .dele {
+        width: 66px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background: #2b81f0;
+        display: inline-block;
+        float: right;
+        margin-right: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer; }
+    .audit_content table tbody {
+      font-size: 14px;
+      color: #bcbcbc;
+      text-align: center; }
+      .audit_content table tbody td {
+        height: 60px;
+        border-bottom: 1px solid #e9e8e8; }
+  .audit_content dl {
+    overflow: hidden;
+    border-bottom: 1px solid #e9e8e8; }
+    .audit_content dl dt {
+      width: 820px;
+      float: left; }
+    .audit_content dl dd {
+      float: left; }
+      .audit_content dl dd ul {
+        float: left;
+        margin-top: 10px; }
+        .audit_content dl dd ul li {
+          float: left; }
+          .audit_content dl dd ul li p {
+            font-size: 14px;
+            color: #484848; }
+          .audit_content dl dd ul li i {
+            font-size: 12px;
+            color: #999999; }
+          .audit_content dl dd ul li span {
+            font-size: 12px;
+            color: #999999; }
+          .audit_content dl dd ul li img {
+            width: 40px;
+            height: 40px; }
+  .audit_content .list {
+    width: 100%;
+    height: 60px; }
+    .audit_content .list li {
+      float: left;
+      line-height: 60PX; }
+      .audit_content .list li input {
+        margin-left: 30px; }
+      .audit_content .list li i {
+        font-size: 19px;
+        color: #2b81f0;
+        margin-top: -4px;
+        display: block;
+        padding-left: 28px; }
+      .audit_content .list li span {
+        padding-left: 10px; }
+      .audit_content .list li p {
+        padding-left: 5px; }
+
+.holder {
+  margin-top: 30px; }
+
+.posi {
+  position: absolute;
+  color: red;
+  margin-left: -7px;
+  margin-top: -10px; }

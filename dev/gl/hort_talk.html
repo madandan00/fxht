@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_18fv1gldh7611yvi.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/hort_talk.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/fenye1.css"/>
+		<script src="../../js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/laydate/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jPages.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="you_problem">
+			<div class="you_pro">
+				<!--导航-->
+				<div class="h_r_nav">
+					<h3></h3>
+					<ul>
+						<li>
+							<a href="#">青青阁楼</a>
+						</li>
+						<li><img src="../../img/images/back_03.jpg" /></li>
+						<li>
+							<a href="#">你问我答</a>
+						</li>
+						<li><img src="../../img/images/back_03.jpg" /></li>
+						<li>
+							<a href="#">常见问题</a>
+						</li>
+					</ul>
+				</div>
+				<!--主体-->
+				<div class="you_pro_main">
+					<!--发布问题-->
+					<div class="rel_btn">
+						<button class="relbtns"><a href="hot_rel.html">发布问题</a></button>
+					</div>
+					<!--标题名称-->
+					<div class="you_pro_tit">
+						<span style="margin-right: 87px;">标题名称：<input type="text" style="margin-left: 3px;" /></span>
+						<span style="margin-right: 54px;">来源：<input type="text" /></span>
+                        <span>关键字：<input type="text" /></span>
+					</div>
+					<!--发布时间-->
+					<div class="you_pro_time">
+						<span>录入人：<input type="text" style="margin-left: 15px;" /></span>
+						<span>
+							发布时间：
+							<input type="text" name="add_start_time" id="" value="" onclick="laydate()" />
+						<i class="iconfont icon-rili"></i>
+						</span>
+						<span><button class="sear"><a href="javascript:;" class="iconfont icon-sousuo">搜索</a></button></span>
+					</div>
+                    
+				</div>
+				
+				<!--信息列表-->
+                     <div class="infor_list">
+                     	<div class="list">
+                     		<p>信息列表<i>（共999条记录）</i></p>
+                     		<p class="p1"><a href="javascript:;">删除</a></p>
+                     	</div>
+                     	<table border="0" cellspacing="1" cellpadding="1" >
+                     		<tr class="cor">
+                     			
+                     			<td>
+                     					<input type="checkbox"  name="checks" value="" id="checkAll" onclick="CheckedAll()" />
+                     			</td>
+                     			<td>标题名称</td>
+                     			<td>来源</td>
+                     			<td>关键字</td>
+                     			<td>发布时间</td>
+                     			<td>浏览量</td>
+                     			<td>录入人</td>
+                     			<td style="padding-left: 15px;box-sizing: border-box;">操作</td>
+                     		</tr>
+                     		<tbody id="itemContainer">
+                     		<tr>
+                     			<td>
+                     				<input type="checkbox"  name="ck" id="" value="checked" class="ck"/>
+                     			</td>
+                     			<td>
+                     				冷冻鱼怎么保鲜？
+                     			</td>
+                     			<td>青青优农</td>
+                     			<td>
+                     				保鲜
+                     			</td>
+                     			<td>
+                     				2017-09-18
+                     			</td>
+                     			<td>17777</td>
+                     			<td>
+                     				李晓明
+                     			</td>
+                     			<td>
+                     				<a href="hort_det.html"><i class="iconfont icon-dujiayuniconzhenggao-" style="margin-right: 15px;"></i></a>
+                     				<a href="javascript:;"><i class="iconfont icon-p-delet"></i></a>
+                     			</td>
+                     		</tr>
+                     		
+                     		</tbody>
+                     	
+                     	</table>
+                     	 <!--分页-->     
+	                     <div id="tap">
+	                     <div class="holder" style="display: inline-block;" ></div>	
+						 <div class="zs" style="display: inline-block;">
+							<span id="page-panel"></span>
+							<span id="page-pane2"></span>
+							<span id="page-pane3"></span>
+							<span id="page-pane4"></span>
+						</div>
+					
+				       </div>	
+                     </div>
+               
+
+                 
+			</div>
+		</div>
+	</body>
+   <script type="text/javascript">
+   	    page(10);
+   	  $("input[name='checks']").click(function(){
+		//判断当前点击的复选框处于什么状态$(this).is(":checked") 返回的是布尔类型
+		if($(this).is(":checked")){
+		$("input[name='ck']").prop("checked",true);
+		}else{
+		$("input[name='ck']").prop("checked",false);
+		}
+		});
+   	    
+   	    
+   	    
+   	  		
+//	$("#checkAll").click( 
+//	  function(){ 
+//	    if(this.checked){ 
+//	        $("input[name='ck']").attr('checked', true)
+//	    }else{ 
+//	        $("input[name='ck']").attr('checked', false)
+//	    } 
+//	  } 
+//	);
+	   	 
+   	 $(".logo").delegate(".picture", "change", function() {
+			if($(".logo .picture1").length < 0) {
+				var path = $(this).val();
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+
+					var pic = '<a href="javascript:;" class="pic iconfont icon-jiahao"><img /><input type="file" class="picture" name="name[]"/></a>'
+					$(this).siblings("ps").remove();
+//					$(this).parent("a").siblings("h1").addClass(" icon-iconfontshequyijujue");
+					$(this).removeClass("picture").addClass("picture1");
+					//			$(".logo .picNum").html($(".logo .picture1").length);
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				}
+			} else {
+				var path = $(this).val();
+				var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+				if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+					$(this).siblings(".ps").remove();
+					$(this).parent("a").siblings("h1").addClass(" icon-iconfontshequyijujue");
+					$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+					$(this).removeClass("picture").addClass("picture1");
+					//			$(".logo .picNum").html($(".logo .picture1").length);
+				} else {
+					alert("请上传正确的图片格式");
+					return false;
+				} 
+				
+
+			}
+			$(".cancel").hide();
+			$("#cont").on("mouseover",function(){
+				$(".cancel").show();
+			})
+			$("#cont").on("mouseleave",function(){
+				$(".cancel").hide();
+			})
+			
+			$(".icon-iconfontshequyijujue").on("click",function(){
+				$(".pic").empty();
+				$('.pic').prepend("<p class='ps' style='font-size: 30px;line-height: 67px;display: inline-block;text-align: center;margin-top: 55px;'><i class=' jia iconfont icon-jiahao' style='width: 80px;height: 80px;display: inline-block;border: 1px dashed #d2d2d2;'></i><i style='display: block;font-size: 12px;color: #adadad;'>（主图最佳尺寸750*750）</i></p><img /><input type='file' class='picture' name='name[]' />")	;
+				$(this).removeClass("icon-iconfontshequyijujue");
+			})
+
+		})
+		$(".logo").delegate(".picture1", "change", function() {
+			var path = $(this).val();
+			//alert(path)
+			var type = path.substring(path.lastIndexOf(".") + 1, path.length).toLowerCase();
+			if(type == "jpg" || type == "bmp" || type == "gif" || type == "png") {
+				$(this).parents('a').find("img").attr("src", window.URL.createObjectURL($(this)[0].files[0]));
+			} else {
+				alert("请上传正确的图片格式");
+				return false;
+			}
+		})
+   	 
+   </script>
+</html>

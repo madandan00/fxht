@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单管理</title>
+		<link rel="stylesheet" type="text/css" href="public.css">
+		<link rel="stylesheet" type="text/css" href="easyui.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_373248_sh1acaipqs13jtt9.css">
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+
+	</head>
+
+	<body class="easyui-layout">
+		<!--顶部-->
+		<div region="north" border="true" class="cs-north">
+
+			<ul>
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="store.html">店铺管理</a>
+				</li>
+				<li>
+					<a href="">商品管理</a>
+				</li>
+				<li class="active">
+					<a href="order.html">青青阁楼</a>
+				</li>
+				<li >
+					<a href="order.html">订单管理</a>
+				</li>
+				<li>
+					<a href="">会员分销</a>
+				</li>
+				<li>
+					<a href="">财务中心</a>
+				</li>
+				<li>
+					<a href="">营销中心</a>
+				</li>
+				<li>
+					<a href="">设置</a>
+				</li>
+				<li><span><i class="iconfont icon-tuichu" ></i><b>退出</b></span></li>
+			</ul>
+		</div>
+		<!--左边导航-->
+		<div region="west" border="false" split="false" title="&nbsp;" class="cs-west">
+			<div class="info">
+				<div class="tou-img">
+					<img src="img/logo.png" />
+				</div>
+				<p class="name">小喵喵仙儿</p>
+				<p class="position">管理员</p>
+			</div>
+			<div class="easyui-accordion" fit="false" border="false">
+				<div title='<i class="iconfont icon-meishi"></i>我教你做' selected="true">
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/m_teach.html" class="cs-navi-tab">菜谱列表</a>
+					</p>
+					
+				</div>
+
+				<div title='<i class="iconfont icon-wenda"></i>你问我答'>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/hort_talk.html" class="cs-navi-tab">热门话题</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/cooking.html" class="cs-navi-tab">厨艺交流</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/you_zhuanjia.html" class="cs-navi-tab">专家解答</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/you_problem.html" class="cs-navi-tab">常见问题</a>
+					</p>
+					
+				</div>
+				<div title='<i class="iconfont icon-xunzhang"></i>我讲你听'>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/m_talk_j.html" class="cs-navi-tab">健康讲堂</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/m_talk_y.html" class="cs-navi-tab">养生之道</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/m_talk_w.html" class="cs-navi-tab">网红专栏</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/m_talk_q.html" class="cs-navi-tab">青葱岁月</a>
+					</p>
+				</div>
+				<div title='<i class="iconfont icon-shenhe1"></i>审核'>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/audit_cooking.html" class="cs-navi-tab">审核列表</a>
+					</p>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/no_audit_cooking.html" class="cs-navi-tab">未通过列表</a>
+					</p>
+					
+				</div>
+				<div title='<i class="iconfont icon-shezhi"></i>设置'>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/set.html" class="cs-navi-tab">条件设置</a>
+					</p>
+					
+				</div>
+				<div title='<i class="iconfont icon-xiaoxi"></i>消息'>
+					<p>
+						<a href="javascript:void(0);" src="dev/gl/message.html" class="cs-navi-tab">消息列表</a>
+					</p>
+					
+				</div>
+			</div>
+
+		</div>
+		<!--右侧展示内容-->
+		<div id="mainPanle" region="center" border="true" border="false">
+			<div id="tabs" class="easyui-tabs" fit="true" border="false">
+				<!--<div title="Home">
+					<div class="cs-home-remark">
+						
+
+					</div>
+				</div>-->
+			</div>
+		</div>
+
+		<!--<div region="south" border="false" class="cs-south">11111111111</div>-->
+
+		<div id="mm" class="easyui-menu cs-tab-menu">
+			<div id="mm-tabupdate">刷新</div>
+			<div class="menu-sep"></div>
+			<div id="mm-tabclose">关闭</div>
+			<div id="mm-tabcloseother">关闭其他</div>
+			<div id="mm-tabcloseall">关闭全部</div>
+		</div>
+	</body>
+	<script src="slide.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		setTimeout(function() {
+			$(".cs-navi-tab").eq(0).click()
+		}, 10)
+	</script>
+
+</html>

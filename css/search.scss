@@ -33,7 +33,7 @@
     span {
         font-size: 14px;
         line-height: 60px;
-        width: 75px;
+        //width: 75px;
         text-align: right;
     }
     input,
@@ -59,7 +59,7 @@
         height: 36px;
         background: #2b81f0;
         line-height: 36px;
-        margin-top: 12px;
+        margin-top: 11px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -67,5 +67,10 @@
         color: #fff;
         font-size: 16px;
         cursor: pointer;
+        i{
+            line-height: 30px;
+            margin-right: 5px;
+            font-size: 16px;
+        }
     }
 }

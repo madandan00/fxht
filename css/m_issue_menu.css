@@ -1,0 +1,540 @@
+.info {
+  margin-top: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #fff; }
+  .info p {
+    height: 60px;
+    line-height: 60px; }
+  .info a {
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    background: #2b81f0;
+    color: #fff;
+    width: 130px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
+  .info span,
+  .info input,
+  .info strong,
+  .info b,
+  .info select {
+    float: left; }
+  .info span {
+    font-size: 14px;
+    line-height: 60px;
+    text-align: right; }
+  .info input,
+  .info select {
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+    padding: 0 5px;
+    border: 1px solid #b6b6b6;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; }
+  .info .rad {
+    width: 18px;
+    height: 18px;
+    margin: 20px 10px; }
+  .info strong {
+    margin: 0 10px; }
+  .info b,
+  .info button {
+    border: none;
+    outline: none;
+    font-weight: normal;
+    width: 95px;
+    height: 36px;
+    background: #2b81f0;
+    line-height: 36px;
+    margin-top: 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; }
+    .info b i,
+    .info button i {
+      margin-right: 5px;
+      font-size: 16px; }
+  .info .article-tit {
+    font-size: 20px;
+    color: #333;
+    text-align: center; }
+  .info .article-descript {
+    font-size: 14px;
+    color: #666;
+    line-height: 26px; }
+  .info .main-pic {
+    margin-top: 25px;
+    text-align: center; }
+    .info .main-pic img {
+      width: 650px;
+      height: 440px; }
+
+.out {
+  background: #fff;
+  margin-top: 10px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative; }
+
+.first-pic {
+  padding: 15px; }
+  .first-pic .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+  .first-pic .big-pic-box {
+    width: 270px;
+    padding-top: 25px;
+    position: relative; }
+    .first-pic .big-pic-box .cancel {
+      position: absolute;
+      font-size: 18px;
+      color: #bbb;
+      display: none;
+      cursor: pointer;
+      right: 0;
+      top: 0; }
+    .first-pic .big-pic-box:hover .cancel {
+      display: block; }
+  .first-pic .pic {
+    width: 240px;
+    height: 240px;
+    background: #f5f5f5;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
+    .first-pic .pic .pic-mark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: none;
+      z-index: 2; }
+    .first-pic .pic p {
+      font-size: 12px;
+      color: #909090;
+      margin-top: 20px; }
+    .first-pic .pic img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: none;
+      z-index: 3; }
+    .first-pic .pic input {
+      position: absolute;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 240px !important;
+      height: 240px !important;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      cursor: pointer;
+      z-index: 10000; }
+  .first-pic .pic-box {
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    line-height: 80px;
+    background: #f5f5f5;
+    text-align: center;
+    color: #d2d2d2;
+    border: 2px dashed #d2d2d2;
+    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
+
+.menu-descript {
+  padding: 15px; }
+  .menu-descript .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+  .menu-descript div {
+    position: relative;
+    width: 680px;
+    height: 180px; }
+    .menu-descript div .tishi {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 14px;
+      color: #959595;
+      z-index: 2; }
+  .menu-descript textarea {
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    left: 0;
+    top: 0;
+    width: 640px;
+    height: 140px;
+    padding: 20px;
+    z-index: 3; }
+
+.main-ingredient {
+  padding: 15px; }
+  .main-ingredient .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+  .main-ingredient .add-in {
+    font-size: 14px;
+    color: #1063e4;
+    line-height: 46px;
+    margin-left: 20px;
+    cursor: pointer; }
+  .main-ingredient .ingredient thead th {
+    width: 310px;
+    height: 46px;
+    text-align: left;
+    padding-left: 20px;
+    color: #bbb;
+    border: 1px solid #eee; }
+  .main-ingredient .ingredient thead .op {
+    width: 50px;
+    border: none; }
+  .main-ingredient .ingredient tbody tr:hover .op {
+    display: block; }
+  .main-ingredient .ingredient tbody td {
+    width: 310px;
+    padding-left: 20px;
+    height: 46px;
+    color: #333;
+    border: 1px solid #eee; }
+    .main-ingredient .ingredient tbody td input {
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .main-ingredient .ingredient tbody .op {
+    width: 50px;
+    text-align: left;
+    border: none;
+    display: none;
+    overflow: hidden; }
+    .main-ingredient .ingredient tbody .op i {
+      color: #bbb;
+      font-size: 18px;
+      line-height: 46px;
+      cursor: pointer; }
+
+.m-menu-step {
+  padding: 15px; }
+  .m-menu-step .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+  .m-menu-step .add-in {
+    font-size: 14px;
+    color: #1063e4;
+    line-height: 46px;
+    margin-left: 20px;
+    cursor: pointer; }
+  .m-menu-step .m-step {
+    width: 910px;
+    position: relative; }
+    .m-menu-step .m-step .step-box .step-pic {
+      width: 645px;
+      height: 365px; }
+      .m-menu-step .m-step .step-box .step-pic img {
+        width: 100%;
+        height: 100%; }
+    .m-menu-step .m-step .step-box .step-descript {
+      width: 750px;
+      font-size: 14px;
+      color: #666;
+      line-height: 26px;
+      margin: 20px 0px; }
+    .m-menu-step .m-step .cancel {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 16px;
+      color: #bbb;
+      display: none;
+      cursor: pointer; }
+    .m-menu-step .m-step:hover .cancel {
+      display: block; }
+    .m-menu-step .m-step .step-tit {
+      font-size: 14px;
+      color: #333;
+      line-height: 40px; }
+    .m-menu-step .m-step .step-left {
+      float: left;
+      width: 315px; }
+      .m-menu-step .m-step .step-left .pic {
+        width: 315px;
+        height: 215px;
+        background: #f5f5f5;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1; }
+        .m-menu-step .m-step .step-left .pic .pic-mark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          display: none;
+          z-index: 2; }
+        .m-menu-step .m-step .step-left .pic p {
+          font-size: 14px;
+          color: #bbb;
+          line-height: 215px; }
+          .m-menu-step .m-step .step-left .pic p i {
+            margin-right: 10px;
+            font-size: 14px; }
+        .m-menu-step .m-step .step-left .pic img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+          display: none;
+          z-index: 3; }
+        .m-menu-step .m-step .step-left .pic input {
+          position: absolute;
+          padding: 0 !important;
+          margin: 0 !important;
+          width: 315px !important;
+          height: 215px !important;
+          right: 0;
+          top: 0;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          cursor: pointer;
+          z-index: 10000; }
+    .m-menu-step .m-step .step-right {
+      float: left;
+      margin-left: 25px;
+      position: relative;
+      width: 520px;
+      height: 215px;
+      border: 1px solid #dfdfdf; }
+      .m-menu-step .m-step .step-right textarea {
+        padding: 20px;
+        width: 480px;
+        height: 175px;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background: rgba(255, 255, 255, 0); }
+      .m-menu-step .m-step .step-right p {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 14px;
+        color: #bbb;
+        z-index: 2; }
+        .m-menu-step .m-step .step-right p i {
+          margin-right: 10px;
+          font-size: 14px; }
+
+.last-pic {
+  padding: 15px; }
+  .last-pic .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+  .last-pic .big-pic-box {
+    width: 345px;
+    padding-top: 25px;
+    position: relative; }
+    .last-pic .big-pic-box .cancel {
+      position: absolute;
+      font-size: 18px;
+      color: #bbb;
+      display: none;
+      cursor: pointer;
+      right: 0;
+      top: 0; }
+    .last-pic .big-pic-box:hover .cancel {
+      display: block; }
+  .last-pic .pic {
+    width: 315px;
+    height: 215px;
+    background: #f5f5f5;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
+    .last-pic .pic .pic-mark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: none;
+      z-index: 2; }
+    .last-pic .pic p {
+      font-size: 14px;
+      color: #bbb;
+      line-height: 215px; }
+      .last-pic .pic p i {
+        margin-right: 10px;
+        font-size: 14px; }
+    .last-pic .pic img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: none;
+      z-index: 3; }
+    .last-pic .pic input {
+      position: absolute;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 315px !important;
+      height: 215px !important;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      cursor: pointer;
+      z-index: 10000;
+      border: none; }
+
+.m-op {
+  text-align: center;
+  margin-top: 100px; }
+  .m-op button {
+    width: 120px;
+    height: 46px;
+    color: #fff;
+    background: #1063e4;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; }
+  .m-op span {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 120px;
+    height: 44px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    color: #1063e4;
+    border: 1px solid #1063e4;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer; }
+
+.m-article {
+  padding: 15px; }
+  .m-article .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+
+.finish-pic .m-menu-tit {
+  font-size: 14px;
+  color: #333;
+  line-height: 50px;
+  margin-top: 10px; }
+.finish-pic img {
+  width: 645px;
+  height: 365px; }
+
+.recommend-ingredient {
+  padding: 15px; }
+  .recommend-ingredient .m-menu-tit {
+    font-size: 14px;
+    color: #333;
+    line-height: 50px;
+    margin-top: 10px; }
+  .recommend-ingredient .add-in {
+    font-size: 14px;
+    color: #1063e4;
+    line-height: 46px;
+    margin-left: 20px;
+    cursor: pointer; }
+  .recommend-ingredient .ingredient thead th {
+    width: 310px;
+    height: 46px;
+    text-align: left;
+    color: #bbb;
+    border: 1px solid #eee;
+    border-bottom: none;
+    padding-left: 20px; }
+  .recommend-ingredient .ingredient thead .op {
+    width: 50px;
+    border: none; }
+  .recommend-ingredient .ingredient tbody tr:hover .op {
+    display: block; }
+  .recommend-ingredient .ingredient tbody td {
+    width: 200px;
+    height: 46px;
+    color: #333; }
+    .recommend-ingredient .ingredient tbody td select {
+      width: 180px;
+      height: 37px;
+      border: 1px solid #eee;
+      padding-left: 20px;
+      margin-top: 10px; }
+  .recommend-ingredient .ingredient tbody .op {
+    width: 50px;
+    line-height: 46px;
+    text-align: left;
+    border: none;
+    display: none; }
+    .recommend-ingredient .ingredient tbody .op i {
+      color: #bbb;
+      line-height: 46px;
+      font-size: 18px;
+      cursor: pointer; }

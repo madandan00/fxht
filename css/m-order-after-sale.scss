@@ -115,17 +115,21 @@
             display: inline-block;
             *display: inline;
             *zoom: 1;
-            width: 80px;
+            min-width: 100px;
+            _width: 100px;
+            white-space: nowrap;
             margin-right: 20px;
             input {
-                width: 80px;
+                width: 100px;
             }
         }
         .phone {
             display: inline-block;
             *display: inline;
             *zoom: 1;
-            width: 130px;
+            min-width: 130px;
+            _width: 130px;
+            white-space: nowrap;
             margin-right: 20px;
             input {
                 width: 130px;
@@ -135,7 +139,9 @@
             display: inline-block;
             *display: inline;
             *zoom: 1;
-            width: 280px;
+            min-width: 280px;
+            _width: 280px;
+            white-space: nowrap;
             margin-right: 20px;
             input {
                 width: 280px;
@@ -333,7 +339,6 @@
     }
     .inputTxt {
         margin-top: 10px;
-
         margin-bottom: 40px;
         overflow: hidden;
         textarea {
@@ -349,7 +354,7 @@
             border: 1px solid #e3e3e3;
         }
     }
-    select{
+    select {
         width: 150px;
         height: 36px;
         margin-top: 20px;
@@ -389,7 +394,7 @@
             color: #fff;
             margin-right: 90px;
         }
-        .cancel{
+        .cancel {
             border: 1px solid #2b81f0;
             background: #fff;
             color: #2b81f0;
@@ -431,5 +436,79 @@
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         cursor: pointer;
+    }
+}
+
+#big-pic,#big-pic2{
+    background: #fff;
+    width: 600px;
+    height: 500px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 20000;
+    margin-left: -350px;
+    margin-top: -250px;
+    display: none;
+    .close,.mclose {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        color: #000;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .experts-answer {
+        width: 445px;
+        height: 445px;
+        margin-top: 27.5px;
+        margin-left: 77.5px;
+        position: relative;
+        .alt-left {
+            width: 22px;
+            height: 40px;
+            position: absolute;
+            top: 202.5px;
+            left: -50px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .alt-right {
+            width: 22px;
+            height: 40px;
+            position: absolute;
+            top: 202.5px;
+            right: -50px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .bigbox {
+            width: 445pxpx;
+            height: 445px;
+            overflow: hidden;
+            position: relative;
+        }
+        .experts-answer-box {
+            width: auto;
+            height: 445px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .m-swiper {
+                width: 445px;
+                height: 445px;
+                float: left;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }

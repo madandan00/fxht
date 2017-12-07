@@ -1,0 +1,230 @@
+@import url("public.css");
+@import url("index.css");
+body {
+  background: #eeeeee; }
+
+.verdant_details {
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px; }
+
+.cru_nav_g {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .cru_nav_g .tit_g {
+    width: 6px;
+    height: 35px;
+    background: #2b81f0;
+    display: inline-block;
+    margin-top: 13px; }
+  .cru_nav_g ul {
+    overflow: hidden; }
+    .cru_nav_g ul li {
+      height: 60px;
+      line-height: 60px;
+      float: left;
+      margin-left: 20px; }
+      .cru_nav_g ul li a {
+        font-size: 16px;
+        color: #333333; }
+      .cru_nav_g ul li i {
+        position: relative;
+        color: #333333;
+        font-size: 20px;
+        top: -2px;
+        text-align: center; }
+
+.verdant_details_main {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-top: 10px; }
+
+.verdant_top {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding-left: 27px; }
+  .verdant_top p {
+    line-height: 80px; }
+    .verdant_top p span {
+      border-left: 6px solid #2b81f0;
+      padding-left: 9px;
+      color: #2b81f0;
+      font-size: 14px;
+      font-weight: bolder; }
+
+.verdant_main {
+  width: 800px;
+  height: auto;
+  padding-bottom: 44px;
+  margin-left: 90px; }
+  .verdant_main .title {
+    font-size: 16px;
+    color: #333333;
+    text-align: center; }
+  .verdant_main .second {
+    font-size: 14px;
+    color: #666666;
+    text-indent: 2em;
+    display: inline-block;
+    margin-top: 10px; }
+  .verdant_main .one_fist {
+    font-size: 14px;
+    color: #666666;
+    text-indent: 2em;
+    display: inline-block;
+    margin-top: 10px; }
+  .verdant_main .img_sc {
+    text-align: center;
+    margin: auto; }
+    .verdant_main .img_sc img {
+      width: 650px;
+      height: 442px;
+      padding-top: 30px; }
+  .verdant_main dl {
+    width: 650px;
+    overflow: hidden;
+    margin: auto; }
+    .verdant_main dl dt .zhu_liao {
+      padding-top: 37px;
+      font-size: 18px;
+      color: #333333;
+      font-weight: bold; }
+    .verdant_main dl dt ul {
+      overflow: hidden;
+      margin-top: 20px; }
+      .verdant_main dl dt ul li {
+        width: 325px;
+        height: 46px;
+        border: 1px solid #f3f3f3;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: #333333;
+        font-size: 14px;
+        background: #fff;
+        line-height: 46px;
+        float: left;
+        font-weight: bold; }
+    .verdant_main dl dd .fu_liao {
+      margin-top: 37px;
+      font-size: 18px;
+      color: #333333;
+      font-weight: bold; }
+    .verdant_main dl dd ul {
+      overflow: hidden;
+      margin-top: 20px; }
+      .verdant_main dl dd ul li {
+        width: 325px;
+        height: 46px;
+        border: 1px solid #f3f3f3;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: #333333;
+        font-size: 14px;
+        background: #fff;
+        line-height: 46px;
+        float: left;
+        font-weight: bold; }
+  .verdant_main .box {
+    margin-top: 42px;
+    margin-left: 50px; }
+    .verdant_main .box table tr td span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #363535; }
+    .verdant_main .box table tr td select {
+      width: 180px;
+      height: 36px;
+      border: 1px solid #b6b6b6;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin-left: 20px; }
+  .verdant_main .step ul {
+    margin-left: 50px;
+    margin-top: 30px; }
+    .verdant_main .step ul .step_title {
+      font-size: 18px;
+      color: #333333;
+      font-weight: bold; }
+    .verdant_main .step ul .one_walk {
+      font-size: 16px;
+      color: #333333;
+      padding-top: 30px;
+      padding-bottom: 15px; }
+    .verdant_main .step ul .step_main {
+      font-size: 14px;
+      color: #666666;
+      margin-top: 25px; }
+  .verdant_main .step dl {
+    margin-top: 110px; }
+    .verdant_main .step dl dt {
+      float: left; }
+      .verdant_main .step dl dt p {
+        width: 100px;
+        line-height: 40px;
+        border-radius: 5px;
+        background: #2b81f0;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 140px;
+        cursor: pointer; }
+    .verdant_main .step dl dd {
+      float: left; }
+      .verdant_main .step dl dd p {
+        width: 100px;
+        line-height: 40px;
+        border-radius: 5px;
+        color: #2b81f0;
+        border: 1px solid #2b81f0;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 60px;
+        cursor: pointer; }
+
+.tianjia {
+  cursor: pointer;
+  color: #2b81f0;
+  font-size: 14px; }
+
+.boxs {
+  margin-left: 50px; }
+  .boxs table tr td span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #363535; }
+  .boxs table tr td select {
+    width: 180px;
+    height: 36px;
+    border: 1px solid #b6b6b6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-left: 20px; }
+
+.dis td {
+  width: 12%;
+  padding-bottom: 20px; }
+  .dis td select {
+    box-sizing: border-box;
+    padding-left: 20px; }
+
+.di td {
+  padding-bottom: 20px; }
+  .di td select {
+    box-sizing: border-box;
+    padding-left: 20px; }
+
+.me_img {
+  display: none;
+  position: absolute;
+  font-size: 20px; }

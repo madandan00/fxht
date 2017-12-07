@@ -1,0 +1,422 @@
+@import url("public.css");
+.jiaru_qingqing_tou{
+	width: 100%;
+	height: 520px;
+	background: url(../img/toubutupian_01.png) no-repeat center center;
+	background-size:cover;
+}
+/*.jiaru_qingqing_tou img{
+	width: 100%;
+	height: auto;
+}*/
+.jiaru_qingqing_main{
+	width: 100%;
+	height: 3135px;
+	background-image: url(../img/_20171205141616.png);
+	background-size: cover;
+}
+.jiaru_qingqing_main img{
+	width: 100%;
+	height: auto;
+}
+.qingqing_jianjie{
+	width: 873px;
+	height: auto;
+	margin: auto;
+}
+.qingqing_jianjie_top{
+	width: 171px;
+	height: auto;
+	/*background: red;*/
+	margin: auto;
+	background: p;
+}
+.qingqing_jianjie_top dl dt{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 20px;
+}
+.qingqing_jianjie_top dl dt i{
+	font-size: 30px;
+}
+.qingqing_jianjie_top dl dd{
+	padding-top: 25px;
+	text-align: center;
+}
+.qingqing_jianjie_top dl dd p i{
+	font-size: 25px;
+}
+.qingqing_jianjie_top dl dd p span{
+	font-size: 24px;
+	color: #333333;
+}
+.qingqing_jianjie_top dl dd p{
+	font-size: 16px;
+}
+.qingqing_jianjie_zhu{
+	width: 100%;
+	height: auto;
+}
+.qingqing_jianjie_zhu_top{
+	width: 100%;
+	height: 410px;
+	margin-top: 60px;
+}
+.qingqing_jianjie_zhu_top_left{
+	width: 450px;
+	height: 410px;
+	float: left;
+}
+.qingqing_jianjie_zhu_top_left img{
+	width: 450px;
+	height: 410px;
+}
+.qingqing_jianjie_zhu_top_right{
+	width: 423px;
+	height: 410px;
+	background: #fff;
+	float: left;
+}
+.qingqing_jianjie_zhu_top_right_nei{
+	width: 405px;
+	height: 395px;
+	border: 1px solid #f5f5f5;
+	margin: auto;
+	margin-top: 6px;
+	box-sizing: border-box;
+	padding-left: 33px;
+}
+.qingqing_jianjie_zhu_top_right_nei i{
+	color: red;
+	display: block;
+	margin-top: 47px;
+}
+.qingqing_jianjie_zhu_top_right_nei p{
+	width: 337px;
+	margin-top: 30px;
+	text-indent: 2em;
+	color: #7b7b7b;
+	line-height: 23px;
+	font-size: 13px;
+}
+.xia{
+	float: right;
+	padding-right: 35px;
+}
+.qingqing_jianjie_zhu_down{
+	width: 100%;
+	height: 410px;
+	margin-top: 60px;
+}
+.qingqing_jianjie_zhu_down_right{
+	width: 450px;
+	height: 410px;
+	float: left;
+}
+.qingqing_jianjie_zhu_down_right img{
+	width: 450px;
+	height: 410px;
+}
+.qingqing_jianjie_zhu_down_left{
+	width: 423px;
+	height: 410px;
+	background: #fff;
+	float: left;
+}
+
+
+
+
+.peakedness{
+	width: 307px;
+	height: auto;
+	/*background: red;*/
+	margin: auto;
+}
+.peakedness dl dt{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 20px;
+}
+.peakedness dl dt i{
+	font-size: 30px;
+}
+.peakedness dl dd{
+	padding-top: 25px;
+	text-align: center;
+}
+.peakedness dl dd p i{
+	font-size: 25px;
+}
+.peakedness dl dd p span{
+	font-size: 24px;
+	color: #333333;
+}
+.peakedness dl dd p{
+	font-size: 16px;
+}
+.peakedness_main{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	/*height: 800px;*/
+	/*background: pink;*/
+}
+/*one*/
+.peakedness_main_one{
+	width: 390px;
+	/*height: 323px;*/
+	float: left;
+	margin-top: 200px;
+}
+.one_circle{
+	width: 388px;
+	height: 258px;
+	background: #fff;
+}
+.one_circle_yuan{
+	width: 365px;
+	height: 234px;
+	border: 1px solid #f8f8f8;
+	margin: auto;
+	box-sizing: border-box;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.one_circle_yuan_title{
+	text-align: center;
+	color: red;
+	font-size: 18px;
+	padding-top: 18px;
+}
+.one_circle_yuan_main{
+	width: 322px;
+	margin: auto;
+	padding-top: 12px;
+	line-height: 30px;
+}
+.one_circle_yuan img{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin-left: 348px;
+}
+/*two*/
+.peakedness_main_two{
+	width: 390px;
+	/*height: 323px;*/
+	float: left;
+	margin-top: 121px;
+	margin-left: 90px;
+}
+.two_circle{
+	width: 388px;
+	height: 258px;
+	background: #fff;
+}
+.two_circle_yuan{
+	width: 365px;
+	height: 234px;
+	border: 1px solid #f8f8f8;
+	margin: auto;
+	box-sizing: border-box;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.two_circle_yuan_title{
+	text-align: center;
+	color: red;
+	font-size: 18px;
+	padding-top: 18px;
+}
+.two_circle_yuan_main{
+	width: 322px;
+	margin: auto;
+	padding-top: 12px;
+	line-height: 30px;
+}
+.two_circle_yuan img{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin-left: 348px;
+}
+/*three*/
+.peakedness_main_three{
+	width: 390px;
+	/*height: 323px;*/
+	float: left;
+	margin-top: 123px;
+	margin-left: 90px;
+}
+.three_circle{
+	width: 388px;
+	height: 258px;
+	background: #fff;
+}
+.three_circle_yuan{
+	width: 365px;
+	height: 234px;
+	border: 1px solid #f8f8f8;
+	margin: auto;
+	box-sizing: border-box;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.three_circle_yuan_title{
+	text-align: center;
+	color: red;
+	font-size: 18px;
+	padding-top: 18px;
+}
+.three_circle_yuan_main{
+	width: 322px;
+	margin: auto;
+	padding-top: 12px;
+	line-height: 30px;
+}
+.three_circle_yuan img{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin-left: 348px;
+}
+/*fore*/
+.peakedness_main_fore{
+	width: 390px;
+	/*height: 323px;*/
+	float: left;
+	margin-top: -179px;
+	/*margin-left: 90px;*/
+}
+.fore_circle{
+	width: 388px;
+	height: 258px;
+	background: #fff;
+}
+.fore_circle_yuan{
+	width: 365px;
+	height: 234px;
+	border: 1px solid #f8f8f8;
+	margin: auto;
+	box-sizing: border-box;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+.fore_circle_yuan_title{
+	text-align: center;
+	color: red;
+	font-size: 18px;
+	padding-top: 18px;
+}
+.fore_circle_yuan_main{
+	width: 322px;
+	margin: auto;
+	padding-top: 12px;
+	line-height: 30px;
+}
+.fore_circle_yuan img{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	margin-left: 348px;
+}
+/*圆*/
+.circle_yu{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	margin-top: -64px;
+	margin-left: 151px;
+	font-size: 32px;
+	text-align: center;
+	line-height: 80px;
+}
+/*致富良方*/
+.recipe_top{
+	width: 307px;
+	height: auto;
+	margin: auto;
+}
+.recipe_top dl dt{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 20px;
+}
+.recipe_top dl dt i{
+	font-size: 30px;
+}
+.recipe_top dl dd{
+	padding-top: 25px;
+	text-align: center;
+}
+.recipe_top dl dd p i{
+	font-size: 25px;
+}
+.recipe_top dl dd p span{
+	font-size: 24px;
+	color: #333333;
+}
+.recipe_top dl dd p{
+	font-size: 16px;
+}
+.recipe_top_main{
+	width: 820px;
+	height: 616px;
+	background: #fff;
+	margin: auto;
+	margin-top: 120px;
+}
+.recipe_top_main_im{
+	width: 733px;
+	height: 420px;
+}
+.recipe_top_main_im{
+	width: 733px;
+	height: 420px;
+	margin: auto;
+	position: absolute;
+	margin-top: 112px;
+	margin-left: 42px;
+	background: url(../img/furltss.png);
+	background-size: cover;
+}
+.opt_des{
+	width: 420px;
+	height: 180px;
+	background: #fff;
+	opacity: 0.8;
+	margin-top: 222px;
+	margin-left: 156px;
+}
+.opt_des p{
+	width: 386px;
+	text-align: center;
+	margin: auto;
+	font-size: 12px;
+	color: #333333;
+	line-height: 23px;
+}
+.opt_des_iphone{
+	display: block;
+	width: 161px;
+	height: 23px;
+	background: #02101f;
+	color: #fff;
+	margin: auto;
+	margin-top: 11px;
+	box-sizing: border-box;
+	padding-left:22px ;
+	font-size: 15px;
+}
+.dingwei{
+	position: absolute;
+	margin-top: -119px;
+	margin-left: 346px;
+}
